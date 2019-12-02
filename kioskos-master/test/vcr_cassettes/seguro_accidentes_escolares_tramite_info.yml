@@ -1,0 +1,96 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.chileatiende.gob.cl/api/fichas/40068?access_token=QMwbYZbx3Hpyc9PG&type=JSON
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Mon, 11 Sep 2017 15:49:56 GMT
+      Set-Cookie:
+      - AWSELB=7BDB09DD16098517261B087C41FC3B6530E55A1737A26103DB20047500860AB3959BFF5788A2645121B5EFFF428BAEB20A481EF53AF01E1F038ED6396E817309DDD8FEFF0A3FD07703DA36FB257C9EE209EC8EA2AB;PATH=/
+      - ci_session=VDBQagFkUW1aIFYgVWMANVdmVm8DcAN9B2VXcwYiD2YGbQpvBFgCZgNiU3EEbgJ3DzQEMgY4V2kAIwBnWGpSPVJnBjNTZQoyUTQBPg87BTlUZFBpATZRZ1ppVmFVPQBnV2FWZwNkA28HM1c2BmMPPAZnCjEEYQI6AzdTcQRuAncPNAQwBjpXaQAjAGpYeVIAUjQGNVNgCnhRMAF5D38FKlRqUCMBalFmWmpWaVV7ADdXY1Z7A2IDIAcxVzkGYQ8hBjoKNwQlAjQDdVNpBGQCNA80BCMGf1cgAGQAcVhWUj5SMgY0U2oKflF3ATEPfwUyVGBQZQFqUXVaHVYyVSsAZVcyVjQDKwMuB3ZXMAZ%2FDz4GMwovBDcCLQM9UyAEbwI1Dz0EOwYoVz8AYABwWH1SAFI0BjJTcApjUSMBYw94BXFUc1BrATlRbVpqVmZVaQAxV2dWYQNnAz4HMFc0BmoPcg%3D%3D;
+        expires=Mon, 11-Sep-2017 17:50:04 GMT; path=/
+      - route=37cf2b5d00ac2ab9f5a0588bcde9cc0c; Path=/
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      X-Var:
+      - MISS
+      Content-Length:
+      - '1905'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ficha":{"id":"40068","codigo":"ZZ001-10023","fecha":"2015-05-22 13:35:04","servicio":"ChileAtiende","titulo":"Seguro
+        contra accidentes escolares","updated_data_at":"2015-05-22 00:00:00","objetivo":"<p>Permite
+        a todos los estudiantes matriculados en un establecimiento educacional reconocido
+        por el Estado, protegerse contra los accidentes sufridos durante la realizaci\u00f3n
+        de sus estudios.<\/p>","beneficiarios":"<p>El\u00a0<strong>seguro contra accidentes
+        escolares<\/strong> permite a todos los estudiantes regulares de educaci\u00f3n
+        b\u00e1sica, media o superior matriculados en un establecimiento educacional
+        reconocido por el Estado, protegerse contra los accidentes sufridos durante
+        la realizaci\u00f3n de sus estudios.<\/p>\n<p>{{mensaje[reloj]:Los beneficios
+        del seguro escolar podr\u00e1n ser utilizados hasta la recuperaci\u00f3n absoluta
+        del estudiante, o mientras existan s\u00edntomas o secuelas causadas por el
+        accidente.}}<\/p>\n<p>{{paso:\u00bfQu\u00e9 es un accidente escolar?}}<\/p>\n<p>{{contenido:Un
+        accidente escolar incluye todas aquellas\u00a0<strong>lesiones que sufran
+        los estudiantes<\/strong>, que produzcan incapacidad o muerte y que ocurran\u00a0<strong>dentro
+        del establecimiento educacional<\/strong>, durante la realizaci\u00f3n de
+        la pr\u00e1ctica profesional o los sufridos en el trayecto (ida y regreso).<\/p>\n<p><strong>No
+        se consideran<\/strong>\u00a0dentro del seguro aquellos accidentes que no
+        tengan relaci\u00f3n con los estudios, o los producidos intencionalmente por
+        la v\u00edctima.}}<\/p>\n<p>{{paso:\u00bfQu\u00e9 hacer en caso de sufrir
+        un accidente escolar?}}<\/p>\n<p>{{contenido:El estudiante debe acudir a cualquier
+        centro de la Red P\u00fablica de Salud. La cobertura del seguro incluye:<\/p>\n<ul>\n<li>Servicio
+        y atenci\u00f3n m\u00e9dica, quir\u00fargica y dental.<\/li>\n<li>Hospitalizaciones,
+        cuando correspondan.<\/li>\n<li>Medicamentos.<\/li>\n<li>Pr\u00f3tesis y aparatos
+        ortop\u00e9dicos (incluida su reparaci\u00f3n).<\/li>\n<li>Rehabilitaci\u00f3n
+        f\u00edsica y reeducaci\u00f3n profesional.<\/li>\n<li>Gastos de traslado.<\/li>\n<li>Pensi\u00f3n
+        permanente, temporal o cuota mortuoria, en caso que de ser necesario.}}<\/li>\n<\/ul>\n<p>{{paso:\u00bfC\u00f3mo
+        se declara?}}<\/p>\n<p>{{contenido:El jefe del establecimiento educacional,
+        el m\u00e9dico tratante o el estudiante accidentado, deben presentar una <a
+        href=\"http:\/\/www.isl.gob.cl\/wp-content\/uploads\/2014\/03\/Declaracion_Individual_Accidente_Escolar.pdf\"
+        target=\"_blank\">declaraci\u00f3n individual de accidente escolar<\/a> ante
+        el Servicio de Salud que corresponda, en la que se exprese:<\/p>\n<ul>\n<li>Nombre,
+        comuna y ciudad del establecimiento educacional.<\/li>\n<li>Datos personales
+        del estudiante.<\/li>\n<li>Informe del accidente.}}<\/li>\n<\/ul>\n<p>{{paso:\u00bfC\u00f3mo
+        acreditar un accidente en el trayecto?}}<\/p>\n<p>{{contenido:Para acreditar
+        un accidente de ida o regreso, entre la casa y el establecimiento educacional
+        o el lugar donde el estudiante realiza su pr\u00e1ctica profesional, el estudiante
+        deber\u00e1 presentar cualquiera de los siguientes documentos:<\/p>\n<ul>\n<li>Un
+        parte emitido por Carabineros.<\/li>\n<li>La declaraci\u00f3n de testigos
+        presenciales.<\/li>\n<li>Cualquier otro medio de prueba fidedigno que acredite
+        el accidente.}}<\/li>\n<\/ul>\n<p>{{paso:Obtenga m\u00e1s informaci\u00f3n}}<\/p>\n<p>{{contenido:<\/p>\n<ul>\n<li>En
+        el <a href=\"http:\/\/web.minsal.cl\/?q=conozcanos_servicios_salud\" target=\"_blank\">Servicio
+        de Salud<\/a>\u00a0m\u00e1s cercano.<\/li>\n<li>Para solicitud de <strong>reembolsos
+        m\u00e9dicos,<\/strong> dir\u00edjase a la\u00a0<a href=\"http:\/\/compin.redsalud.gob.cl\/?page_id=19\"
+        target=\"_blank\">Comisi\u00f3n de Medicina Preventiva (COMPIN)<\/a>.<\/li>\n<li>Para
+        <strong>prestaciones econ\u00f3micas o cuota mortuoria<\/strong>, consulte
+        en el <a href=\"http:\/\/www.isl.gob.cl\/category\/tramites\/accidentes-escolares\/\"
+        target=\"_blank\">Instituto de Seguridad Laboral<\/a>.<\/li>\n<li>Para realizar
+        un <strong>reclamo<\/strong> consulte en la <a href=\"http:\/\/www.suseso.cl\/reclamos-y-apelaciones\/\"
+        target=\"_blank\">Superintendencia de Seguridad Social<\/a>.}}<\/li>\n<\/ul>\n<p>{{paso:Marco
+        legal}}<\/p>\n<p>{{contenido:<a href=\"http:\/\/www.leychile.cl\/Navegar?idNorma=74448&amp;buscar=Decreto+313+Ministerio+del+Trabajo\"
+        target=\"_blank\">Ley N\u00ba16.744<\/a>.}}<\/p>","costo":"","vigencia":"","plazo":"","observaciones":"","marco_legal":"","doc_requeridos":"","guia_online":"","guia_online_url":"","guia_oficina":"","guia_telefonico":"","guia_correo":"","temas":{"tema":["Seguridad","Educaci\u00f3n"]},"tags":{"tag":["accidente
+        de trayecto","seguro escolar","seguro de accidentes escolares","accidente
+        en el colegio","accidente en la universidad","accidente camino a"]},"chileclic_id":null,"permalink":"https:\/\/www.chileatiende.gob.cl\/fichas\/ver\/40068"}}'
+    http_version: 
+  recorded_at: Mon, 11 Sep 2017 15:49:57 GMT
+recorded_with: VCR 3.0.3

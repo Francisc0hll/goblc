@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.chileatiende.gob.cl/api/fichas/370?access_token=QMwbYZbx3Hpyc9PG&type=JSON
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Fri, 22 Sep 2017 15:45:38 GMT
+      Set-Cookie:
+      - AWSELB=7BDB09DD16098517261B087C41FC3B6530E55A1737A26103DB20047500860AB3959BFF5788C0C2DE773903E6CA41FF468E7B085567559B6A356CB056DFEED2412E5514BF7848B507FBF4A5172EBFDC9FE6ED9F59E2;PATH=/
+      - ci_session=AGRRa1cyADwJcwB2DTsGMwAxV25WJQN9WjhSdlt%2FXzZSOQFkBFgMaFMyV3VSOAZzCjFXYVJsUG5TcABiUTkNMQNhVjYDYww%2BVWELMVM0UT4AZ1FjVzcAMAk4ADINYwYxADJXNVZmAz5aP1IyWz9fPVIzATwEMgwwU2JXdVI4BnMKMVdjUm5QblNwAGpRcA1fA2VWZQMwDH5VNAtzUyNRfgA%2BUSJXPAA3CTkAPw0jBjEANFd6VjcDIFpsUjJbPF9xUm4BPQQlDDpTJVdtUjIGMAoxV3BSK1AnUzcAcVFfDWEDY1ZkAzoMeFVzCztTI1FmADRRZFc8ACQJTgBkDXMGYwBlVzVWfgMuWitSNVsiX25SZwEkBDcMI1NtVyRSOQYxCjhXaFJ8UDhTMwBwUXQNXwNlVmIDIAxlVScLaVMkUSUAJ1FqV28APAk5ADANMQY0ADFXbVYyAz9aaFI9WzdfIg%3D%3D;
+        expires=Fri, 22-Sep-2017 17:45:58 GMT; path=/
+      - route=37cf2b5d00ac2ab9f5a0588bcde9cc0c; Path=/
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      X-Var:
+      - MISS
+      Content-Length:
+      - '895'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ficha":{"id":"370","codigo":"AD009-8","fecha":null,"servicio":"Carabineros
+        de Chile","titulo":"Sistema de Seguridad Privada: Requisitos para un servicio
+        de Guardias de Seguridad","updated_data_at":null,"objetivo":"<p><strong>Descripci\u00f3n:<\/strong><\/p>\n<p>Aprobaci\u00f3n
+        por parte de la Autoridad Fiscalizadora respectiva, de la Directiva de Funcionamiento
+        que determina la modalidad de contrataci\u00f3n del servicio de Guardias de
+        Seguridad (propio o por empresa). <br \/><strong><\/strong><\/p>\n<p><strong>En
+        que consiste:<\/strong><\/p>\n<p>Determinar la modalidad de contrataci\u00f3n
+        del servicio de Guardias de Seguridad, (propio o por empresa) y comunicar
+        a la Autoridad Fiscalizadora respectiva, para efectos de aprobaci\u00f3n de
+        la Directiva de Funcionamiento.<\/p>","beneficiarios":"<p>Personas Naturales
+        o Jur\u00eddicas, que cumplan con el siguiente requisito: Contar con la aprobaci\u00f3n
+        de la Directiva de Funcionamiento.<\/p>","costo":"<p>No tiene costo.<\/p>","vigencia":"","plazo":"","observaciones":"<ul>\n<li>Una
+        vez aprobada la Directiva de Funcionamiento el empleador, en el caso de haber
+        contratado directamente al Guard\u00eda de Seguridad, deber\u00e1 solicitar
+        la tramitaci\u00f3n de su Tarjeta de Identificaci\u00f3n ante la Autoridad
+        F\u00edscalizadora.<\/li>\n<li>La Tarjeta de Identificaci\u00f3n tiene vigencia
+        de un a\u00f1o renovable y tendr\u00e1 validez mientras preste servicios para
+        la entidad.<\/li>\n<\/ul>","marco_legal":"","doc_requeridos":"<ul>\n<li>Contrato
+        de Trabajo del Guardias de Seguridad<\/li>\n<li>Seguro de vida a favor del
+        Guardia de Seguridad (75 U.T.M.).<\/li>\n<\/ul>","guia_online":"","guia_online_url":"","guia_oficina":"<p>En
+        cada una de las Autoridades Fiscalizadoras (Prefecturas), en donde se desarrollar\u00e1
+        el servicio.<\/p>\n<p>El resultado del tr\u00e1mite ser\u00e1: Aprobaci\u00f3n
+        del estudio de seguridad.<\/p>","guia_telefonico":"","guia_correo":"","temas":null,"tags":null,"chileclic_id":"CARAB0008","permalink":"https:\/\/www.chileatiende.gob.cl\/fichas\/ver\/370"}}'
+    http_version: 
+  recorded_at: Fri, 22 Sep 2017 15:45:38 GMT
+recorded_with: VCR 3.0.3

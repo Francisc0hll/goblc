@@ -1,0 +1,21 @@
+.certificates
+  .container-fluid
+  .row
+    .col-md-12
+      -if flash[:error]
+        .alert.alert-danger
+          %p #{flash[:error]}
+
+  .container
+    .row
+      .col-md-12
+        %h3 Activación del Totem
+
+    .row.forms
+      .col-md-12.text-center
+        - if cookies[:hostname].present?
+          %h1= "Kiosco #{cookies[:hostname]} no configurado en administración. Favor configúrelo en la administración"
+        - else
+          %h1 Este módulo no pudo ser iniciado. Regulariza esta situación con el administrador
+      .col-md-12.text-center
+        = link_to 'Reintentar', root_path, class: 'btn medium-btn btn-main'

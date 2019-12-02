@@ -1,0 +1,16 @@
+- name: "apt | Ensure xorg is present"
+  become: yes
+  become_user: root
+  apt:
+    name: "xorg"
+    state: present
+
+- name: "copy daemon.conf with autologin"
+  become: yes
+  become_user: root
+  template:
+    src: daemon.conf.j2
+    dest: /etc/gdm3/daemon.conf
+    owner: "{{ totem_linux_user }}"
+    group: "{{ totem_linux_user }}"
+    mode: 0744

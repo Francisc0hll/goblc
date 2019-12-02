@@ -1,0 +1,39 @@
+.option-header.claveunica
+  .row
+    .col-md-12
+      =link_to alternatives_clave_unicas_path, class: 'btn-back' do
+        %i.material-icons keyboard_backspace
+      .title
+        %i.material-icons ipower_settings_new
+        %h1 Obtener claveúnica
+
+.claveunica-page
+  .container
+    .row
+      .col-md-12
+        %h3= "Recibirás la clave única para el RUN #{format_rut(current_user.rut) } en tu celular"
+    .row.forms
+      = form_tag clave_unicas_path do
+        .col-md-12
+          = hidden_field_tag :create_method, :phone
+          %label Ingresa tu celular
+          .hint.p-right Ej: 9 98287367
+          .clean-input
+            %i.material-icons clear
+          = text_field_tag :phone, nil, placeholder: "",minlength:9, class: 'phone atLeastOne', pattern:"[9][0-9]+", title: "ingrese un número de celular valido"
+        .col-md-12
+          %label Ingresa tu correo electrónico
+          .hint.p-right Ej: nombre@mail.cl
+          .clean-input
+            %i.material-icons clear
+          = text_field_tag :mail, nil, placeholder: "", class: 'text atLeastOne email'
+        .col-md-12
+          %button.btn.medium-btn.btn-main
+            Aceptar
+:javascript
+  $('form').validate({
+    rules: {
+      phone: "required",
+      mail: "required"
+    },
+  })

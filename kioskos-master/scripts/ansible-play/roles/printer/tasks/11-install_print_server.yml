@@ -1,0 +1,26 @@
+- name: "Download the print server from its repo"
+  git:
+    repo: "https://github.com/e-gob/plataforma-kioscos-autoatencion-print.git"
+    dest: /home/{{ totem_linux_user }}/printer/
+
+- name: "Change owner and permissions of the printer dir"
+  file:
+    path: /home/{{ totem_linux_user }}/printer
+    state: directory
+    recurse: yes
+    mode: 0766
+    owner: "{{ totem_linux_user }}"
+
+- name: "Install bundler"
+  shell: cd /home/{{ totem_linux_user }}/printer && gem install bundler --user-install
+
+- name: "Install gems"
+  shell: cd /home/{{ totem_linux_user }}/printer && /home/{{ totem_linux_user }}/.gem/ruby/2.3.0/bin/bundle install --path vendor/bundle
+
+- name: "Copy the autostart print server script to its intended location"
+  become: yes
+  become_user: root
+  template:
+    src: print_server_starter.j2
+    dest: /opt/print_server_starter
+    mode: 0755

@@ -1,0 +1,228 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.chileatiende.gob.cl/api/fichas/12016?access_token=QMwbYZbx3Hpyc9PG&type=JSON
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Tue, 12 Sep 2017 19:26:35 GMT
+      Set-Cookie:
+      - AWSELB=7BDB09DD16098517261B087C41FC3B6530E55A17372333BF9E5601DC547D719670BE22915931EB9AA4E38DC98F28975D3140E4F2B56E2B763114ED73D00EA50FFFE6F84C1FF01A0D29C42FAC844B91A40BA429732E;PATH=/
+      - ci_session=VDBUblcyUGxcJlMlDDoHMlJjV25XJA1zBGYNKVF1DWQEb1E0Al4EYANiUXNXPVAlCjEDNVZoAz1UdwUyBWFWOVVgUGFTPQpvBjBTPlRhDDhUZ1RmVzBQZ1xvUzIMNQc7UmZXY1c%2BDWYEYQ08UTcNOAQ4UWMCOQQ5AzJRc1c9UCUKMQM3VmoDPVR3BW8FJFYEVTNQY1NgCngGZ1MrVCQMI1RqVCdXPFBnXGxTbAwiBzBSZld6VzYNLgQyDWNRNg0jBDhRbAIjBDIDdVFrVzdQZgoxAyRWLwN0VDAFdAULVjpVNVBiU2oKfgYgU2NUJAw7VGBUYVc8UHRcG1M3DHIHYlI3VzVXfw0gBHUNalEoDTwEMVF0AjEEKwM9USJXPFBnCjgDPFZ4A2tUNAV1BSBWBFUzUGRTcApjBnRTMVQjDHhUc1RvV29QbFxsU2MMMAc2UmFXYFcyDTMEOg1tUT0NcA%3D%3D;
+        expires=Tue, 12-Sep-2017 21:26:37 GMT; path=/
+      - route=992d2dede5be69f2f523d48ac3594a7e; Path=/
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      X-Var:
+      - MISS
+      Content-Length:
+      - '4879'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ficha":{"id":"12016","codigo":"ZZ001-145","fecha":"2017-07-05 12:08:35","servicio":"ChileAtiende","titulo":"Pr\u00f3rroga
+        de la cotizaci\u00f3n previsional obligatoria para independientes que emiten
+        boletas","updated_data_at":"2017-07-05 00:00:00","objetivo":"<p>Hasta la operaci\u00f3n
+        renta 2018 los trabajadores independientes podr\u00e1n <a href=\"[[12111]]\"
+        target=\"_blank\">declarar su voluntad de no cotizar<\/a>.<\/p>","beneficiarios":"<p>La
+        <a href=\"http:\/\/www.leychile.cl\/Navegar?idNorma=1086935\" target=\"_blank\">Ley
+        N\u00b020.894<\/a> <strong>prorroga hasta el 2017 (operaci\u00f3n renta 2018)
+        la obligatoriedad de cotizar de los trabajadores independientes como pago
+        anual con cargo a la devoluci\u00f3n de impuestos<\/strong>. De esta forma,
+        quienes deseen podr\u00e1n <a href=\"[[12111]]\" target=\"_blank\">declarar
+        su voluntad de no cotizar<\/a> durante las operaciones renta 2016, 2017 y
+        2018, sin perjuicio de los trabajadores independientes que opten por pagar
+        en forma mensual sus cotizaciones.<\/p>\n<p>{{youtube:qbi8wRxPJaM}}<\/p>\n<p>{{paso:Contexto}}<\/p>\n<p>{{contenido:<\/p>\n<p>En
+        2012 comenz\u00f3 el <strong>ingreso gradual al sistema previsional de los
+        trabajadores independientes<\/strong> que emiten boletas de honorarios, en
+        el marco de la <a href=\"http:\/\/www.leychile.cl\/Navegar?idNorma=269892\"
+        target=\"_blank\">reforma previsional<\/a>.<\/p>\n<p>Esto se tradujo en que,
+        desde 2012 hasta 2014, los trabajadores a honorarios pudieron <strong>cotizar
+        en una AFP y en una mutualidad de empleadores o en el Instituto de Seguridad
+        Laboral (ISL) <\/strong>por un porcentaje de la renta imponible progresivamente
+        mayor, excepto que hubiesen manifestado expresamente su <strong>voluntad de
+        no cotizar<\/strong> mediante una declaraci\u00f3n jurada en las respectivas
+        operaciones renta 2013, 2014 y 2015.<\/p>\n<p>Si bien en la <strong>declaraci\u00f3n
+        de renta 2016<\/strong> no se pod\u00eda manifestar la voluntad de no cotizar
+        por el 100% de la renta imponible percibida entre enero y diciembre de 2015,
+        la\u00a0<a href=\"http:\/\/www.leychile.cl\/Navegar?idNorma=1086935\" target=\"_blank\">Ley
+        N\u00b020.894<\/a> <strong>prorrog\u00f3 la posibilidad de renunciar a cotizar
+        hasta la declaraci\u00f3n de renta 2018<\/strong>.}}<\/p>\n<p>{{paso:\u00bfQui\u00e9nes
+        deben cotizar?}}<\/p>\n<p>{{contenido:<\/p>\n<p>Para efectos de la operaci\u00f3n
+        renta 2017, a los\u00a0<strong>trabajadores que no completaron la <\/strong><a
+        href=\"[[12111]]\" target=\"_blank\"><strong>declaraci\u00f3n jurada de renuncia
+        a cotizar<\/strong><\/a>,<strong> <\/strong>y<strong> emitieron boletas de
+        honorarios<\/strong> durante el a\u00f1o 2016, siempre que su renta imponible
+        anual haya sido igual o superior a un <a href=\"http:\/\/www.dt.gob.cl\/consultas\/1613\/w3-article-60141.html\"
+        target=\"_blank\">ingreso m\u00ednimo mensual<\/a> y hasta el <strong>l\u00edmite
+        m\u00e1ximo imponible<\/strong> (75,7 <a href=\"http:\/\/www.sii.cl\/pagina\/valores\/valyfechas.htm\"
+        target=\"_blank\">Unidades de Fomento<\/a>) multiplicado por doce, se les
+        <strong>retendr\u00e1 de su devoluci\u00f3n de impuestos<\/strong> lo que
+        corresponda a las cotizaciones asociadas a la pensi\u00f3n.<\/p>\n<p>Adem\u00e1s,
+        los trabajadores que no est\u00e9n afiliados a una Administradora de Fondos
+        de Pensiones (AFP), al Instituto de Previsi\u00f3n Social (IPS), la Direcci\u00f3n
+        de Previsi\u00f3n de Carabineros (DIPRECA), o la Caja de Previsi\u00f3n de
+        la Defensa Nacional (CAPREDENA) y <strong>no efect\u00faen la renuncia a cotizar<\/strong>,
+        se entender\u00e1n afiliados a la AFP que se adjudic\u00f3 la licitaci\u00f3n
+        para la administraci\u00f3n de las cuentas de capitalizaci\u00f3n individual
+        (actualmente, PlanVital).<\/p>\n<p>Los trabajadores que est\u00e1n <strong>obligados
+        a cotizar<\/strong> son aquellos que:<\/p>\n<ul>\n<li>Obtienen honorarios
+        por actividades independientes.<\/li>\n<li>Perciben rentas que los obligan
+        a emitir boletas de honorarios.<\/li>\n<li>Perciben rentas, y reciben boletas
+        de prestaci\u00f3n de servicios a terceros.<\/li>\n<li>Generan ingresos por
+        participaciones en rentas de una sociedad de profesionales, excepto que opten
+        por tributar en <a href=\"http:\/\/www.sii.cl\/preguntas_frecuentes\/renta\/001_002_1711.htm\"
+        target=\"_blank\">primera categor\u00eda<\/a>.}}<\/li>\n<\/ul>\n<p>{{paso:No
+        est\u00e1n obligados a cotizar}}<\/p>\n<p>{{contenido:<\/p>\n<p>Todas las
+        personas que, emitiendo boletas de honorarios, se encuentren en alguno de
+        los siguientes casos, no est\u00e1n obligadas a cotizar:<\/p>\n<ul>\n<li>Al
+        1 de enero de 2012 ten\u00edan 55 o m\u00e1s a\u00f1os de edad (hombres),
+        o 50 o m\u00e1s a\u00f1os de edad (mujeres), para las cotizaciones de pensi\u00f3n.<\/li>\n<li>Est\u00e9n
+        acogidos a pensiones de vejez, vejez anticipada o invalidez total (excepto
+        pensionados por invalidez de la ley de accidentes del trabajo).<\/li>\n<li>Coticen
+        mensualmente en calidad de trabajadores dependientes por una remuneraci\u00f3n
+        imponible superior al l\u00edmite m\u00e1ximo imponible mensual.<\/li>\n<li>Sean
+        independientes y acrediten una renta imponible anual inferior al\u00a0<a href=\"http:\/\/www.dt.gob.cl\/consultas\/1613\/w3-article-60141.html\"
+        target=\"_blank\">ingreso m\u00ednimo mensual<\/a><span>,<\/span>\u00a0vigente
+        a diciembre del a\u00f1o correspondiente a las rentas.<\/li>\n<li>Pertenezcan
+        al Instituto de Previsi\u00f3n Social (IPS), Direcci\u00f3n de Previsi\u00f3n
+        de Carabineros de Chile (DIPRECA) o Caja de Previsi\u00f3n de la Defensa Nacional
+        (CAPREDENA).}}<strong> <br \/><\/strong><\/li>\n<\/ul>\n<p>{{paso:\u00bfC\u00f3mo
+        se pagan las cotizaciones?}}<\/p>\n<p>{{contenido:<\/p>\n<p>Las cotizaciones
+        se pueden pagar en forma:<\/p>\n<ul>\n<li><strong>Mensual<\/strong>: Pago
+        Provisional de Cotizaci\u00f3n (PPC).<\/li>\n<li><strong>Anual<\/strong>:
+        con cargo a la devoluci\u00f3n de impuestos de la operaci\u00f3n renta del
+        a\u00f1o siguiente al que se percibieron los ingresos.<\/li>\n<\/ul>\n<p>Los
+        trabajadores independientes que realicen el pago de sus cotizaciones previsionales
+        en forma anual quedar\u00e1n cubiertos por el Seguro de Invalidez y Sobrevivencia
+        (SIS), a partir de mayo del a\u00f1o en que se realice el pago.<\/p>\n<p>El
+        per\u00edodo que dure dicha cobertura depender\u00e1 del monto de la cotizaci\u00f3n:<\/p>\n<ul>\n<li>Si
+        la renta imponible obtenida durante el a\u00f1o es igual o superior a siete
+        ingresos m\u00ednimos mensuales ($1.890.000), el seguro regir\u00e1 desde
+        el 1 de mayo del a\u00f1o en que pag\u00f3 las cotizaciones hasta el 30 de
+        abril del a\u00f1o siguiente.\u00a0<\/li>\n<li>Si la renta imponible es inferior
+        a siete ingresos m\u00ednimos ($1.890.000), la cantidad de meses que rija
+        el seguro ser\u00e1 proporcional al n\u00famero de cotizaciones equivalentes
+        a ingresos m\u00ednimos. La cobertura comenzar\u00e1 a operar desde el 1 de
+        mayo del a\u00f1o en que pag\u00f3 las cotizaciones. Por ejemplo:<\/li>\n<\/ul>\n<p>Un
+        trabajador independiente que tiene una renta imponible anual de $1.584.000
+        tendr\u00e1 una cobertura de 10 meses, que se calculan de la siguiente forma:<\/p>\n<p>$1.584.000
+        \/ $270.000 (ingreso m\u00ednimo mensual) \/ 7 x 12 (meses): 10 meses de cobertura.<\/p>\n<p><strong>Tabla
+        resumen sobre el pago de las cotizaciones<\/strong>:<\/p>\n<table border=\"0\">\n<tbody>\n<tr>\n<td
+        width=\"20%\"><strong>Cotizaciones<\/strong><\/td>\n<td width=\"20%\"><strong>Instituci\u00f3n
+        y monto de la cotizaci\u00f3n<\/strong><\/td>\n<td width=\"30%\"><strong>\u00bfC\u00f3mo
+        deben pagar las cotizaciones?<\/strong><\/td>\n<td width=\"30%\"><strong>\u00bfCu\u00e1ndo
+        reciben los beneficios asociados al pago de las cotizaciones?<\/strong><\/td>\n<\/tr>\n<tr>\n<td><strong>Pensi\u00f3n
+        y Seguro de Invalidez y Sobrevivencia (SIS)<\/strong><\/td>\n<td>\n<p>AFP<\/p>\n<p><strong>10%
+        para la cuenta de capitalizaci\u00f3n individual<\/strong> (m\u00e1s la comisi\u00f3n
+        de la AFP), y 1,41% para el seguro de invalidez y sobrevivencia.<\/p>\n<\/td>\n<td>\n<p>Mes
+        vencido, es decir, el plazo es hasta el \u00faltimo d\u00eda h\u00e1bil del
+        mes siguiente en el que se percibieron las rentas.<\/p>\n<\/td>\n<td>\n<p>Las
+        cotizaciones previsionales se acumulan hasta que los trabajadores solicitan
+        la pensi\u00f3n de vejez.<\/p>\n<p>En el caso del Seguro de Invalidez y Sobrevivencia
+        (SIS), los trabajadores independientes estar\u00e1n cubiertos durante el mes
+        siguiente al realizado el pago.<\/p>\n<\/td>\n<\/tr>\n<tr>\n<td><strong>Seguro
+        Social contra Accidentes del Trabajo y Enfermedades Profesionales<\/strong><\/td>\n<td>\n<p>Instituto
+        de Seguridad Laboral (ISL) o mutual de seguridad<\/p>\n<p><strong>0,95% para
+        el Seguro contra Accidentes Laborales y Enfermedades Profesionales<\/strong>.
+        Si la actividad econ\u00f3mica presenta un riesgo mayor, deben pagar la tasa
+        adicional diferenciada, cuyo tope es de 3,4%.<\/p>\n<\/td>\n<td>A partir del
+        mes siguiente a su incorporaci\u00f3n, los trabajadores tendr\u00e1n que enterar
+        mensualmente la cotizaci\u00f3n que el ISL o la mutual les informe, seg\u00fan
+        la actividad que desarrollan.<\/td>\n<td>Para acceder a las prestaciones,
+        no es necesario registrar un per\u00edodo m\u00ednimo de cotizaciones, pero
+        s\u00ed <strong>deben estar al d\u00eda en el pago<\/strong> (no tener m\u00e1s
+        de dos meses de cotizaciones impagas desde la incorporaci\u00f3n al seguro).<\/td>\n<\/tr>\n<tr>\n<td><strong>Salud<\/strong><\/td>\n<td>\n<p>FONASA
+        o ISAPRE<\/p>\n<p><strong>7% de salud<\/strong> o el monto superior correspondiente
+        al valor del plan de la ISAPRE. <strong>Para asegurar la cobertura, el pago
+        debe ser mensual<\/strong>.<\/p>\n<\/td>\n<td>Seg\u00fan lo indicado por FONASA
+        o la ISAPRE respectiva.<\/td>\n<td>Para <strong>tener derecho a las prestaciones<\/strong>,
+        es necesario <strong>haber pagado a lo menos seis cotizaciones continuas o
+        discontinuas, durante los \u00faltimos 12 meses<\/strong> anteriores a la
+        fecha en que se soliciten los beneficios.<\/td>\n<\/tr>\n<\/tbody>\n<\/table>\n<p>}}<strong>
+        <\/strong><\/p>\n<p>{{paso:\u00bfCu\u00e1l es la renta imponible de los trabajadores
+        independientes?}}<\/p>\n<p>{{contenido:<\/p>\n<p>La <strong>renta imponible
+        anual<\/strong> corresponde al 80% de los honorarios brutos percibidos en
+        el a\u00f1o anterior a la operaci\u00f3n renta, siempre que sea igual o superior
+        al ingreso m\u00ednimo mensual y hasta el l\u00edmite m\u00e1ximo imponible
+        mensual multiplicado por doce. En caso de haber hecho pagos provisionales
+        de cotizaciones en forma mensual por una renta imponible menor, se reliquidar\u00e1
+        la diferencia en la operaci\u00f3n renta respectiva.}}<\/p>\n<p>{{paso:Prestaciones
+        para los trabajadores independientes que cotizan}}<\/p>\n<p>{{contenido:<\/p>\n<p>La
+        <strong>primera cotizaci\u00f3n<\/strong> de un independiente a una AFP <strong>produce
+        su afiliaci\u00f3n al sistema de pensiones<\/strong> (<a href=\"http:\/\/www.leychile.cl\/Navegar?idNorma=7147\"
+        target=\"_blank\">Decreto Ley N\u00b03.500<\/a>). A la vez, es responsabilidad
+        de cada persona afiliarse tambi\u00e9n al sistema de salud y al seguro de
+        accidentes del trabajo y enfermedades profesionales.<\/p>\n<p>En general,
+        las prestaciones a las que pueden acceder son similares a las de los trabajadores
+        dependientes:<\/p>\n<ul>\n<li><strong>Pensiones de vejez, invalidez y sobrevivencia<\/strong>
+        (a trav\u00e9s de una AFP o compa\u00f1\u00eda de seguro, seg\u00fan sea el
+        caso). (El <strong>pago se realizar\u00e1\u00a0anualmente<\/strong>, a trav\u00e9s
+        de la retenci\u00f3n del 10% de impuesto).<\/li>\n<li>Prestaciones de salud
+        (libre elecci\u00f3n <a href=\"[[37853]]\" target=\"_blank\">FONASA<\/a>,
+        o a trav\u00e9s de una ISAPRE), pagos de licencias m\u00e9dicas, y pago del
+        pre y posnatal. (El <strong>pago debe realizarse mensualmente<\/strong>).<\/li>\n<li>Seguro
+        social contra riesgos de accidentes del trabajo y enfermedades profesionales,
+        a trav\u00e9s de cualquiera de las mutualidades de empleadores o del ISL.\u00a0(El\u00a0<strong>pago
+        debe realizarse mensualmente<\/strong>).<\/li>\n<li><a href=\"[[34676]]\"
+        target=\"_blank\">Asignaci\u00f3n familiar<\/a> y maternal. La acreditaci\u00f3n
+        de cargas familiares y la concesi\u00f3n del beneficio es determinado por
+        el Instituto de Previsi\u00f3n Social (IPS).<\/li>\n<li>Beneficios complementarios
+        y de cr\u00e9dito social asociados a una caja de compensaci\u00f3n de asignaci\u00f3n
+        familiar.}}<\/li>\n<\/ul>\n<p>{{paso:Cotizaciones adeudadas}}<\/p>\n<p>{{contenido:<\/p>\n<p>Antes
+        de la entrada en vigencia de la <a href=\"http:\/\/www.leychile.cl\/Navegar?idNorma=1086935\"
+        target=\"_blank\">Ley N\u00b020.894<\/a>, que prorroga la obligatoriedad de
+        cotizar de los trabajadores independientes, las Administradoras de Fondos
+        de Pensiones (AFP) estaban obligadas a perseguir los saldos insolutos de las
+        cotizaciones previsionales mediante el procedimiento de cobranza prejudicial
+        y judicial.<\/p>\n<p>A partir de la nueva normativa, las cotizaciones que
+        se requieran enterar se pagar\u00e1n el siguiente a\u00f1o tributario con
+        cargo a las cantidades retenidas por el Servicio de Impuestos Internos (SII),
+        con ocasi\u00f3n de la operaci\u00f3n renta. Los montos adeudados se pagar\u00e1n
+        reajustados seg\u00fan la variaci\u00f3n que experimente el \u00cdndice de
+        Precios al Consumidor (IPC).}}<\/p>\n<p>{{paso:Nuevo orden para pagar las
+        cotizaciones previsionales}}<\/p>\n<p>{{contenido:<\/p>\n<p>Existe un nuevo
+        orden de prelaci\u00f3n para efectuar los pagos de las cotizaciones previsionales
+        con cargo a la retenci\u00f3n del 10% de los honorarios que realiza el Servicio
+        de Impuestos Internos (SII):<\/p>\n<ol>\n<li><strong>Seguro de Invalidez y
+        Sobrevivencia<\/strong>: corresponde al primer descuento, ya que los beneficios
+        otorgados son proporcionales a lo cotizado. Cuando la retenci\u00f3n no alcanza
+        a cubrir la totalidad de las cotizaciones previsionales y el asegurado se
+        enfrenta a una contingencia de invalidez o fallecimiento, estar\u00e1 cubierto
+        s\u00f3lo por el porcentaje cotizado de su renta total.<\/li>\n<li><strong>Seguro
+        Social contra Riesgos de Accidentes del Trabajo y Enfermedades Profesionales.<\/strong><\/li>\n<li><strong>Cotizaciones<\/strong>
+        correspondientes a la Administradora de Fondos de Pensiones <strong>(AFP)
+        y su respectiva comisi\u00f3n<\/strong>.<\/li>\n<li><strong>Saldos insolutos<\/strong>
+        reajustados de las cotizaciones mencionadas anteriormente y en el mismo orden.<\/li>\n<li><strong>Cotizaciones
+        de salud<\/strong>.}}<\/li>\n<\/ol>\n<p>{{paso:M\u00e1s informaci\u00f3n}}<\/p>\n<p>{{contenido:<\/p>\n<p>Si
+        requiere <strong>m\u00e1s informaci\u00f3n<\/strong>:<\/p>\n<ul>\n<li>Llame
+        a los siguientes tel\u00e9fonos:\n<ul>\n<li>+56 2 8279 66 00 de la Subsecretar\u00eda
+        de Previsi\u00f3n Social.<\/li>\n<li>600 831 20 12 de la Superintendencia
+        de Pensiones (SP).<\/li>\n<li>+56 2 2620 45 00 de la Superintendencia de Seguridad
+        Social (SUSESO).<\/li>\n<\/ul>\n<\/li>\n<li>Ingrese al <a href=\"http:\/\/www.previsionsocial.gob.cl\/sps\/prorroga-cotizacion-previsional-trabajadores-independientes\/\"
+        target=\"_blank\">sitio web de la Subsecretar\u00eda de Previsi\u00f3n Social<\/a>.}}<\/li>\n<\/ul>","costo":"","vigencia":"","plazo":"","observaciones":"","marco_legal":"","doc_requeridos":"","guia_online":"","guia_online_url":"","guia_oficina":"","guia_telefonico":"","guia_correo":"","temas":{"tema":["Previsi\u00f3n"]},"tags":{"tag":["renta","trabajador
+        independiente","cotizar","7%","cotizaciones","no cotizar","cotizaci\u00f3n","renuncia
+        a cotizar","independiente","cotizacion independientes","cotizacion 7%","isapre
+        independientes","fonasa independientes","cotizaci\u00f3n trabajadores honorario","boleta
+        de honorario","boleta de honorario cotizacion","obligacion a cotizar"]},"chileclic_id":null,"permalink":"https:\/\/www.chileatiende.gob.cl\/fichas\/ver\/12016"}}'
+    http_version: 
+  recorded_at: Tue, 12 Sep 2017 19:26:35 GMT
+recorded_with: VCR 3.0.3

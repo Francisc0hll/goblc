@@ -1,0 +1,59 @@
+.option-header.procedures
+  .row
+    .col-md-12
+
+      =link_to procedures_path, class: 'btn-back' do
+        %i.material-icons keyboard_backspace
+      .title
+        %h1 Ayuda sobre trámites
+
+.procedures-page
+  .container-fluid.interior-page
+    -if flash[:show_toast]
+      %h3.flash_tramite_in_totem Este trámite puede realizarse en este tótem.
+    .row
+      .col-md-12
+        %h3= @procedure['titulo']
+        .tramites-api
+          = sanitize(@procedure['objetivo'], tags: %w(p ul li) ).html_safe
+          .tramites-api-list
+            
+            = sanitize(@procedure['costo']).html_safe   
+      
+
+      .col-md-12.documents-section
+        %h4 Beneficiarios
+        = sanitize(@procedure['beneficiarios'], tags: %w(p ul li)).html_safe
+
+      .col-md-12.warning-section
+        - if @procedure['alerta'].present?
+          .alert.alert-warning
+            %i.material-icons warning
+            = sanitize(@procedure['alerta']).html_safe
+        - if @procedure['reloj'].present?
+          .alert.alert-warning
+            %i.material-icons access_time
+            = sanitize(@procedure['reloj']).html_safe
+
+  .container-fluid.mail-keyboard
+    .row
+      .col-md-12
+        %h4 Ingresa un correo para enviarte esta información
+        = form_tag send_info_procedures_path, remote: true do
+          = hidden_field_tag :id, @procedure['id']
+          .mail-input
+            %input{type:"text", name:"email", class: 'text email required'}
+            = submit_tag('Enviar', class: 'btn')
+
+#modal-correo.modal.fade{:role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-body.success
+        %i.material-icons check_circle
+        %h4
+          %strong Correo Enviado
+        %h4
+          Te hemos enviado la información solicitada a tu correo.
+      .modal-footer
+        %a.btn.medium-btn.btn-success{"data-dismiss" => "modal"} Perfecto, gracias.
+

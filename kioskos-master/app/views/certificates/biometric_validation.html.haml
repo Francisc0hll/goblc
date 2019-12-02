@@ -1,0 +1,34 @@
+.option-header.certificate
+  .row
+    .col-md-12
+      =link_to totem_path, class: 'btn-back' do
+        %i.material-icons keyboard_backspace
+      .title
+        %i.material-icons insert_drive_file
+        %h1 Obtener un certificado
+
+.certificates
+  .container#huellaBody
+    :javascript
+      window.startTransaction()
+    .row
+      .col-md-12
+        %h3
+          %strong
+            1
+          Ubica tu cédula de identidad en la ranura que se encuentra a un costado de la pantalla
+      .col-md-12
+        .instruction
+          =image_tag "hand1.svg", alt: "hand1"
+
+          -# = t('clave_unica.btn')
+
+  = render 'biometric_validation_step_two'
+
+= render 'error/error_huella'
+= render 'error/error_ci'
+= render 'error/error_identificacion'
+= render 'error/error_moc'
+= render 'error/error_retry'
+= render 'error/error_timeout'
+

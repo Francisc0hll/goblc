@@ -1,0 +1,63 @@
+.option-header.claveunica
+  .row
+    .col-md-12
+      =link_to totem_path, class: 'btn-back' do
+        %i.material-icons keyboard_backspace
+      .title
+        %i.material-icons ipower_settings_new
+        %h1 Obtener claveúnica
+
+.claveunica-page
+  .container-fluid
+    .row
+      .col-md-12.alert.alert-success.alert-carnet
+        Ahora puedes retirar tu cedula de identidad
+  .container
+    .row
+      .col-md-12
+        %h3
+          Escoge la manera en que quieres
+          %br
+          crear tu clave única
+
+    .options
+      .row
+        .col-md-11
+          =link_to cellphone_clave_unicas_path, class: 'option sms' do
+            %i.material-icons smartphone
+            %span
+              Recibe tu Clave en tu 
+              %strong Celular
+        .col-md-1.tooltip.telefono
+          %i.material-icons help_outline
+          %span.tooltiptext
+            %p
+              Con esta opción, el sistema
+              %strong enviará un mensaje de texto a tu celular con un codigo de activación que permitira crear tu clave única.
+      .row
+        .col-md-11
+          =link_to email_clave_unicas_path, class: 'option mail' do
+            %i.material-icons mail_outline
+            %span
+              Recibe tu Clave en tu
+              %strong correo electrónico
+        .col-md-1.tooltip.correo
+          %i.material-icons help_outline
+          %span.tooltiptext
+            %p
+              Con esta opción, el sistema
+              %strong enviará un enlace a tu correo electrónico el que podrás abrir en tu computador o celular y crear tu clave única.
+      .row
+        .col-md-11
+          =link_to screen_clave_unicas_path, class: 'option screen' do
+            %i.material-icons keyboard_hide
+            %span
+              Crea clave Unica en         
+              %strong pantalla
+        .col-md-1.tooltip.pantalla
+          %i.material-icons help_outline
+          %span.tooltiptext
+            %p
+              Con esta opción podrás crear la clave
+              %strong ahora en este mismo módulo.
+

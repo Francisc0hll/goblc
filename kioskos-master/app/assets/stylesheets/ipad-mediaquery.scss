@@ -1,0 +1,103 @@
+//Proto IPad//
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+    body{
+      //background: blue;
+    }
+
+  //Hidden Elements
+  #keyboard{
+		display: none;
+	}
+
+	.body{
+		.title{
+			padding: 50px;
+			h2{
+				font-size: 46px;
+			}
+		}
+	}
+
+	.name-btn{
+		width: 55%;
+		i, span{
+			font-size: 38px;
+		}
+	}
+
+	.search{
+		input{
+			width: 35%;
+		}
+	}
+
+	.block-all,
+	.block-mid{
+		padding: 40px 0;
+		a{
+			padding: 25px;
+			width: 60%;
+			h3{
+				font-size: 26px;
+				margin: 0;
+			}
+			img{
+				width: 60%;
+			}
+		}
+	}
+
+	.block-mid{
+		padding: 40px 0;
+		width: 49.2%;
+		margin-right: 6px;
+		a{
+			width: 75%;
+		}
+		&:last-child{
+			margin-right: 0px;
+			margin-left: 6px;
+		}
+		.name-btn{
+			width: 72%;
+			font-weight: 500;
+			i, span{
+				font-size: 28px;
+			}
+			i{
+				padding: 3px 4px 0 0;
+			}
+			span{
+				line-height: 140%;
+			}
+		}
+	}
+
+	.btn-no-padding {
+		.name-btn{
+			width: 100% !important;
+			height: 180px;
+			i,span{
+				font-size: 28px;
+				height: 130px;
+			}
+			i{
+				float: left;
+				font-size: 60px;
+				width: 40%;
+	  		padding: 60px 10px 0;
+	  		text-align: right;
+			}
+			span{
+				float: left;
+				width: 60%;
+				white-space: normal;
+				text-align: left;
+				padding: 64px 0;
+	  		line-height: 100%;
+			}
+		}
+	}
+}

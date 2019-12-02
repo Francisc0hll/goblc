@@ -1,0 +1,23 @@
+
+.col-md-12{ data: { certificates_target: "true" } }
+  - propres = 5
+  - if params[:search].present?
+    - if @procedures.size > 0
+      %h3 Resultado de la busqueda
+      - propres = 11
+    - else
+      %h3 No se encuentran certificados con los terminos de la b&uacute;squeda
+  - else
+    - if @procedures.size > 0
+      %h3 Certificados disponibles
+      - propres = 5
+    - else
+      %h3 Actualmente no tenemos certificados disponibles
+  - @procedures.order(:name)[0..propres].each do |procedure|
+    .col-md-4
+      =link_to certificate_path(procedure), class: 'name-btn' do
+        .inner-title
+          = procedure.name
+        .inner-btn
+          .inner-text Obtener ahora
+          %i.material-icons vertical_align_bottom

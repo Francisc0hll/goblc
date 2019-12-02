@@ -1,0 +1,173 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  hello: "Hello world"
+  active_admin:
+    dashboard_welcome:
+      welcome: "Welcome to Active Admin. This is the default initial page."
+      call_to_action: "To add sections edit 'app/admin/dashboard.rb'"
+    dashboard:
+      title: Home
+      panel:
+        active_totem: 'Active Totems'
+        popular_certificates: 'Most Requested Certificates'
+    logs: 'Logs'
+  activerecord:
+    models:
+      certificate:
+        one: 'Certificate'
+        other: 'Certificates'
+      notification:
+        one: 'Notification'
+        other: 'Notifications'
+      procedure:
+        one: 'Procedure'
+        other: 'Procedures'
+      totem:
+        one: 'Totem'
+        other: 'Totems'
+      user:
+        one: 'User'
+        other: 'Users'
+      admin_user:
+        one: 'Administrator'
+        other: 'Administrators'
+      clave_unica_petition:
+        one: 'Clave Única Request'
+        other: 'Clave Única Requests'
+      institution:
+        one: 'Institution'
+        other: 'Institutions'
+      match_on_card_transaction:
+        one: 'Biometric Transaction'
+        other: 'Biometric Transactions'
+      procedure_log:
+        one: 'Procedures Inquiry'
+        other: 'Procedures Inquiries'
+      search_procedure_log:
+        one: 'Procedures Search'
+        other: 'Procedures Searches'
+      authentication:
+        one: 'Authentication'
+        other: 'Authentications'
+    attributes:
+      default: &default_attributes
+        created_at: 'Creation Date'
+        updated_at: 'Updated Date'
+        rut: 'Rut'
+        email: 'Email'
+        totem_id: 'Totem ID'
+      certificate:
+        <<: *default_attributes
+        status: 'Status'
+      notification:
+        <<: *default_attributes
+        message: 'Message'
+        chile_atiende_id: 'Chile Atiende ID'
+        read: 'Read'
+      procedure:
+        <<: *default_attributes
+        name: 'Name'
+        price: 'Price'
+        active_in_totem: 'Active in Totem'
+        security: 'Security'
+        type_of_procedure: 'type of Procedure'
+        description: 'Description'
+        info: 'Information'
+        warning: 'Warning'
+        request_count: 'Amount of Request'
+        delivery_count: 'Amount of Deliveries'
+        id_proceso_simple: 'Simple Process ID'
+        id_etapa_simple: 'Simple Step ID'
+        class_name_simple: 'Simple Class Name'
+        chile_atiende_id: 'Chile Atiende ID'
+        category: 'Category'
+        subcategory: 'Sub-Category'
+      totem:
+        <<: *default_attributes
+        tid: 'ID'
+        active: 'Active'
+        location: 'Location'
+        country_phone_code: 'Country Phone Code'
+        location_type: 'Location Type'
+        institution_id: 'Institution'
+        has_printer: 'Printing Enabled'
+        ping_time: 'Last Ping'
+      user:
+        <<: *default_attributes
+        sign_in_count: 'Amount Sign In'
+        current_sign_in_at: 'Current Sign In Date'
+        last_sign_in_at: 'Last Sign In Date'
+        current_sign_in_ip: 'Current Sign In IP'
+        last_sign_in_ip: 'Last Sign In IP'
+        current_totem_id: 'Current Totem ID'
+        name: 'Name'
+        last_name_father: 'Lastname'
+        last_name_mother: 'second Lastname'
+      admin_user:
+        <<: *default_attributes
+        current_sign_in_at: 'Current Sign In Date'
+        current_sign_in_ip: 'Current Sign In IP'
+        sign_in_count: 'Amount of Sign In'
+        encrypted_password: 'Encrypted Password'
+        reset_password_token: 'Reset Password Token'
+        reset_password_sent_at: 'Reset Password Sent At'
+        last_sign_in_at: 'Last Sign In Date'
+        current_sign_in_at: 'Current Sign In Date'
+        last_sign_in_ip: 'Last Sign IN IP'
+        remember_created_at: 'Remember Creation Date'
+        admin_type: 'Admin Type'
+        institution_id: 'Institution'
+      authentication:
+        <<: *default_attributes
+        auth_type: 'Authentication Type'
+        minucia: 'Minucia'
+        finger: 'Finger'
+        signature: 'Signature'
+        user_id: 'User ID'
+      clave_unica_petition:
+        <<: *default_attributes
+        status: 'Status'
+        method: 'Method'
+        phone: 'Phone'
+      institution:
+        <<: *default_attributes
+        name: 'Name'
+      match_on_card_transaction:
+        <<: *default_attributes
+        event_json: 'Event JSON'
+      procedure_log:
+        <<: *default_attributes
+        name: 'Name'
+        chileatiende_id: 'Chile Atiende ID'
+      search_procedure_log:
+        <<: *default_attributes
+        search: 'Search'
+        found: 'Found'
+        results: 'Results'
+  collections:
+    location_type:
+      ministerial_office: 'Ministerial office'
+      mall: 'Mall'
+      train_station: 'Train station'
+      subway_station: 'Subway station'
+      bus_terminal: 'Bus terminal'

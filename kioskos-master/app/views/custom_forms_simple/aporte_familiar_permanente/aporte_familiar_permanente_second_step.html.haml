@@ -1,0 +1,40 @@
+.container-fluid.header.option-header
+  .row
+    .col-md-2.col-xs-2.back
+      %a.btn.btn-info.btn-volver{href: "#{totem_path}"}
+        %i.material-icons arrow_back
+        %span.span_align Volver
+    .col-md-10.col-xs-10.title
+      .section-title.certificados
+        %i.material-icons insert_drive_file
+        %h2 Certificado a tu correo electrónico
+.container-fluid.body
+  .container
+    .row
+      .col-md-3
+      .col-md-6.block-all.forms
+        %h2.center Tercer paso
+        %h3.center2 Numero de pago
+        = sanitize(@glosa, tags: %w(h4 h2 br p)).html_safe
+        - if @statusMensaje == false
+          =form_tag(create_certificates_path, 'data-timeout' => 30000, 'data-redirect' => "#{rut_certificates_path}?error_timeout=true") do
+            = hidden_field_tag :procedure_step, @procedure_step
+            = hidden_field_tag :rut, current_user[:rut]
+            = hidden_field_tag :email, current_user[:email]
+            = hidden_field_tag :_id_instancia_, @id_instancia
+            = hidden_field_tag :_id_etapa_, @id_etapa
+            = hidden_field_tag :_secuencia_, @secuencia
+
+            .input-search-main.inner-addon.right-addon
+
+
+              %select{"name":"numeropago",
+                    class: 'text ui-keyboard-input ui-widget-content ui-corner-all ui-keyboard-autoaccepted ui-keyboard-input-current',
+                    }
+                %option{value: @numeropago}
+                  = @numeropago
+
+              = button_tag(type: 'submit', class: 'btn btn-icon btn-msj btn-success') do
+                %i.material-icons navigate_next
+                %span.span_align Continuar
+        - else

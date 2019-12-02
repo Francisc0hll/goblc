@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /home/{{ totem_linux_user }}/printer
+/home/{{ totem_linux_user }}/.gem/ruby/2.3.0/bin/bundle install --path vendor/bundle
+ruby /home/{{ totem_linux_user }}/printer/server.rb

@@ -1,0 +1,103 @@
+//KEYBOARD
+$font-size: 40px;
+$background-blue: #375179;
+.ui-keyboard {
+  background: rgb(236, 239, 240);
+  border: none;
+  bottom: 0;
+  height: 400px;
+  left: 0;
+  position: fixed;
+  top: auto;
+  width: 100%;
+  .ui-keyboard-actionkey:not(.ui-keyboard-dec):not(.ui-keyboard-combo) span{
+    position: static;
+    font-size: $font-size;
+    .material-icons{
+      font-size: $font-size
+    }
+  }
+
+  .ui-keyboard-button, .ui-keyboard-button-num{
+    background: linear-gradient(-180deg,#f9f9f9 0,#eaeaea 100%);
+    border:none;
+    box-shadow: 1px 1px 9px 0 rgba(0,0,0,.2);
+    border-radius: 2px;
+    height: 75px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    width: 75px;
+  }
+  .ui-keyboard-button-num{
+    width: 130px;
+  }
+
+  @keyframes ripple {
+    0% {
+      transform: scale(0, 0);
+      opacity: 1;
+    }
+    20% {
+      transform: scale(25, 25);
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(40, 40);
+    }
+  }
+
+  .ui-keyboard-button:not([disabled]):hover{
+    background-color: white;
+    background-image: none;
+    color: #333;
+  }
+
+  .ui-state-hover{
+    background-image: none !important;
+    background: $background-blue !important;
+    color:white !important;
+  }
+
+  .ui-keyboard-send_form, .ui-keyboard-enter{
+    background:  rgb(73, 144, 226)
+  }
+  .ui-keyboard-text{
+    font-size: $font-size
+  }
+  .ui-keyboard-space{
+    width: 60%
+  }
+
+  .ui-keyboard-bksp, .ui-keyboard-shift, .ui-keyboard-meta1, .ui-keyboard-meta2, .ui-keyboard-normal{
+    background: rgb(224, 227, 229);
+  }
+  .ui-keyboard-bksp span, .ui-keyboard-shift span, .ui-keyboard-meta1 span, .ui-keyboard-meta2 span, .ui-keyboard-normal span{
+    font-size: 30px !important;
+  }
+}
+.ui-keyboard-num-container{
+  .ui-keyboard-keyset{
+    width: 42%;
+  }
+}
+
+.ui-keyboard-caret{
+  background-color: #fff;
+  width: 2px;
+}
+
+.ui-keyboard-caret:after {
+    content: attr(data-character);
+    background: $background-blue;
+    color: white;
+    font-family: Verdana, Tahoma, Segoe, sans-serif;
+    font-size: 1.1em;
+    min-width: 1em;
+    position: absolute;
+    z-index: 100;
+    top: -1.4em;
+    left: -.5em;
+}

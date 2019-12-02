@@ -1,0 +1,12 @@
+# Add this to /etc/xdg/autostart
+
+[Desktop Entry]
+Name=chrome_monitor
+Comment=Autostart chrome monitor.
+Exec=sh -c "xset -dpms && xset s off && /opt/chrome_monitor"
+NoDisplay=true
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=Utility;
+MimeType=application/octet-stream;application/x-shellscript

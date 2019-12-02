@@ -1,0 +1,19 @@
+.option-header.procedures
+  .row
+    .col-md-12
+      =link_to totem_path, class: 'btn-back' do
+        %i.material-icons keyboard_backspace
+      .title
+        %h1 Ayuda sobre trámites
+
+.procedures-page
+  .container-fluid
+    .row
+      .col-md-12.search-main
+        = form_tag search_procedures_path, remote: true do
+          .input-search-main
+            = text_field_tag "search", nil, placeholder: "Escribe aquí el trámite que buscas", class: 'text'
+            = submit_tag "Buscar", class: "btn searcher"
+  .container
+    .row#items_grid
+      = render partial: 'item_list', locals: { procedures: @procedures}

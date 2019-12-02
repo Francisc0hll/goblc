@@ -1,0 +1,15 @@
+# main playbook that calls all other plays
+- hosts: all
+  remote_user: root
+  become: yes
+  become_method: sudo
+
+  roles:
+    - chrome
+    - email
+    - printer
+
+  #- name: "After installing everything, reboot"
+  # tasks:
+  #   name: Reboot after installing
+  #   shell: shutdown -r now

@@ -1,0 +1,20 @@
+some_certificate:
+  procedure: free_anonymous
+  rut: 11111111-1
+  email: usuarioejemplo@example.com
+  status: success
+another_certificate:
+  procedure: constancia_de_pensionado
+  rut: 11111111-2
+  email: yetanotherexampleuser@example.com
+  status: success
+failed_certificate:
+  procedure: free_anonymous
+  rut: 11111111-3
+  email: failedemailfreeanon@example.com
+  status: failure
+another_failed_certificate:
+  procedure: constancia_de_pensionado
+  rut: 11111111-4
+  email: emailfailedconstancia@example.com
+  status: failure

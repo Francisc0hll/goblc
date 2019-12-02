@@ -1,0 +1,13 @@
+# Add this to /etc/xdg/autostart
+
+[Desktop Entry]
+Name=printer_server
+Comment=Autostart printer server.
+Exec=sh -c "/opt/print_server_starter"
+NoDisplay=true
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=Utility;
+MimeType=application/octet-stream;application/x-shellscript
+

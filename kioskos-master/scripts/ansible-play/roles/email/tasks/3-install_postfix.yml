@@ -1,0 +1,26 @@
+- name: "apt | ensure Postfix is present"
+  apt:
+    name: "postfix"
+    state: present
+    
+- name: "apt | ensure mailutils is present"
+  apt:
+    name: "mailutils"
+    state: present
+
+- name: "apt | ensure libsasl2-2 is present"
+  apt:
+    name: "libsasl2-2"
+    state: present
+
+- name: "apt | ensure ca-certificates is present"
+  apt:
+    name: "ca-certificates"
+    state: present
+
+- name: "apt | ensure libsasl2-modules is present"
+  apt:
+    name: "libsasl2-modules"
+    state: present
+
+  #sudo apt-get install postfix mailutils libsasl2-2 ca-certificates libsasl2-modules

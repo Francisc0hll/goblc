@@ -1,0 +1,10 @@
+#modalErrorHuella.modal.fade{:role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-body
+        %h4 ¡Lo siento!
+        %h4 Hay problemas con la lectura de tu huella digital.
+        %h4
+          %strong Prueba usando otro dedo.
+      .modal-footer
+        %a#change-finger.btn.medium-btn.btn-main{"data-dismiss" => "modal"} Ok, no hay problema.

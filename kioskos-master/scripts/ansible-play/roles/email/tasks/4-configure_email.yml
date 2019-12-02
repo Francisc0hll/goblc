@@ -1,0 +1,45 @@
+
+- name: "Copy main.cf config file for postfix to work"
+  template:
+    src: ./templates/main.cf.j2
+    dest: /etc/postfix/main.cf
+    owner: root
+    group: root
+    mode: 0444
+    backup: yes
+
+- name: "Copy gmail credentials file for postfix to work"
+  template:
+    src: ./templates/sasl_passwd.j2
+    dest: /etc/postfix/sasl_passwd
+    owner: root
+    group: root
+    mode: 0400
+    backup: yes
+
+- name: "Create /etc/mailname"
+  template:
+    src: ./templates/mailname.j2
+    dest: /etc/mailname
+    owner: root
+    group: root
+    mode: 0444
+    backup: yes
+
+- name: "Update postfix config to use sasl_passwd"
+  shell: postmap /etc/postfix/sasl_passwd
+
+
+- name: "Verify certificate" 
+  shell: cat /etc/ssl/certs/thawte_Primary_Root_CA.pem | tee -a /etc/postfix/cacert.pem
+
+- name: "Enable the postfix service"
+  systemd:
+    name: postfix
+    state: started
+    enabled: yes
+
+- name: "Restart postfix service"
+  systemd:
+    name: postfix
+    state: restarted

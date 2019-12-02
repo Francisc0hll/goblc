@@ -1,0 +1,6 @@
+ministerio_del_test:
+  id: 1
+  name: Ministerio del Testeo
+ministerio_de_inexistencia:
+  id: 2
+  name: Ministerio que no existe

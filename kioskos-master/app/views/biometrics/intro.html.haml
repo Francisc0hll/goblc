@@ -1,0 +1,23 @@
+.option-header.claveunica
+  .row
+    .col-md-12
+      =link_to totem_path, class: 'btn-back' do
+        %i.material-icons keyboard_backspace
+      .title
+        %i.material-icons ipower_settings_new
+        %h1 Obtener claveúnica
+
+.claveunica-page
+  .container
+    .row
+      .col-md-12
+        %h3
+          Por favor ten a mano tu cédula de identidad.
+        %h4
+          A continuación necesitamos validar tu identidad. Para ello te indicaremos primero donde deberás poner tu cédula y seguido, la huella de tu dedo índice.
+
+      .col-md-12.bottom-options
+        =link_to 'Continuar', biometrics_index_path, id: 'claveunica-totem', class: 'btn medium-btn btn-main'
+
+
+= render 'error/error_conection'

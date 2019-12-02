@@ -1,0 +1,71 @@
+
+document.addEventListener("turbolinks:load", function() { 
+
+    function getAutocompletableInput() {
+        return document.querySelector('input[data-autocompletable="true"]')
+    }
+
+    function getCertificatesForm() {
+        return document.querySelector('form[action="/certificates"][method="get"]');
+    }
+
+    function getCertificateListInsertTarget() {
+        return document.querySelector('*[data-certificates-target="true"]')
+    };
+
+    function setTheTimeout(oldValue) {
+        return window.setTimeout(debounce(function() { timeOutHandler(oldValue) }, 700 , false), 700)
+    }
+
+    function onSearchResultsReceived(results) {
+        getCertificateListInsertTarget().innerHTML = results;
+    }
+
+    function requestSearchWithTerms(searchString){
+        if(!$ && !jQuery) { return console.log("jQuery is not loaded, aborting GET request to /certificates"); }
+        var jq = $ || jQuery;
+        var searchParams = { search: searchString }
+        var results = jq.get("<%= Rails.application.routes.url_helpers.certificates_path %>", searchParams)
+                        .done(onSearchResultsReceived);
+    }
+
+    function unsetTimeout(timeoutId) {
+        return window.clearTimeout(timeoutId)
+    }
+
+    // courtesy of https://davidwalsh.name/javascript-debounce-function
+    function debounce(func, wait, immediate) {
+        var timeout;
+        return function() {
+            var context = this, args = arguments;
+            var later = function() {
+                timeout = null;
+                if (!immediate) func.apply(context, args);
+            };
+            var callNow = immediate && !timeout;
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+            if (callNow) func.apply(context, args);
+        };
+    };
+
+    function timeOutHandler(oldValue) {
+        var autoCompletableInput = getAutocompletableInput();
+        if(!autoCompletableInput) return;
+        if(oldValue != autoCompletableInput.value) {
+            requestSearchWithTerms(autoCompletableInput.value);
+        }
+        return setTheTimeout(autoCompletableInput.value);
+     
+    }
+
+    function checkAutocompletableInputsChanged() {
+        var certificatesForm = getCertificatesForm();
+        if(!certificatesForm) return;
+        var autoCompletableInput = getAutocompletableInput(certificatesForm.children)
+        if(!autoCompletableInput) return;
+        return setTheTimeout(autoCompletableInput.value);
+    }
+    checkAutocompletableInputsChanged();
+});
+

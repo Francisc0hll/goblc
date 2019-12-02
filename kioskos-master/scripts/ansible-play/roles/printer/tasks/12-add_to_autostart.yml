@@ -1,0 +1,9 @@
+- name: "printer server autostart"
+  become: yes
+  become_user: root
+  template:
+    src: print_server.desktop
+    dest: /etc/xdg/autostart/print_server.desktop
+    owner: "{{ totem_linux_user }}"
+    group: "{{ totem_linux_user }}"
+    mode: 0755

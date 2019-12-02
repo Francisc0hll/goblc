@@ -1,0 +1,154 @@
+//TRAMITES
+.procedures-page{
+  font-size: 100%;
+  padding: 0;
+  height: calc(100vh - 330px);
+  overflow: hidden;
+  overflow-y: auto;
+  h3{
+    font-size: 220%;
+    text-align: center;
+    display: block;
+    margin: 8% 0 10% 0;
+    font-weight: 600;
+    strong{
+      border: 6px solid #4171bb;
+      padding: 4px;
+      border-radius: 50%;
+      margin: 10px;
+      height: 70px;
+      width: 70px;
+      font-size: 100%;
+      display: inline-block;
+      line-height: 130%;
+    }
+  }
+  h4{
+    font-size: 160%;
+    text-align: center;
+  }
+  .bottom-options{
+    padding: 10% 0 0 0;
+    text-align: center;
+    margin-bottom: 10px;
+    &.margin-left{
+      margin-left: 70px;
+    }
+    .btn{
+      padding: 30px 60px;
+      font-size: 200%
+    }
+  }
+  .interior-page{
+    font-size: 140%;
+    background: white;
+    color: #666;
+    padding: 30px 80px 80px;
+    h3{
+      font-size: 150%;
+    }
+    h4{
+      font-size: 150%;
+      font-weight: 600;
+      color: #4285f4;
+      text-align: left;
+      display: block;
+    }
+    ul, ol{
+      margin-bottom: 100px;
+    }
+    .documents-section{
+      p{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.tag{
+	height: 50px;
+	padding: 0px 6px;
+}
+
+a.tag-text{
+	font-size: 20px;
+    text-align: center;
+    line-height: 240%;
+    display: block;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 -5px 0 rgba(0, 0, 0, 0.2) inset;
+    background-color: #4285f4;
+    border-radius: 2px;
+
+    &.pressed{
+    background-color: #ffffff;
+    color: #4285f4;
+    }
+}
+
+.tramites-api{
+  line-height: 130%;
+  text-align: left;
+   p{
+      &:nth-child(odd){
+        font-weight: 600;
+        color: #4285f4;
+        font-size: 140%;
+      }
+      &:nth-child(even){
+        margin-bottom: 80px;
+      }
+    }
+  .tramites-api-list{
+    margin: 65px 0;
+    padding: 40px;
+    background: #f1f1f1;
+    &:nth-child{
+      color: #666;
+
+    }
+    p{
+      font-weight: 300;
+      color: #666;
+      font-size: 100%;
+    }
+    ul{
+      list-style-type: decimal;
+      font-weight: 600;
+      li{
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.warning-section{
+  margin-top: 0;
+}
+
+.flash_tramite_in_totem {
+  background-color: lightgreen;
+  width: 100vw;
+  margin: auto;
+  margin-left: -20px;
+  text-align:center;
+  font-weight:bold;
+}
+
+.select_tramite_options {
+  font-size: 25px;
+  background-color: #375179;
+  color: white;
+  padding: 15px;
+  margin: 25px;
+  border: 1px solid white;
+  border-radius: 15px;
+  text-align: center;
+
+
+
+}
+
+
+

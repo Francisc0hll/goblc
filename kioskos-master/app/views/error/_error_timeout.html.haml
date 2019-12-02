@@ -1,0 +1,14 @@
+#modalErrorTimeOut.modal.fade{:role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header.title
+        %h1 Error:
+      .modal-body
+        .information-text
+          %p Has demorado demasiado tiempo.
+        .row
+          .col-md-6.modal-footer
+            %a#back.btn.btn-danger.btn-modal{"data-dismiss" => "modal"} Salir
+          .col-md-6.modal-footer
+            %a#retry-button.btn.btn-success.btn-modal{"data-dismiss" => "modal"} Reintentar
+

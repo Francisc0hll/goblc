@@ -1,0 +1,45 @@
+version: '2'
+services:
+  postgres:
+    image: postgres:9.5.3
+    ports:
+      - "5432"
+  web:
+    tty: true
+    extra_hosts:
+      - "minsegpres.simple.cl:52.10.168.224"
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: Dockerfile.development
+    command: bundle exec rails s -p 3000 -b '0.0.0.0'
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
+    volumes_from:
+      - bundle_cache
+    environment:
+      - CHILEATIENDE_TOKEN=$CHILEATIENDE_TOKEN
+      - GET_CLAVEUNICA_TOKEN=$GET_CLAVEUNICA_TOKEN
+      - GET_CLAVEUNICA_URL=$GET_CLAVEUNICA_URL
+      - MOC_SECRET=$MOC_SECRET
+      - ROLLBAR_ACCESS_TOKEN=$ROLLBAR_ACCESS_TOKEN
+      - SIMPLE_URL=$SIMPLE_URL
+      - SMTP_ADDRESS=$SMTP_ADDRESS
+      - SMTP_DOMAIN=$SMTP_DOMAIN
+      - SMTP_PORT=$SMTP_PORT
+      - SMTP_SECRET=$SMTP_SECRET
+      - SMTP_USER=$SMTP_USER
+      - SMTP_FROM_EMAIL=$SMTP_FROM_EMAIL
+      - CLAVE_UNICA_CLIENT_ID=$CLAVE_UNICA_CLIENT_ID
+      - CLAVE_UNICA_CLIENT_SECRET=$CLAVE_UNICA_CLIENT_SECRET
+      - API_URL=$API_URL
+      - MONITORING_INTERVAL=$MONITORING_INTERVAL
+  bundle_cache:
+      image: ruby:2.3.3 # Should be the same as the app Dockerfile base image
+      volumes:
+        - /usr/local/bundle
+

@@ -1,0 +1,596 @@
+cl:
+  activerecord:
+    models:
+      certificate:
+        one: 'Certificado'
+        other: 'Certificados'
+      notification:
+        one: 'Notificación'
+        other: 'Notificaciones'
+      procedure:
+        one: 'Trámite'
+        other: 'Trámites'
+      totem:
+        one: 'Tótem'
+        other: 'Tótems'
+      user:
+        one: 'Usuario'
+        other: 'Usuarios'
+      admin_user:
+        one: 'Administrador'
+        other: 'Administradores'
+      clave_unica_petition:
+        one: 'Petición Clave Única'
+        other: 'Peticiones Clave Única'
+      institution:
+        one: 'Institución'
+        other: 'Instituciones'
+      match_on_card_transaction:
+        one: 'Transacción Biométrica'
+        other: 'Transacciones Biométricas'
+      procedure_log:
+        one: 'Consulta de Trámites'
+        other: 'Consultas de Trámites'
+      search_procedure_log:
+        one: 'Búsqueda de Trámites'
+        other: 'Búsquedas de Trámites'
+      authentication:
+        one: 'Autentificación'
+        other: 'Autentificaciones'
+    attributes:
+      default: &default_attributes
+        created_at: 'Fecha de Creación'
+        updated_at: 'Fecha de Actualización'
+        rut: 'Rut'
+        email: 'Email'
+        totem_id: 'ID del Tótem'
+      certificate:
+        <<: *default_attributes
+        status: 'Estado'
+      notification:
+        <<: *default_attributes
+        message: 'Mensaje'
+        chile_atiende_id: 'ID Chile Atiende'
+        read: 'Leido'
+      procedure:
+        <<: *default_attributes
+        name: 'Nombre'
+        price: 'Precio'
+        active_in_totem: 'Activado en Tótem'
+        security: 'Seguridad'
+        type_of_procedure: 'Tipo de Trámite'
+        description: 'Descripción'
+        info: 'Información'
+        warning: 'Alerta'
+        request_count: 'Nº de Solicitudes'
+        delivery_count: 'Nº de Entregas'
+        id_proceso_simple: 'ID de Proceso de Simple'
+        id_etapa_simple: 'ID de Etapa de Simple'
+        class_name_simple: 'Nombre de Clase de Simple'
+        chile_atiende_id: 'ID de Chile Atiende'
+        category: 'Categoría'
+        subcategory: 'Sub-categoría'
+      totem:
+        <<: *default_attributes
+        tid: 'Identificador'
+        active: 'Activo'
+        location: 'Ubicación'
+        rut: 'Rut Asociado'
+        country_phone_code: 'Código Telefónico de País'
+        location_type: 'Tipo de Ubicación'
+        institution_id: 'Institución'
+        has_printer: 'Impresión habilitada'
+        ping_time: 'Último ping reportado'
+      user:
+        <<: *default_attributes
+        sign_in_count: 'Cantidad de Inicios de Sesión'
+        current_sign_in_at: 'Fecha de Sesión Actual'
+        last_sign_in_at: 'Fecha de Último Inicio de Sesión'
+        current_sign_in_ip: 'IP de Sesión Actual'
+        last_sign_in_ip: 'IP de Última Sesión'
+        current_totem_id: 'ID de Tótem Actual'
+        name: 'Nombre'
+        last_name_father: 'Apellido Paterno'
+        last_name_mother: 'Apellido Materno'
+      admin_user:
+        <<: *default_attributes
+        current_sign_in_at: 'Fecha de Sesión Actual'
+        current_sign_in_ip: 'IP de Sesión Actual'
+        sign_in_count: 'Cantidad de Sesiones'
+        encrypted_password: 'Contraseña Encriptada'
+        reset_password_token: 'Token de Reinicio de Contraseña'
+        reset_password_sent_at: 'Reinicio de Contraseña Enviado a las'
+        last_sign_in_at: 'Fecha de Última Sesión'
+        current_sign_in_at: 'Fecha Sesión Actual'
+        last_sign_in_ip: 'IP Última Sesión'
+        remember_created_at: 'Recordatorio de Sesión Creado a las'
+        admin_type: 'Tipo de Administrador'
+        institution_id: 'Institución'
+        institution: 'Institución'
+      authentication:
+        <<: *default_attributes
+        auth_type: 'Tipo de Autenticación'
+        minucia: 'Minucia'
+        finger: 'Dedo'
+        signature: 'Firma'
+        user_id: 'ID del Usuario'
+      clave_unica_petition:
+        <<: *default_attributes
+        status: 'Estado'
+        method: 'Método'
+        phone: 'Teléfono'
+      institution:
+        <<: *default_attributes
+        name: 'Nombre'
+      match_on_card_transaction:
+        <<: *default_attributes
+        event_json: 'JSON del Evento'
+      procedure_log:
+        <<: *default_attributes
+        name: 'Nombre'
+        chileatiende_id: 'ID de Chile Atiende'
+      search_procedure_log:
+        <<: *default_attributes
+        search: 'Búsqueda'
+        found: 'Encontrado'
+        results: 'Resultados'
+  collections:
+    location_type:
+      ministerial_office: 'Oficina Ministerial'
+      mall: 'Mall'
+      train_station: 'Estación de trenes'
+      subway_station: 'Estación de metro'
+      bus_terminal: 'Terminal de buses'
+    admin_type:
+      super_admin: 'Super Administrador'
+      admin: 'Administrador'
+  formtastic:
+    :yes: 'Si'
+    :no: 'No'
+    :create: 'Crear'
+    :update: 'Actualizar'
+    :submit: 'Submit %{model}'
+    :required: 'requerido'
+  active_admin:
+    dashboard_welcome:
+      welcome: "Bienvenido a Active Admin. Esta es la página de inicio predeterminada."
+      call_to_action: "Para agregar secciones edite 'app/admin/dashboard.rb'"
+    dashboard:
+      title: Inicio
+      panel:
+        active_totem: 'Tótems Activos'
+        popular_certificates: 'Certificados más solicitados'
+    logs: 'Logs'
+
+    view: "Ver"
+    edit: "Editar"
+    delete: "Eliminar"
+    delete_confirmation: "¿Está seguro de que quiere eliminar esto?"
+    new_model: "Añadir"
+    edit_model: "Editar"
+    delete_model: "Eliminar"
+    details: "Detalles"
+    cancel: "Cancelar"
+    empty: "Vacío"
+    import: "Importar"
+    previous: "Anterior"
+    next: "Siguiente"
+    download: "Descargar:"
+    has_many_new: "Añadir %{model}"
+    has_many_delete: "Eliminar"
+    has_many_remove: "Quitar"
+    filters:
+      buttons:
+        filter: "Filtrar"
+        clear: "Quitar Filtros"
+      predicates:
+        contains: "Contiene"
+        equals: "Igual a"
+        eq: "Igual a"
+        starts_with: "Empieza con"
+        ends_with: "Termina con"
+        greater_than: "Mayor que"
+        less_than: "Menor que"
+    search_status:
+      headline: "Estado de la búsqueda:"
+      current_scope: "Alcance:"
+      current_filters: "Filtros actuales:"
+      no_current_filters: "Ninguno"
+    status_tag:
+      "yes": "Sí"
+      "no": "No"
+    main_content: "Por favor implemente %{model}#main_content para mostrar contenido."
+    logout: "Salir"
+    powered_by: "Funciona con %{active_admin} %{version}"
+    sidebars:
+      filters: "Filtros"
+      search_status: "Estado de la búsqueda"
+    pagination:
+      empty: "No se han encontrado %{model}"
+      one: "Mostrando <b>1</b> %{model}"
+      one_page: "Mostrando <b>un total de %{n}</b> %{model}"
+      multiple: "Mostrando %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> de un total de <b>%{total}</b>"
+      multiple_without_total: "Mostrando %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b>"
+      entry:
+        one: "registro"
+        other: "registros"
+    any: "Cualquiera"
+    blank_slate:
+      content: "No hay %{resource_name} aún."
+      link: "Añadir"
+    dropdown_actions:
+      button_label: "Acciones"
+    batch_actions:
+      button_label: "Acciones en masa"
+      default_confirmation: "¿Seguro que quieres hacer esto?"
+      delete_confirmation: "Eliminar %{plural_model}: ¿Está seguro?"
+      succesfully_destroyed:
+        one: "Se ha destruido 1 %{model} con éxito"
+        other: "Se han destruido %{count} %{plural_model} con éxito"
+      selection_toggle_explanation: "(Cambiar selección)"
+      link: "Añadir"
+      action_label: "%{title} seleccionados"
+      labels:
+        destroy: "Borrar"
+    comments:
+      created_at: "Fecha de creación"
+      resource_type: "Tipo de recurso"
+      author_type: "Tipo de autor"
+      body: "Cuerpo"
+      author: "Autor"
+      title: "Comentario"
+      add: "Comentar"
+      delete: "Borrar Comentario"
+      delete_confirmation: "¿Está seguro que desea borrar este comentario?"
+      resource: "Recurso"
+      no_comments_yet: "No hay comentarios aún."
+      author_missing: "Anónimo"
+      title_content: "Comentarios (%{count})"
+      errors:
+        empty_text: "El comentario no fue guardado, el texto estaba vacío."
+    devise:
+      username:
+        title: "Nombre de usuario"
+      email:
+        title: "Email"
+      subdomain:
+        title: "Subdominio"
+      password:
+        title: "Password"
+      sign_up:
+        title: "Registrarse"
+        submit: "Registrarse"
+      login:
+        title: "Iniciar Sesión"
+        remember_me: "Recordarme"
+        submit: "Iniciar Sesión"
+      reset_password:
+        title: "¿Olvidó su contraseña?"
+        submit: "Restablecer mi contraseña"
+      change_password:
+        title: "Cambie su contraseña"
+        submit: "Cambiar mi contraseña"
+      unlock:
+        title: "Reenviar instrucciones de desbloqueo"
+        submit: "Reenviar instrucciones de desbloqueo"
+      resend_confirmation_instructions:
+        title: "Reenviar instrucciones de confirmación"
+        submit: "Reenviar instrucciones de confirmación"
+      links:
+        sign_up: "Ingresar"
+        sign_in: "Registrarse"
+        forgot_your_password: "¿Olvidó su contraseña?"
+        sign_in_with_omniauth_provider: "Conéctate con %{provider}"
+        resend_unlock_instructions: "Reenviar instrucciones de desbloqueo"
+        resend_confirmation_instructions: "Reenviar instrucciones de confirmación"
+    unsupported_browser:
+      headline: "Por favor tenga en cuenta que Active Admin no soporta versiones de Internet Explorer menores a 8."
+      recommendation: "Recomendamos que actualice a la última versión de <a href=\"http://windows.microsoft.com/ie\">Internet Explorer</a>, <a href=\"https://chrome.google.com/\">Google Chrome</a>, o <a href=\"https://mozilla.org/firefox/\">Firefox</a>."
+      turn_off_compatibility_view: "Si está usando IE 9 o superior, asegúrese de <a href=\"http://windows.microsoft.com/es-es/windows7/webpages-look-incorrect-in-Internet-Explorer\">apagar la \"Vista de compatibilidad\"</a>."
+    access_denied:
+      message: "No está autorizado/a a realizar esta acción."
+    index_list:
+      table: "Tabla"
+      block: "Lista"
+      grid: "Grilla"
+      blog: "Blog"
+  active_admin_import:
+    file_error: "Error: %{message}"
+    file_format_error: "Sólo se puede importar un archivo CSV válido"
+    file_empty_error: "No puedes importar un archivo vacío"
+    no_file_error: "Seleccione un archivo para importar"
+    details: "Seleccione un archivo"
+    imported:
+      one: "Se ha importado exitosamente 1 %{model}"
+      other: "Se ha importado exitosamente %{count} %{plural_model}"
+    failed:
+      one:   "No se pudo importar 1 %{model}"
+      other: "No se pudo importar %{count} %{plural_model}"
+    import_model: "Importar %{plural_model}"
+    import_btn: "Importar"
+    import_btn_disabled: "Espere..."
+    errors:
+      messages:
+        record_invalid: "La validación falló: %{errors}"
+        restrict_dependent_destroy:
+          has_one: No se puede eliminar el registro porque existe un %{record} dependiente
+          has_many: No se puede eliminar el registro porque existen %{record} dependientes
+  date:
+    abbr_day_names:
+    - dom
+    - lun
+    - mar
+    - mié
+    - jue
+    - vie
+    - sáb
+    abbr_month_names:
+    -
+    - ene
+    - feb
+    - mar
+    - abr
+    - may
+    - jun
+    - jul
+    - ago
+    - sep
+    - oct
+    - nov
+    - dic
+    day_names:
+    - domingo
+    - lunes
+    - martes
+    - miércoles
+    - jueves
+    - viernes
+    - sábado
+    formats:
+      default: "%d/%m/%Y"
+      long: "%d de %B de %Y"
+      short: "%d de %b"
+    month_names:
+    -
+    - enero
+    - febrero
+    - marzo
+    - abril
+    - mayo
+    - junio
+    - julio
+    - agosto
+    - septiembre
+    - octubre
+    - noviembre
+    - diciembre
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: alrededor de 1 hora
+        other: alrededor de %{count} horas
+      about_x_months:
+        one: alrededor de 1 mes
+        other: alrededor de %{count} meses
+      about_x_years:
+        one: alrededor de 1 año
+        other: alrededor de %{count} años
+      almost_x_years:
+        one: casi 1 año
+        other: casi %{count} años
+      half_a_minute: medio minuto
+      less_than_x_minutes:
+        one: menos de 1 minuto
+        other: menos de %{count} minutos
+      less_than_x_seconds:
+        one: menos de 1 segundo
+        other: menos de %{count} segundos
+      over_x_years:
+        one: más de 1 año
+        other: más de %{count} años
+      x_days:
+        one: 1 día
+        other: "%{count} días"
+      x_minutes:
+        one: 1 minuto
+        other: "%{count} minutos"
+      x_months:
+        one: 1 mes
+        other: "%{count} meses"
+      x_years:
+        one: 1 año
+        other: "%{count} años"
+      x_seconds:
+        one: 1 segundo
+        other: "%{count} segundos"
+    prompts:
+      day: Día
+      hour: Hora
+      minute: Minutos
+      month: Mes
+      second: Segundos
+      year: Año
+  devise:
+    confirmations:
+      confirmed: "Tu cuenta ya ha sido confirmada."
+      confirmed_and_signed_in: "Tu cuenta ya ha sido confirmada. Has sido identificado."
+      send_instructions: "Recibirás un correo electrónico en unos minutos con instrucciones sobre cómo restablecer tu contraseña."
+      send_paranoid_instructions: "Si tu correo electrónico existe en nuestra base de datos recibirás un correo electrónico en unos minutos con instrucciones sobre cómo reiniciar tu contraseña."
+    failure:
+      already_authenticated: "Ya estás identificado."
+      inactive: "Tu cuenta aún no ha sido activada."
+      invalid: "Correo o contraseña inválidos."
+      invalid_token: "Cadena de autenticación invalida."
+      locked: "Tu cuenta está bloqueada."
+      not_found_in_database: "Correo o contraseña inválidos."
+      timeout: "Tu sesión ha expirado, por favor identifícate de nuevo para continuar."
+      unauthenticated: "Necesitas iniciar sesión o registrarte para continuar."
+      unconfirmed: "Debes confirmar tu cuenta para continuar."
+      last_attempt: "Tienes un intento más antes que tu cuenta quede bloqueada."
+    mailer:
+      confirmation_instructions:
+        subject: "Instrucciones de confirmación"
+      reset_password_instructions:
+        subject: "Instrucciones para restablecer tu contraseña"
+      unlock_instructions:
+        subject: "Instrucciones de desbloqueo"
+    omniauth_callbacks:
+      failure: "No se te pudo autorizar de %{kind} debido a \"%{reason}\"."
+      success: "Identificado correctamente de %{kind}."
+    passwords:
+      no_token: "No puedes acceder a esta página sino es por medio de un enlace para restablecer contraseña. Si accediste desde el enlace para restablecer la contraseña, asegúrate de que la URL esté completa."
+      send_instructions: "Recibirás un correo electrónico con instrucciones sobre cómo restablecer tu contraseña en unos minutos."
+      send_paranoid_instructions: "Si tu correo electrónico existe en nuestra base de datos, recibirás un enlace para restablecer la contraseña en unos minutos."
+      updated: "Tu contraseña se cambió correctamente. Has sido identificado."
+      updated_not_active: "Tu contraseña se cambió correctamente."
+    registrations:
+      destroyed: "¡Adiós! Tu cuenta ha sido cancelada. Esperamos volver a verte pronto."
+      signed_up: "¡Bienvenido! Has sido identificado."
+      signed_up_but_inactive: "Te has registrado correctamente, pero no has podido iniciar sesión porque no has activado tu cuenta."
+      signed_up_but_locked: "Te has registrado correctamente, pero no has podido iniciar sesión porque tu cuenta está bloqueada."
+      signed_up_but_unconfirmed: "Se te ha enviado un mensaje con un enlace de confirmación. Por favor visita el enlace para activar tu cuenta."
+      update_needs_confirmation: "Actualizaste tu cuenta correctamente, sin embargo necesitamos verificar tu nueva cuenta de correo. Por favor revisa tu correo electrónico y visita el enlace para finalizar la confirmación de tu nueva dirección de correo electrónico."
+      updated: "Has actualizado tu cuenta correctamente."
+    sessions:
+      admin_user:
+        signed_in: "Has iniciado sesión satisfactoriamente."
+        signed_out: "Has cerrado la sesión satisfactoriamente."
+    unlocks:
+      send_instructions: "Recibirás un correo electrónico en unos minutos con instrucciones sobre cómo desbloquear tu cuenta."
+      send_paranoid_instructions: "Si tu cuenta existe, recibirás un correo electrónico en unos minutos con instrucciones sobre cómo desbloquear tu cuenta."
+      unlocked: "Tu cuenta ha sido desbloqueada. Por favor inicia sesión para continuar."
+  errors:
+    messages:
+      already_confirmed: "ya ha sido confirmado, por favor intenta iniciar sesión."
+      confirmation_period_expired: "necesita ser confirmado en %{period}, por favor vuelve a solicitarla."
+      expired: "ha expirado, por favor vuelve a solicitarla."
+      not_found: "no se encontró."
+      not_locked: "no estaba bloqueado."
+      not_saved:
+        one: "1 error impidió que este %{resource} fuese guardado:"
+        other: "%{count} errores impidieron que este %{resource} fuese guardado:"
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: debe ser aceptado
+      blank: no puede estar en blanco
+      present: debe estar en blanco
+      confirmation: no coincide
+      empty: no puede estar vacío
+      equal_to: debe ser igual a %{count}
+      even: debe ser par
+      exclusion: está reservado
+      greater_than: debe ser mayor que %{count}
+      greater_than_or_equal_to: debe ser mayor que o igual a %{count}
+      inclusion: no está incluido en la lista
+      invalid: no es válido
+      less_than: debe ser menor que %{count}
+      less_than_or_equal_to: debe ser menor que o igual a %{count}
+      model_invalid: "La validación falló: %{errors}"
+      not_a_number: no es un número
+      not_an_integer: debe ser un entero
+      odd: debe ser impar
+      required: debe existir
+      taken: ya está en uso
+      too_long:
+        one: "es demasiado largo (1 carácter máximo)"
+        other: "es demasiado largo (%{count} caracteres máximo)"
+      too_short:
+        one: "es demasiado corto (1 carácter mínimo)"
+        other: "es demasiado corto (%{count} caracteres mínimo)"
+      wrong_length:
+        one: "no tiene la longitud correcta (1 carácter exactos)"
+        other: "no tiene la longitud correcta (%{count} caracteres exactos)"
+      other_than: debe ser distinto de %{count}
+    template:
+      body: 'Se encontraron problemas con los siguientes campos:'
+      header:
+        one: No se pudo guardar este/a %{model} porque se encontró 1 error
+        other: No se pudo guardar este/a %{model} porque se encontraron %{count} errores
+    custom:
+      not_authorized: 'Rut no autorizado para iniciar este Tótem'
+      not_active: 'Este tótem no se encuentra activo por el momento'
+  helpers:
+    select:
+      prompt: Por favor seleccione
+    submit:
+      create: Crear %{model}
+      submit: Guardar %{model}
+      update: Actualizar %{model}
+  number:
+    currency:
+      format:
+        delimiter: "."
+        format: "%n %u"
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "€"
+    format:
+      delimiter: "."
+      precision: 3
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: mil millones
+          million:
+            one: millón
+            other: millones
+          quadrillion: mil billones
+          thousand: mil
+          trillion:
+            one: billón
+            other: billones
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n %"
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: " y "
+      two_words_connector: " y "
+      words_connector: ", "
+  time:
+    am: am
+    formats:
+      default: "%A, %d de %B de %Y %H:%M:%S %z"
+      long: "%d de %B de %Y %H:%M"
+      short: "%d de %b %H:%M"
+    pm: pm
+  procedure:
+    create:
+      problem: "Tenemos problemas al generar este certificado, dirigete al centro de atención para más detalles."
+      generated: "Certificado enviado a %{mail}"
+  notification:
+    more_info: "Puedes obtener más información"
+    more_info_link: "Ver Beneficio"
+  clave_unica:
+    btn: 'Identifícate aquí'

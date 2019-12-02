@@ -1,0 +1,11 @@
+#modalErrorAuth.modal.fade{:role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-body
+        %h4 ¡Lo siento!
+        %h4 No hemos podido hacer la validación de identidad.
+        - if current_totem.ministerial?
+          %h4
+            %strong Por favor acércate a un mesón de ayuda.
+      .modal-footer
+        %a#back.btn.medium-btn.btn-main{"data-dismiss" => "modal"} Ok, perfecto.

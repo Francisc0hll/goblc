@@ -1,0 +1,27 @@
+- name: "apt | Ensure sudo is present"
+  apt:
+    name: "sudo"
+    state: present
+
+- name: "apt | Ensure make is present"
+  apt:
+    name: "make"
+    state: present
+
+- name: "apt | Ensure gcc is present"
+  apt:
+    name: "gcc"
+    state: present
+
+- name: "apt | Ensure g++ is present"
+  apt:
+    name: "g++"
+    state: present
+
+- name: "apt | Ensure git is present"
+  apt:
+    name: "git"
+    state: present
+
+- name: " Ensure remove gnome keyring"
+  shell: "if [ -f /usr/bin/gnome-keyring-daemon ]; then mv /usr/bin/gnome-keyring-daemon /usr/bin/gnome-keyring-daemon-old; fi"

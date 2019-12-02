@@ -1,0 +1,65 @@
+.option-header.certificate
+  .row
+    .col-md-12
+      =link_to certificates_path, class: 'btn-back' do
+        %i.material-icons keyboard_backspace
+      .title
+        %i.material-icons insert_drive_file
+        %h1 Obtener un certificado
+
+.certificates.mail-keyboard
+  = form_tag(create_certificates_path(@procedure)) do
+    .container-fluid
+      .row
+        .col-md-12
+          - if @procedure.warning.present?
+            .alert.alert-warning
+              %p
+                %i.material-icons warning
+                = @procedure.warning
+          - if @procedure.info.present?
+            .alert.alert-info
+              %p
+                %i.material-icons info
+                = @procedure.info
+    .container
+      .row
+        %h3
+          = @procedure.name
+        %h4
+          = @procedure.description.try(:html_safe)
+
+      .row.forms
+        - if @procedure.anonymous?
+          .col-md-12 
+            %label ¿A quién corresponde el certificado?
+            .radio-group
+              -if @procedure. class_name_simple == "ProcedureCertificadoDefuncion"
+                %input{type:"radio", name:"quien", id:"otro", value: 'other'}
+                %label{for:"otro"} A otra persona
+              -else
+                %input{type:"radio", name:"quien", id:"yo", checked:"", value: 'self'} 
+                %label{for:"yo"}A mí
+                %input{type:"radio", name:"quien", id:"otro", value: 'other'}
+                %label{for:"otro"} A otra persona
+          .col-md-12.add-rut
+            %label Ingresa el RUT del beneficiario
+            = text_field_tag :rut, current_rut,placeholder: 'Ejemplo: 12345678k' , class: 'rut'
+        = render "custom_forms_simple/#{@form_view}" if @form_view
+        .col-md-12
+          %label Ingresa un correo donde enviar el certificado
+            
+          = text_field_tag :email, current_user.try(:email) == 'f' ? '' : current_user.try(:email),placeholder: 'nombre@ejemplo.com' , class: 'text email required', pattern:"(^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$)", title: "Ingrese un email valido"
+          = hidden_field_tag :send_by_email, true
+
+        .col-md-12
+          = submit_tag('Enviar certificado', class: 'btn medium-btn btn-main', :onclick => "document.getElementById('send_by_email').value=true;")
+          = submit_tag('Imprimir certificado', class: 'btn-print', :onclick => "document.getElementById('send_by_email').value=false;") if current_totem.has_printer==true
+:javascript
+  $('form').validate({
+    rules: {
+      password_again: {
+        equalTo: "#email"
+        }
+    }
+  })

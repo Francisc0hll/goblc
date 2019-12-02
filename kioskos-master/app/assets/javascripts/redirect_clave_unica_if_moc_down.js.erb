@@ -1,0 +1,13 @@
+document.addEventListener('turbolinks:load', function() {
+    var identityRoute = "<%= Rails.application.routes.url_helpers.certificates_path %>"
+    if(window.location.href.indexOf(identityRoute) == -1) return;
+    // Is the match on card socket open? if so, allow user to choose MOC or Clave unica
+    if(window.wssocket.estaAbierto()) return;
+    // Else, just redirect to clave unica immediately
+    // Send query param to notify controller that MOC is down.
+    [].slice
+      .call(document.querySelectorAll('a.name-btn'))
+      .forEach(function(btn) {
+          btn.href = btn.href + '?socket=false';
+      });
+});

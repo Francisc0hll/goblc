@@ -1,0 +1,34 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+active:
+  rut: <%= RUT_DUMMY %>
+  tid: 00012
+  active: true
+  location: Ministerio del test
+  location_type: ministerial_office
+  institution_id: 1
+  country_phone_code: '56'
+
+inactive:
+  tid: 00013
+  active: false
+  location: Ministerio que no existe
+  location_type: ministerial_office
+  institution_id: 2
+  country_phone_code: '56'
+
+some_other_totem:
+  tid: 00014
+  active: true
+  location: Ministerio del test
+  location_type: mall
+  institution_id: 1
+  country_phone_code: '56'
+
+yet_another_totem:
+  tid: 00015
+  active: true
+  location: Ministerio que no existe
+  location_type: mall
+  institution_id: 2
+  country_phone_code: '56'

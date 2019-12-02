@@ -1,0 +1,15 @@
+#modalBiometricsTimeOut.modal.fade{:role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header.title
+        %h3 Tiempo Excedido:
+      .modal-body
+        .information-text
+          %p Ha pasado mucho tiempo de inactividad.
+          %strong ¿Necesitas más tiempo?
+        .row
+          .col-md-6.modal-footer
+            %a.btn.btn-success.btn-modal{"data-dismiss" => "modal"} No, salir
+          .col-md-6.modal-footer
+            %a.btn.btn-success.btn-modal{"data-dismiss" => "modal"} Si, más tiempo
+

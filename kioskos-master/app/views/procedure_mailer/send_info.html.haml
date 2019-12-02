@@ -1,0 +1,22 @@
+%h1
+  = @procedure['titulo']
+= @procedure['objetivo'].html_safe
+= @procedure['observaciones'].html_safe
+%p
+  = @procedure['costo'].html_safe
+%p
+= @procedure['observaciones'].html_safe
+- if @procedure['alerta'].present?
+  = @procedure['alerta'].html_safe
+- if @procedure['reloj'].present?
+  = @procedure['reloj'].html_safe
+%h3
+  Documentos Requeridos
+= @procedure['doc_requeridos'].html_safe
+%h3
+  Beneficiarios
+= @procedure['beneficiarios'].html_safe
+
+= link_to 'Más Información en la pagina de ChileAtiende', url_for("https://www.chileatiende.gob.cl/fichas/ver/#{@procedure['id']}")
+
+

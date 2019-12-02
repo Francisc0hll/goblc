@@ -1,0 +1,13 @@
+mock_authentication:
+  auth_type: 'clave_unica'
+  minucia: nil
+  finger: nil
+  user: one
+  totem: active
+
+another_authentication:
+  auth_type: 'inicio_sesion'
+  minucia: nil
+  finger: nil
+  user: one
+  totem: yet_another_totem

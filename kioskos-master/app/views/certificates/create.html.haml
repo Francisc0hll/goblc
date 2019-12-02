@@ -1,0 +1,21 @@
+.option-header.certificate
+  .row
+    .col-md-12
+      .title
+        %i.material-icons insert_drive_file
+        %h1 Obtener un certificado
+
+.certificates.success
+  .container
+    .row
+      .col-md-12
+        .icon
+          %i.material-icons check_circle
+        %h3
+          Certificado procesado exitosamente
+        %h4
+          = @error_desc
+          %strong
+            =@mail
+      .col-md-12.bottom-options
+        = link_to "Volver a Certificados", certificates_path, class: 'btn medium-btn btn-secondary'

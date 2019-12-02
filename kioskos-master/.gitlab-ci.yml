@@ -1,0 +1,91 @@
+image: docker:stable
+
+stages:
+  - build
+  - test
+
+test:
+  image: ruby:2.4
+  stage: test
+  services:
+    - postgres:9.6
+  variables:
+    POSTGRES_USER: test
+    POSTGRES_PASSSWORD: test-password
+    POSTGRES_DB: test_db
+    DATABASE_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSSWORD}@postgres/${POSTGRES_DB}
+    RAILS_ENV: test
+    CHILEATIENDE_TOKEN: KAZXSW3Hpyc9PGqa
+    SIMPLE_URL: http://simple-cer.digital.gob.cl
+    GET_CLAVEUNICA_URL: https://apis.digital.gob.cl/claveunica/users
+    GET_CLAVEUNICA_TOKEN: 123
+    MOC_SECRET: 1234567890
+    SMTP_ADDRESS: smtp.sendgrid.net
+    SMTP_DOMAIN: totems.cl
+    SMTP_PORT: 587
+    SMTP_SECRET: SG.s99lfHKTR_imP8_mCX-Svg.myTEdasdaeefeqTeW1yOuQj9VTqxLAg_WTGE2RnP8
+    SMTP_USER: apikey
+    SMTP_FROM_EMAIL: info@totems.cl
+    PHANTOMJS_VERSION: 2.1.1
+
+  script:
+    - apt-get update -qy
+    - apt-get install -y nodejs
+    - apt-get install -qq -y --no-install-recommends build-essential nodejs libpq-dev
+    - curl -L -O https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-$PHANTOMJS_VERSION-linux-x86_64.tar.bz2
+    - tar xvfj phantomjs-$PHANTOMJS_VERSION-linux-x86_64.tar.bz2
+    - cp phantomjs-$PHANTOMJS_VERSION-linux-x86_64/bin/phantomjs /usr/local/bin
+    - rm -rf phantomjs-$PHANTOMJS_VERSION-linux-x86_64
+    - bundle install
+    - bundle exec rake db:create
+    - bundle exec rake db:migrate
+
+code_quality:
+  stage: build
+  variables:
+    DOCKER_DRIVER: overlay2
+  allow_failure: true
+  services:
+    - docker:stable-dind
+  script:
+    - export SP_VERSION=$(echo "$CI_SERVER_VERSION" | sed 's/^\([0-9]*\)\.\([0-9]*\).*/\1-\2-stable/')
+    - docker run
+        --env SOURCE_CODE="$PWD"
+        --volume "$PWD":/code
+        --volume /var/run/docker.sock:/var/run/docker.sock
+        "registry.gitlab.com/gitlab-org/security-products/codequality:$SP_VERSION" /code
+  artifacts:
+    paths: [gl-code-quality-report.json]
+
+build:
+  stage: build
+  variables:
+    DOCKER_DRIVER: overlay2
+  services:
+    - docker:stable-dind
+  script:
+    - docker login git.gob.cl:4567 -u gitlab-ci-token -p $CI_BUILD_TOKEN
+    - docker build -f Dockerfile.production  -t git.gob.cl:4567/chileatiende/kioskos:$CI_COMMIT_REF_NAME .
+    - docker push git.gob.cl:4567/chileatiende/kioskos:$CI_COMMIT_REF_NAME
+  only:
+    - master
+    - dev
+
+build_assets:
+  stage: build
+  image: ruby:2.4
+  variables:
+    RAILS_ENV: production
+    SECRET_KEY_BASE: notusedforassetprecompileherebutmustbepresentoritbreaks
+    PORT: 80
+  script:
+    - apt-get update -qy
+    - apt-get install -y nodejs
+    - apt-get install -qq -y --no-install-recommends build-essential nodejs libpq-dev
+    - bundle install
+    - bundle exec rake assets:precompile
+
+  artifacts:
+    paths:
+      - public/assets/*
+    

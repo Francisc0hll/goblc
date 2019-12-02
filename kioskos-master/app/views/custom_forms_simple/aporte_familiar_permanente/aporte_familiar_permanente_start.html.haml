@@ -1,0 +1,29 @@
+.container-fluid.header.option-header
+  .row
+    .col-md-2.col-xs-2.back
+      %a.btn.btn-info.btn-volver{href: "#{totem_path}"}
+        %i.material-icons arrow_back
+        %span Volver
+    .col-md-10.col-xs-10.title
+      .section-title.certificados
+        %i.material-icons insert_drive_file
+        %h2 Certificado a tu correo electrónico
+.container-fluid.body
+  .container
+    .row
+      .col-md-3
+      .col-md-6.block-all.forms
+        %h2 Ingresa tu fecha de nacimiento
+        %h3 (formato DD-MM-AAAA)
+        =form_tag(create_certificates_path, 'data-timeout' => 30000, 'data-redirect' => "#{rut_certificates_path}?error_timeout=true") do
+          = hidden_field_tag :procedure_step, 0
+          = hidden_field_tag :rut, current_user[:rut]
+          = hidden_field_tag :email, current_user[:email]
+          .input-search-main.inner-addon.right-addon
+            %i.material-icons.clean-input clear
+            %input{type:"text", name:"birth_date", id:"num", maxlength:"11", placeholder:"Ej: 26-02-1945",
+                   class: 'text ui-keyboard-input ui-widget-content ui-corner-all ui-keyboard-autoaccepted ui-keyboard-input-current'}
+            = button_tag(type: 'submit', class: 'btn btn-icon btn-success') do
+              %i.material-icons navigate_next
+              %span Continuar
+/TODO: change this keyboard to present only 0-9 and - (dash)

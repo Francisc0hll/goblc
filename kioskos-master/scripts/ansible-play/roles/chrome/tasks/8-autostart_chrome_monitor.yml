@@ -1,0 +1,29 @@
+- name: "Copy chrome monitor bootstrapper script"
+  become: yes
+  become_user: root
+  template:
+    src: chrome_monitor.j2
+    dest: /opt/chrome_monitor
+    owner: "{{ totem_linux_user }}"
+    group: "{{ totem_linux_user }}"
+    mode: 0755
+
+- name: "Copy autostart file"
+  become: yes
+  become_user: root
+  template:
+    src: autostart
+    dest: /etc/xdg/autostart/autostart.desktop
+    owner: "{{ totem_linux_user }}"
+    group: "{{ totem_linux_user }}"
+    mode: 0755
+
+- name: "rotate screen"
+  become: yes
+  become_user: root
+  template:
+    src: rotate_screen.desktop
+    dest: /etc/xdg/autostart/rotate_screen.desktop
+    owner: "{{ totem_linux_user }}"
+    group: "{{ totem_linux_user }}"
+    mode: 0755

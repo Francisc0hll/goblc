@@ -1,0 +1,29 @@
+.option-header.certificate
+  .row
+    .col-md-12
+      =link_to totem_path, class: 'btn-back' do
+        %i.material-icons keyboard_backspace
+      .title
+        %i.material-icons insert_drive_file
+        %h1 Obtener un certificado
+
+.certificates.instructions
+  .container
+    .row
+      .col-md-12
+        %h3
+          Por favor ten a mano tu cédula de identidad
+        %h4
+          A continuación necesitamos validar tu identidad. Para ello te indicaremos primero donde deberás poner tu cédula y seguido, la huella de tu dedo índice.
+
+      .col-md-12.bottom-options
+        %a#claveunica-totem.btn.medium-btn.btn-main.invert{href: "#{biometric_validation_certificates_path}"}
+          %span Continuar
+          %i.material-icons navigate_next
+
+        %a#claveunica-totem.btn.medium-btn.btn-claveunica{href: "#{authenticate_clave_unicas_path}"}
+          Usar mi claveúnica
+
+
+
+= render 'error/error_conection'

@@ -1,0 +1,19 @@
+.option-header.certificate
+  .row
+    .col-md-12
+      .title
+        %i.material-icons insert_drive_file
+        %h1 Obtener un certificado
+
+.certificates.error
+  .container
+    .row
+      .col-md-12
+        .icon
+          %i.material-icons error
+        %h3 Certificado no pudo ser procesado
+        %h4
+          = @error_desc
+
+      .col-md-12.bottom-options
+        =link_to 'Volver a Certificados', certificates_path, class: 'btn medium-btn btn-secondary'

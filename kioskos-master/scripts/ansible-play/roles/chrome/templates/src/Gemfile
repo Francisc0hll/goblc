@@ -1,0 +1,7 @@
+source "http://rubygems.org"
+
+gem "json"
+gem "chrome_remote"
+gem "mail"
+gem "webrick"
+gem "eventmachine"

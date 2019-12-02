@@ -1,0 +1,15 @@
+clave_unica_petition_mock1:
+  rut: '16777321-9'
+  status: success
+  method: email
+  phone: 555333999
+  email: somefakeemail@example.com
+  totem: active
+
+another_clave_unica_petition_mock:
+  rut: '17222333-1'
+  status: failure
+  method: email
+  phone: 222333777
+  email: anotheremail@example.com
+  totem: yet_another_totem

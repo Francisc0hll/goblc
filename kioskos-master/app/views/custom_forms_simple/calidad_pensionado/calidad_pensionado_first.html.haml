@@ -1,0 +1,28 @@
+.container-fluid.header.option-header
+  .row
+    .col-md-2.col-xs-2.back
+      %a.btn.btn-info.btn-volver{href: "#{totem_path}"}
+        %i.material-icons arrow_back
+        %span.span_align Volver
+    .col-md-10.col-xs-10.title
+      .section-title.certificados
+        %i.material-icons insert_drive_file
+        %h2 Certificado a tu correo electrónico
+.container-fluid.body
+  .container
+    .row
+      .col-md-1
+      .col-md-10.block-all.forms.solicitud
+        %h2 Se Solicitara el certificado de calidad de pensionado para el Run
+        %h2.f_rut #{current_user[:rut]}
+        =form_tag(create_certificates_path, 'data-timeout' => 30000, 'data-redirect' => "#{rut_certificates_path}?error_timeout=true") do
+          = hidden_field_tag :procedure_step, 0
+          = hidden_field_tag :rut, current_user[:rut]
+          = hidden_field_tag :email, current_user[:email]
+          = hidden_field_tag :_id_instancia_, @id_instancia
+          = hidden_field_tag :_id_etapa_, @id_etapa
+          = hidden_field_tag :_secuencia_, @secuencia
+
+          = button_tag(type: 'submit', class: 'btn btn-icon btn-success btn-msj') do
+            %i.material-icons navigate_next
+            %span.span_align Solicitar Calidad Pensionado

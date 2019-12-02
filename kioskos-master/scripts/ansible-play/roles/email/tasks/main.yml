@@ -1,0 +1,4 @@
+---
+# tasks file for email
+- include: 3-install_postfix.yml
+- include: 4-configure_email.yml

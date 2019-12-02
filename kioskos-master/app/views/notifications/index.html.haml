@@ -1,0 +1,40 @@
+.container-fluid.header.option-header
+  .row
+    .col-md-2.col-xs-2.back
+      =link_to totem_path do
+        %i.material-icons arrow_back
+        %span Volver
+    .col-md-8.col-xs-8.title
+      .section-title.beneficios
+        %i.material-icons card_giftcard
+        %h2 Beneficios
+    .col-md-2.out
+    .col-md-8.col-xs-8.title
+      .section-title.beneficios
+        %i.material-icons card_giftcard
+        %h2 Beneficios
+    .col-md-2.out
+    .col-md-8.col-xs-8.title
+      .section-title.beneficios
+        %i.material-icons card_giftcard
+        %h2 Beneficios
+.container-fluid.body
+  .container
+    .row
+      .col-md-3
+      .col-md-6.block-all.forms
+        %h2 Ingresa tu RUT
+        %h3 (sin puntos ni guiones)
+        = form_tag notifications_path do
+          .input-search-main.inner-addon.right-addon
+            %i.material-icons.clean-input clear
+            %input{type:"text", name:"rut", id:"rut", maxlength:"11", placeholder:"Ej: 123456789", class: 'rut'}
+            = button_tag(type: 'submit', class: 'btn btn-icon btn-success') do
+              %i.material-icons navigate_next
+              %span Continuar
+
+  .modal.fade{id:"modalValidacionOk", tabindex:"-1", role:"dialog"}
+    .modal-dialog{role:"document"}
+      .modal-content
+        .modal-body.block-all.success
+          %i.material-icons verified_user

@@ -1,0 +1,6 @@
+---
+# vars file for email
+totem_linux_user: kiosk
+totem_linux_user_password: kiosk
+gmail_account: mockexample@gmail.com
+gmail_password: secretpassword123

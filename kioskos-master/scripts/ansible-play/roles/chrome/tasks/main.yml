@@ -1,0 +1,18 @@
+---
+- include: 0-install_sudo.yml
+- include: 1-create_user_kiosk.yml
+- include: 2-install_graphical_environment.yml
+  become: true
+  become_user: kiosk
+- include: 5-install_ruby_and_bundler.yml
+  become: true
+  become_user: kiosk
+- include: 6-install_chrome.yml
+  become: true
+  become_user: kiosk
+- include: 7-install_chrome_monitor_scripts.yml
+  become: true
+  become_user: kiosk
+- include: 8-autostart_chrome_monitor.yml
+  become: true
+  become_user: kiosk

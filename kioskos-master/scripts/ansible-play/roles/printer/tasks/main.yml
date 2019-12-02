@@ -1,0 +1,4 @@
+---
+# tasks file for printer
+- include: 11-install_print_server.yml
+- include: 12-add_to_autostart.yml

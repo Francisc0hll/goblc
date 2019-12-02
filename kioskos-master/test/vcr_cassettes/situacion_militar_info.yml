@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.chileatiende.gob.cl/api/fichas/946?access_token=QMwbYZbx3Hpyc9PG&type=JSON
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Fri, 22 Sep 2017 15:11:59 GMT
+      Set-Cookie:
+      - AWSELB=7BDB09DD16098517261B087C41FC3B6530E55A1737A26103DB20047500860AB3959BFF5788C0C2DE773903E6CA41FF468E7B085567559B6A356CB056DFEED2412E5514BF7848B507FBF4A5172EBFDC9FE6ED9F59E2;PATH=/
+      - ci_session=BWFRawVgCjYJc1guATdWYw8%2BX2ZXJAd5AGJSdgMnWjNQOwNmAV1SNlIzUXNSOARxADtRZwc5UG5XdAAxVjEDOwQ2BGJWMw1sBGEHbw5sBzkFNFFmBWQKOwluWG4BPFZjD21falc3BzoANFJhA2VaY1BgAzEBM1I5UjZRc1I4BHEAO1FlBztQbld0AGpWdwNRBGIEN1ZlDX8EZQd%2FDn4HKAU7USIFbgo9CTlYZwEvVmEPO19yVzYHJAA2UjIDZFp0UGwDPwEgUmRSJFFrUjIEMgA7UXYHflAnVzMAcVZYA28EZAQ2Vm8NeQQiBzcOfgcwBTFRZAVuCi4JTlg8AX9WMw9qXz1XfwcqAHFSNQN6WmtQZQMmATJSfVJsUSJSOQQzADJRbgcpUDhXNwBwVnMDUQRiBDBWdQ1kBHYHZQ55B3MFIlFqBT0KNgk5WGgBPVZkDz5fZVc1BzsANFI8A29aJw%3D%3D;
+        expires=Fri, 22-Sep-2017 17:12:19 GMT; path=/
+      - route=37cf2b5d00ac2ab9f5a0588bcde9cc0c; Path=/
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      X-Var:
+      - MISS
+      Content-Length:
+      - '1343'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ficha":{"id":"946","codigo":"AD013-14","fecha":"2017-09-14 09:20:56","servicio":"Direcci\u00f3n
+        General de Movilizaci\u00f3n Nacional","titulo":"Certificado de situaci\u00f3n
+        militar al d\u00eda","updated_data_at":"2017-09-14 00:00:00","objetivo":"<p>Permite
+        acreditar que la situaci\u00f3n militar del interesado est\u00e1 en conformidad
+        con la ley.<\/p>\n<p>En Chile, el certificado se puede solicitar en l\u00ednea
+        o en las oficinas del cant\u00f3n de reclutamiento; en el extranjero, en cualquier
+        <a href=\"[[49659]]\" target=\"_blank\">consulado chileno<\/a>.<\/p>\n<p>{{mensaje[alerta]:Si
+        no tiene la situaci\u00f3n militar al d\u00eda dir\u00edjase al <a href=\"http:\/\/www.serviciomilitar.cl\/?page_id=39\"
+        target=\"_blank\">cant\u00f3n de reclutamiento<\/a> m\u00e1s cercano.}}<\/p>\n<p>{{mensaje[reloj]:El
+        tr\u00e1mite se puede realizar durante todo el a\u00f1o.}}<\/p>","beneficiarios":"<p>Personas
+        que est\u00e9n al d\u00eda en su situaci\u00f3n militar.<\/p>\n<p><strong>Importante<\/strong>:
+        si el tr\u00e1mite es realizado en l\u00ednea, la persona debe contar con
+        <a href=\"[[11331]]\" target=\"_blank\">clave \u00fanica<\/a>, entregada por
+        el Servicio de Registro Civil e Identificaci\u00f3n (SRCeI).<\/p>","costo":"<p>No
+        tiene costo.<\/p>","vigencia":"<p>90 d\u00edas continuos.<\/p>","plazo":"","observaciones":"","marco_legal":"<p><a
+        href=\"http:\/\/www.leychile.cl\/Navegar?idNorma=6876\" target=\"_blank\">Decreto
+        Ley N\u00ba2.306, y su reglamento complementario<\/a>.<\/p>","doc_requeridos":"<p>C\u00e9dula
+        de identidad (vigente).<\/p>","guia_online":"<ol>\n<li>Haga clic en<strong>
+        ir al tr\u00e1mite<\/strong> y, luego, en <strong>clave \u00fanica<\/strong>.<\/li>\n<li>Escriba
+        su RUN y clave, y haga clic en <strong>autenticar<\/strong>.<\/li>\n<li>Complete
+        los datos requeridos, y haga clic en <strong>guardar<\/strong>.\u00a0<\/li>\n<li>Haga
+        clic en <strong>iniciar<\/strong> y, luego, en <strong>siguiente<\/strong>.\u00a0<\/li>\n<li>Como
+        resultado del tr\u00e1mite, habr\u00e1 solicitado el certificado, el que podr\u00e1
+        descargar inmediatamente.<\/li>\n<\/ol>\n<p><strong>Si requiere m\u00e1s informaci\u00f3n<\/strong>:<\/p>\n<ul>\n<li>Escriba
+        a <a href=\"mailto:oirs@dgmn.cl\" target=\"_blank\">oirs@dgmn.cl<\/a>.<\/li>\n<li>Llame
+        al +56 2 2441 39 85 o +56 2 2441 39 86.<\/li>\n<\/ul>","guia_online_url":"https:\/\/dgmn.chilesinpapeleo.cl\/tramites\/disponibles","guia_oficina":"<ol>\n<li>Re\u00fana
+        el antecedente mencionado en el campo <strong>documentos requeridos<\/strong>.<\/li>\n<li>Dir\u00edjase
+        a una oficina del <a href=\"http:\/\/www.serviciomilitar.cl\/?page_id=39\"
+        target=\"_blank\">cant\u00f3n de reclutamiento<\/a> m\u00e1s cercano.<\/li>\n<li>Explique
+        el motivo de su visita: solicitar un certificado de situaci\u00f3n militar
+        al d\u00eda.<\/li>\n<li>Entregue el antecedente requerido.<\/li>\n<li>Como
+        resultado del tr\u00e1mite, obtendr\u00e1 el certificado inmediatamente.<\/li>\n<\/ol>\n<p><strong>Si
+        requiere m\u00e1s informaci\u00f3n<\/strong>:<\/p>\n<ul>\n<li>Escriba a <a
+        href=\"mailto:oirs@dgmn.cl\" target=\"_blank\">oirs@dgmn.cl<\/a>.<\/li>\n<li>Llame
+        al +56 2 2441 39 85 o +56 2 2441 39 86.<\/li>\n<\/ul>","guia_telefonico":"","guia_correo":"","temas":{"tema":["Trabajo","Legal","Chilenos
+        en el extranjero","TodosxChile"]},"tags":{"tag":["situaci\u00f3n militar","certificado
+        militar al d\u00eda","servicio militar al d\u00eda"]},"chileclic_id":"DGMN0014","permalink":"https:\/\/www.chileatiende.gob.cl\/fichas\/ver\/946"}}'
+    http_version: 
+  recorded_at: Fri, 22 Sep 2017 15:11:59 GMT
+recorded_with: VCR 3.0.3

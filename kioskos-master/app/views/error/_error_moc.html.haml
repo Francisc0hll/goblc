@@ -1,0 +1,20 @@
+#modalErrorMOC.modal.fade{:role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-body
+        %h4 ¡Lo siento!
+        %h4 Hay problemas con el sistema de identificación biométrica.
+        - if current_totem.ministerial?
+          %strong Por favor intentalo en otro kiosco o acércate a un mesón de ayuda.
+        - else
+          %strong Por favor intentalo en otro kiosco.
+
+        - if controller.controller_name == 'certificates'
+          .modal-footer
+            .col-md-12
+              =link_to 'Usar Clave Unica', authenticate_clave_unicas_path, class: 'btn medium-btn btn-claveunica'
+            .col-md-12
+              %a#back.btn.medium-btn.btn-main{"data-dismiss" => "modal"} Salir
+
+        - else
+          %a#back.btn.btn-success.btn-modal{"data-dismiss" => "modal"} Ok, comprendo.

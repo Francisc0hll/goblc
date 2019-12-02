@@ -1,0 +1,11 @@
+.col-md-12
+  %h3 Trámites más consultados
+- if @procedures.present?
+  - @procedures.each do |procedure|
+    .col-md-4
+      =link_to procedure_path(procedure['id']), class:'name-btn' do
+        .inner-title
+          = procedure['titulo']
+        .inner-btn.procedurecolor
+          .inner-text Ver detalles
+          %i.material-icons arrow_forward

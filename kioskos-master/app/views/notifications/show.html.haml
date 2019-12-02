@@ -1,0 +1,42 @@
+.container-fluid.header.option-header
+  .row
+    .col-md-2.col-xs-2.back
+    .col-md-8.col-xs-8.title
+      .section-title.beneficios
+        %i.material-icons card_giftcard
+        %h2 Beneficios
+    .col-md-2.out
+      %a{href: "#{totem_path}"}
+        %i.material-icons close
+        %span
+          %strong Salir
+.container-fluid.body
+  .container
+    .row
+      .col-md-12.col-xs-12.title.content-section
+
+    - if @notifications.empty?
+      .row
+        .empty-message
+          .col-md-12
+            %i.material-icons.question-mark error
+          .col-md-12
+            %p
+              = "Por ahora no podemos mostrar tus beneficios"
+
+    -else
+      .row
+        .col-md-12.col-xs-12.title.content-section
+          %h3
+            %strong Estos son tus beneficios
+      .row
+        .col-md-12
+        - @notifications.each do |notification|
+          .col-md-4.col-xs-4
+            =link_to procedure_path(notification.chile_atiende_id), class: 'name-btn' do
+              = notification.message
+              .inner-btn
+                .inner-color
+                  %i.material-icons arrow_forward
+                .inner-text
+                  = t("notification.more_info_link")

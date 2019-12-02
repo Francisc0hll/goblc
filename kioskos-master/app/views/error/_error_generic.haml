@@ -1,0 +1,19 @@
+#modalErrorGeneric.modal.fade{:role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-body
+        %h4 ¡Lo siento! Tenemos algunos problemas con el sistema de identificación.
+        - if current_totem.ministerial?
+          %h4
+            %strong Por favor intentalo en otro kiosco o acércate a un mesón de ayuda.
+        - else
+          %h4
+            %strong Por favor intentalo en otro kiosco.
+
+      - if controller.controller_name == 'certificates'
+        .modal-footer
+          .col-md-12
+            =link_to 'Ingresar usando claveúnica', authenticate_clave_unicas_path, class: 'btn medium-btn btn-claveunica'
+          .col-md-12
+            %a#retry-button.btn.medium-btn.btn-main Reintentar
+

@@ -1,0 +1,7 @@
+- name: "Copy the chrome monitor ruby scripts to their destination"
+  copy:
+    src: ./templates/src
+    dest: /home/{{ totem_linux_user }}/monitor
+    owner: "{{ totem_linux_user }}"
+    group: "{{ totem_linux_user}}"
+    mode: 0755

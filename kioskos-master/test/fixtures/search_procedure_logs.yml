@@ -1,0 +1,23 @@
+search_procedure_log_mock:
+  search: militar
+  found: true
+  results: 'Llamados al Servicio Militar 2017, Servicio Militar como voluntario'
+  totem: active
+
+search_procedure_log_not_found:
+  search: notfound
+  found: false
+  results: ''
+  totem: active
+
+another_search_procedure_log_mock:
+  search: salud
+  found: true
+  results: 'Seguro de Salud, Compra Bono FONASA'
+  totem: yet_another_totem
+
+another_search_procedure_not_found:
+  search: alsonotfound
+  found: false
+  results: ''
+  totem: yet_another_totem

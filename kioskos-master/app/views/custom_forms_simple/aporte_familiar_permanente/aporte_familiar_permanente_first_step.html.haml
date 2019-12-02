@@ -1,0 +1,39 @@
+.container-fluid.header.option-header
+  .row
+    .col-md-2.col-xs-2.back
+      %a.btn.btn-info.btn-volver{href: "#{totem_path}"}
+        %i.material-icons arrow_back
+        %span Volver
+    .col-md-10.col-xs-10.title
+      .section-title.certificados
+        %i.material-icons insert_drive_file
+        %h2 Certificado a tu correo electrónico
+.container-fluid.body
+  .container
+    .row
+      .col-md-3
+      .col-md-6.block-all.forms
+        %h2 Segundo paso
+        %h3 Selecciona tu documento de pago
+        =form_tag(create_certificates_path, 'data-timeout' => 30000, 'data-redirect' => "#{rut_certificates_path}?error_timeout=true") do
+          = hidden_field_tag :procedure_step, @procedure_step
+          = hidden_field_tag :rut, current_user[:rut]
+          = hidden_field_tag :email, current_user[:email]
+          = hidden_field_tag :_id_instancia_, @id_instancia
+          = hidden_field_tag :_id_etapa_, @id_etapa
+          = hidden_field_tag :_secuencia_, @secuencia
+
+          .input-search-main.inner-addon.right-addons
+            %i.material-icons.clean-input clear
+          -if @pagos.present?
+            %select{class: 'select_tramite_options', name: 'numeropago'}
+              - @pagos.each do |opt|
+                %option{value: opt['numeroDocumentoPago']} pago #{opt['numeroDocumentoPago']}, del #{opt['fechaPago']}
+          -else
+            No hay pagos disponibles
+          
+          -# %input{type:"text", name:"birthDate", id:"num", maxlength:"11", placeholder:"Ej: 25-03-1980",
+          -#        class: 'text ui-keyboard-input ui-widget-content ui-corner-all ui-keyboard-autoaccepted ui-keyboard-input-current'}
+          = button_tag(type: 'submit', class: 'btn btn-icon btn-success') do
+            %i.material-icons navigate_next
+            %span Continuar

@@ -1,0 +1,32 @@
+.option-header.certificate
+  .row
+    .col-md-12
+      .title
+        %i.material-icons insert_drive_file
+        %h1 Obtener un certificado
+
+.certificates.success{:id => 'status-icon-color-print'}
+  .container
+    .row
+      .col-md-12
+        .icon
+          %i.material-icons{:id => 'status-icon-type-print'} check_circle
+        %h3{:id => 'status-title-print'} Certificado creado exitosamente
+        %h4{:id => 'status-msg-print'} 
+          = @error_desc
+
+      .col-md-12.bottom-options
+        =link_to 'Volver a Certificados', certificates_path, class: 'btn medium-btn btn-secondary'
+
+:javascript
+  print("#{@certificate_base64}", function(text, success) {
+    $('#status-msg-print').text(text)
+    if (success) {
+      $('#status-icon-color-print').removeClass('error').addClass('success')
+      $('#status-icon-type-print').text('check_circle')
+    } else {
+      $('#status-icon-color-print').removeClass('success').addClass('error')
+      $('#status-icon-type-print').text('error')
+      $('#status-title-print').text('No fue posible imprimir el documento')
+    }
+  })

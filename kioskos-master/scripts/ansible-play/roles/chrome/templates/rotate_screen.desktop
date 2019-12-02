@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=rotate_screen
+Comment=Rotate screen to right
+Exec=sh -c "xrandr --output DP-1 --rotate right"
+Terminal=false
+Type=Application
+X-GNOME-Autostart-enabled=true

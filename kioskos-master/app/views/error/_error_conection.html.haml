@@ -1,0 +1,12 @@
+#modalErrorConection.modal.fade{:role => "dialog", :tabindex => "-1"}
+
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-body
+        %h4 Hay problemas con el sistema de identificación biométrica.
+        %h4
+          %strong No es posible realizar esta acción,
+          inténtalo en otro kiosco de autoatención por favor.
+      .modal-footer
+        %a.btn.medium-btn.btn-main{"data-dismiss" => "modal", href: "#{totem_path}"} Ok, entiendo
+

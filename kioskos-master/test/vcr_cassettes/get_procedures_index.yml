@@ -1,0 +1,246 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.chileatiende.gob.cl/api/fichas?access_token=QMwbYZbx3Hpyc9PG&maxResults=6&pageToken&query&type=JSON
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Fri, 22 Sep 2017 15:38:55 GMT
+      Set-Cookie:
+      - AWSELB=7BDB09DD16098517261B087C41FC3B6530E55A1737A26103DB20047500860AB3959BFF5788C0C2DE773903E6CA41FF468E7B085567559B6A356CB056DFEED2412E5514BF7848B507FBF4A5172EBFDC9FE6ED9F59E2;PATH=/
+      - ci_session=UjYCOFUwUm5dJwRyUGZWYw4%2FUmtUJwV7AGIAJFB0DmdXPApvBFgMaARlByVXPQVwDjUCNFJsV2kDIF9lVTFXPAQwDTlXMw09ADZXbVIwDTlSMgI1VTJSY11kBDNQZFY2DjxSaVQ9BW4AYQBjUDEONldkCjIEYwxgBDQHJVc9BXAONQI2Um5XaQMgXzVVdFcFBGINPldkDX8AYVcvUiINIlJsAnFVPlJlXW0EO1B%2BVmEOOlJ%2FVDUFJgA2AGBQNw4gV2sKNgQlDDoEcgc9VzcFMw41AiVSK1cgA2dfLlVbVzsEZA0%2FV24NeQAmV2dSIg06UmYCN1U%2BUnZdGgRgUC5WMw5rUjBUfAUoAHEAZ1ApDj9XYgovBDcMIwQ6B3RXPAUyDjwCPVJ8Vz8DY18vVXBXBQRiDTlXdA1kAHJXNVIlDXlSdQI5VW1Sbl1tBDRQbFZkDj9SaFQxBT8AMgBiUDwOcw%3D%3D;
+        expires=Fri, 22-Sep-2017 17:39:15 GMT; path=/
+      - route=37cf2b5d00ac2ab9f5a0588bcde9cc0c; Path=/
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      X-Var:
+      - MISS
+      Content-Length:
+      - '4054'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"fichas":{"titulo":"Listado de Fichas","tipo":"chileatiende#fichasFeed","nextPageToken":"Ng%3D%3D","total":2514,"items":{"ficha":[{"id":"370","codigo":"AD009-8","fecha":null,"servicio":"Carabineros
+        de Chile","titulo":"Sistema de Seguridad Privada: Requisitos para un servicio
+        de Guardias de Seguridad","updated_data_at":null,"objetivo":"<p><strong>Descripci\u00f3n:<\/strong><\/p>\n<p>Aprobaci\u00f3n
+        por parte de la Autoridad Fiscalizadora respectiva, de la Directiva de Funcionamiento
+        que determina la modalidad de contrataci\u00f3n del servicio de Guardias de
+        Seguridad (propio o por empresa). <br \/><strong><\/strong><\/p>\n<p><strong>En
+        que consiste:<\/strong><\/p>\n<p>Determinar la modalidad de contrataci\u00f3n
+        del servicio de Guardias de Seguridad, (propio o por empresa) y comunicar
+        a la Autoridad Fiscalizadora respectiva, para efectos de aprobaci\u00f3n de
+        la Directiva de Funcionamiento.<\/p>","beneficiarios":"<p>Personas Naturales
+        o Jur\u00eddicas, que cumplan con el siguiente requisito: Contar con la aprobaci\u00f3n
+        de la Directiva de Funcionamiento.<\/p>","costo":"<p>No tiene costo.<\/p>","vigencia":"","plazo":"","observaciones":"<ul>\n<li>Una
+        vez aprobada la Directiva de Funcionamiento el empleador, en el caso de haber
+        contratado directamente al Guard\u00eda de Seguridad, deber\u00e1 solicitar
+        la tramitaci\u00f3n de su Tarjeta de Identificaci\u00f3n ante la Autoridad
+        F\u00edscalizadora.<\/li>\n<li>La Tarjeta de Identificaci\u00f3n tiene vigencia
+        de un a\u00f1o renovable y tendr\u00e1 validez mientras preste servicios para
+        la entidad.<\/li>\n<\/ul>","marco_legal":"","doc_requeridos":"<ul>\n<li>Contrato
+        de Trabajo del Guardias de Seguridad<\/li>\n<li>Seguro de vida a favor del
+        Guardia de Seguridad (75 U.T.M.).<\/li>\n<\/ul>","guia_online":"","guia_online_url":"","guia_oficina":"<p>En
+        cada una de las Autoridades Fiscalizadoras (Prefecturas), en donde se desarrollar\u00e1
+        el servicio.<\/p>\n<p>El resultado del tr\u00e1mite ser\u00e1: Aprobaci\u00f3n
+        del estudio de seguridad.<\/p>","guia_telefonico":"","guia_correo":"","temas":null,"tags":null,"chileclic_id":"CARAB0008","permalink":"https:\/\/www.chileatiende.gob.cl\/fichas\/ver\/370"},{"id":"382","codigo":"AD009-12","fecha":null,"servicio":"Carabineros
+        de Chile","titulo":"Recepci\u00f3n y fiscalizaci\u00f3n de medidas de seguridad
+        de estaciones de servicio y bombas bencineras","updated_data_at":null,"objetivo":"<p><strong>Descripci\u00f3n:<\/strong><\/p>\n<p>Procedimiento
+        de aprobaci\u00f3n de las medidas de seguridad que deben tener las estaciones
+        de servicios o bombas bencineras, en todas sus formas, resuelto por la Prefectura
+        de Carabineros correspondiente al domicilio de la instalaci\u00f3n. <br \/><strong><\/strong><\/p>\n<p><strong>En
+        que consiste:<\/strong><\/p>\n<p>Presentaci\u00f3n de una solicitud de aprobaci\u00f3n
+        de las medidas de seguridad de un establecimiento de venta de combustible,
+        conforme a formato establecido para ello.<\/p>","beneficiarios":"<p>Establecimientos
+        de venta de combustible al p\u00fablico, (estaciones de servicio o bombas
+        bencineras)<\/p>\n<p>Propietario o administradores de estaciones de servicio
+        o bombas bencineras, que cumplan con los siguientes requisitos:<\/p>\n<ul>\n<li>Presentaci\u00f3n
+        de una solicitud de aprobaci\u00f3n de medidas de seguridad.<\/li>\n<li>Documento
+        que contenga la descripci\u00f3n de las medidas de seguridad dispuestas para
+        el establecimiento<\/li>\n<li>La medidas de seguridad mencionadas deben tender
+        a proteger la vida e integridad f\u00edsica de los trabajadores y el publico
+        en general, proteger el patrimonio de la empresa y considerar los factores
+        socio delictuales de su entorno e historial de il\u00edcitos que le hubieren
+        afectado.<\/li>\n<li>Cumplir con el formato tipo, establecido por Carabineros
+        de Chile, el cual est\u00e1 a disposici\u00f3n de los interesados en las respectivas
+        Autoridad Fiscalizadoras y el sitio web <a href=\"http:\/\/www.carabinerosdechileos10.cl\">www.carabinerosdechileos10.cl<\/a><\/li>\n<\/ul>","costo":"<p>Conforme
+        a publicaci\u00f3n de sitio web <a href=\"http:\/\/www.carabinerosdechileos10.cl\">www.carabinerosdechileos10.cl<\/a>.<\/p>","vigencia":"","plazo":"","observaciones":"","marco_legal":"<p>Las
+        medidas de seguridad, podr\u00e1n ser fiscalizadas por la Autoridad Fiscalizadora
+        respectiva, en el ejercicio de sus facultades, establecidas en el art\u00edculo
+        9\u00b0 de la <a href=\"http:\/\/www.leychile.cl\/Navegar?idNorma=30670\">Ley
+        N\u00b0 19.303<\/a>. Las disposiciones legales que regulan esta particular
+        materia, se encuentran contenidas en la Ley 19.303 y su reglamento; <a href=\"http:\/\/www.leychile.cl\/Navegar?idNorma=18592\">Decreto
+        Supremo N\u00b0 1.772<\/a>, ambos de 1994.<\/p>","doc_requeridos":"<p>Formato
+        tipo, establecido por Carabineros de Chile, a disposici\u00f3n de las entidades
+        en las respectivas Autoridad F\u00edscalizadoras.<\/p>","guia_online":"","guia_online_url":"","guia_oficina":"<p>En
+        la Autoridad Fiscalizadora (Prefectura de Carabineros) correspondiente al
+        domicilio comercial de la entidad.<\/p>\n<p>El resultado del tr\u00e1mite
+        ser\u00e1: Autorizaci\u00f3n de las medidas de seguridad de la estaci\u00f3n
+        de servicio o bomba bencinera, dispuesta por la Autoridad Fiscalizadora correspondiente.<\/p>","guia_telefonico":"","guia_correo":"","temas":null,"tags":null,"chileclic_id":"CARAB0012","permalink":"https:\/\/www.chileatiende.gob.cl\/fichas\/ver\/382"},{"id":"400","codigo":"AD009-18","fecha":null,"servicio":"Carabineros
+        de Chile","titulo":"Acreditaci\u00f3n de empresas de asesor\u00edas en materias
+        inherentes a seguridad privada","updated_data_at":null,"objetivo":"<p><strong>Descripci\u00f3n:<\/strong><\/p>\n<p>Corresponde
+        a la acreditaci\u00f3n de empresas interesadas en prestar servicios de asesor\u00eda
+        en materias de seguridad privada. <br \/><strong><\/strong><\/p>\n<p><strong>En
+        que consiste:<\/strong><\/p>\n<p>Consiste en la presentaci\u00f3n de una solicitud
+        de acreditaci\u00f3n como empresa de asesor\u00eda, la posterior revisi\u00f3n
+        de antecedentes - que demuestren poseer idoneidad c\u00edvica, moral y profesional
+        - y la emisi\u00f3n por parte de la Autoridad Fiscalizadora (Prefectura de
+        Carabineros) de la autorizaci\u00f3n para ejercer tales funciones.<\/p>","beneficiarios":"<p>A
+        personas naturales o jur\u00eddicas, que cumplan con los siguientes requisitos:<\/p>\n<p
+        style=\"margin-left: 30px;\">Acreditar idoneidad c\u00edvica, moral y profesional.<\/p>","costo":"<p>Conforme
+        a publicaci\u00f3n de sitio web <a href=\"http:\/\/www.carabinerosdechileos10.cl\">www.carabinerosdechileos10.cl<\/a><\/p>","vigencia":"","plazo":"","observaciones":"<p>Por
+        regla general, la autorizaci\u00f3n tiene una vigencia de dos a\u00f1os. Es
+        renovable y permite a la persona cumplir sus funciones en todo el territorio
+        nacional.<\/p>","marco_legal":"","doc_requeridos":"<ul>\n<li>Solicitud simple.<\/li>\n<li>Fotocopia
+        C\u00e9dula de Identidad socios.<\/li>\n<li>Escritura de Constituci\u00f3n
+        de Sociedad y publicaci\u00f3n del extracto en el Diario Oficial, relativos
+        al Decreto Ley N\u00b0 3.607, de 3.607, de 1981 (excepto personas naturales)<\/li>\n<li>Iniciaci\u00f3n
+        de Actividades con el giro correspondiente a prestaciones de servicios en
+        Seguridad Privada.<\/li>\n<li>Certificado de Antecedentes para fines especiales
+        de los socios.<\/li>\n<li>Certificado de Antecedentes para fines comerciales
+        de los socios y de la empresa.<\/li>\n<li>Certificado de Obra, otorgado por
+        la Inspecci\u00f3n del Trabajo.<\/li>\n<li>Escritura de compraventa o contrato
+        de arrendamiento de las oficinas o instalaciones donde funcionar\u00e1 la
+        empresa.<\/li>\n<li>Patente municipal.<\/li>\n<li>Contar al menos con un asesor
+        de seguridad, acreditado ante Autoridad Fiscalizadora.<\/li>\n<\/ul>","guia_online":"","guia_online_url":"","guia_oficina":"<ul>\n<li>En
+        oficina dir\u00edjase a la Autoridad Fiscalizadora (Prefectura de Carabineros)
+        correspondiente al domicilio comercial del interesado.<\/li>\n<li>El resultado
+        del tr\u00e1mite ser\u00e1 la autorizaci\u00f3n para desarrollar la funci\u00f3n
+        de empresa de asesor\u00eda en materias de seguridad privada, emitida por
+        la Autoridad Fiscalizadora correspondiente.<\/li>\n<\/ul>","guia_telefonico":"","guia_correo":"","temas":null,"tags":null,"chileclic_id":"CARAB0018","permalink":"https:\/\/www.chileatiende.gob.cl\/fichas\/ver\/400"},{"id":"415","codigo":"AD009-23","fecha":null,"servicio":"Carabineros
+        de Chile","titulo":"Acreditaci\u00f3n de empresas de recursos t\u00e9cnicos
+        para seguridad privada","updated_data_at":null,"objetivo":"<p><strong>Descripci\u00f3n:<\/strong><\/p>\n<p>Corresponde
+        a la acreditaci\u00f3n de empresas interesadas en prestar servicios relacionados
+        a proporcionar, instalar, mantener o reparar recursos afines a materias de
+        seguridad privada. <br \/><strong><\/strong><\/p>\n<p><strong>En que consiste:<\/strong><\/p>\n<p>Consiste
+        en la presentaci\u00f3n de una solicitud de acreditaci\u00f3n como empresa
+        de recursos t\u00e9cnicos, posterior revisi\u00f3n de antecedentes -que demuestren
+        poseer idoneidad c\u00edvica, moral y profesional- y emisi\u00f3n por parte
+        de la Autoridad Fiscalizadora de la autorizaci\u00f3n para ejercer esas funciones.<\/p>","beneficiarios":"<p>Personas
+        naturales o jur\u00eddicas, que cumplan con los siguientes requisitos:<\/p>\n<p
+        style=\"margin-left: 30px;\">Acreditar idoneidad c\u00edvica, moral y profesional.<\/p>","costo":"<p>El
+        costo de esta autorizaci\u00f3n se encuentra publicado en el sitio web <a
+        href=\"http:\/\/www.carabinerosdechileos10.cl\">www.carabinerosdechileos10.cl<\/a><\/p>","vigencia":"<div
+        style=\"background-image: initial; background-attachment: initial; background-origin:
+        initial; background-clip: initial; outline-width: 0px; outline-style: initial;
+        outline-color: initial; margin: 8px;\">\n<p>Por regla general, la autorizaci\u00f3n
+        tiene una vigencia de dos a\u00f1os, es renovable y permite a la persona cumplir
+        sus funciones en todo el territorio nacional.<\/p>\n<\/div>","plazo":"","observaciones":"","marco_legal":"","doc_requeridos":"<ul>\n<li>Solicitud
+        Simple.<\/li>\n<li>Fotocopia C\u00e9dula de Identidad socios.<\/li>\n<li>Escritura
+        de Constituci\u00f3n de Sociedad y publicaci\u00f3n del extracto en el Diario
+        Oficial, relativos al decreto Ley N\u00ba 3.607, de 1981. (excepto personas
+        naturales)<\/li>\n<li>Iniciaci\u00f3n de Actividades con el giro correspondiente
+        a prestaciones de servicios en Seguridad Privada.<\/li>\n<li>Certificado de
+        Antecedentes para fines especiales de los socios.<\/li>\n<li>Certificado de
+        Antecedentes para fines comerciales de los socios y de la empresa.<\/li>\n<li>Certificado
+        de Obra, otorgado por la Inspecci\u00f3n del Trabajo.<\/li>\n<li>Escritura
+        de compraventa o Contrato de Arrendamiento de las oficinas o instalaciones
+        donde funcionar\u00e1 la empresa.<\/li>\n<li>Patente Municipal.<\/li>\n<li>Relaci\u00f3n
+        pormenorizada de elementos t\u00e9cnicos que pretenda comercializar, vender
+        o reparar (descripci\u00f3n gen\u00e9rica) y contar con personal t\u00e9cnico,
+        certificado y acreditado por la Autoridad Fiscalizadora.<\/li>\n<\/ul>","guia_online":"","guia_online_url":"","guia_oficina":"<ul>\n<li>Dir\u00edjase
+        ante la Autoridad Fiscalizadora donde se ubica su domicilio comercial.<\/li>\n<li>Como
+        resultado del tr\u00e1mite obtendr\u00e1 autorizaci\u00f3n para desarrollar
+        la funci\u00f3n de empresa de recursos t\u00e9cnicos en materias de seguridad
+        privada, emitida por la Autoridad Fiscalizadora correspondiente<\/li>\n<\/ul>","guia_telefonico":"","guia_correo":"","temas":null,"tags":null,"chileclic_id":"CARAB0023","permalink":"https:\/\/www.chileatiende.gob.cl\/fichas\/ver\/415"},{"id":"418","codigo":"AD009-24","fecha":null,"servicio":"Carabineros
+        de Chile","titulo":"Curso de formaci\u00f3n de vigilante privado","updated_data_at":null,"objetivo":"<p><strong>Descripci\u00f3n:<\/strong><\/p>\n<p>Corresponde
+        a un curso dictado por una empresa de capacitaci\u00f3n acreditada en Carabineros
+        o por la propia entidad empleadora, seg\u00fan lo contemple su estudio de
+        seguridad. <br \/><strong><\/strong><\/p>\n<p><strong>En que consiste:<\/strong><\/p>\n<p>Consiste
+        en un curso de 100 horas, dictado por una empresa de capacitaci\u00f3n acreditada
+        en Carabineros o por capacitadores contratados por la propia entidad empleadora.
+        Est\u00e1 dirigido a personas naturales contratadas por las entidades mencionadas
+        en el art\u00edculo 3\u00b0 del <a href=\"http:\/\/www.carabinerosdechileos10.cl\/wp-content\/uploads\/2010\/03\/4DL3.607.pdf\">Decreto
+        Ley N\u00b0 3.607<\/a> . A su t\u00e9rmino, se rinde un examen ante la Autoridad
+        Fiscalizadora (Prefectura de Carabineros).<\/p>","beneficiarios":"<p>Personas
+        jur\u00eddicas (empleadores), que cumplan con los siguientes requisitos:<\/p>\n<ul>\n<li>Ser
+        chileno.<\/li>\n<li>21 a\u00f1os de edad.<\/li>\n<li>8\u00b0 a\u00f1o de Educaci\u00f3n
+        B\u00e1sica aprobado.<\/li>\n<li>Haber cumplido en forma efectiva el servicio
+        militar \u00f3 ser funcionario en retiro de las Fuerzas Armadas, de Orden
+        o de Gendarmer\u00eda. En casos calificados, las Prefecturas de Carabineros,
+        podr\u00e1n exceptuar del cumplimiento de este requisito a postulantes de
+        sexo femenino.<\/li>\n<li>No haber sido condenado ni estar sometido a proceso
+        por crimen o simple delito.<\/li>\n<li>Tener salud y condiciones f\u00edsicas
+        compatibles con la funci\u00f3n que van a desempe\u00f1ar, especialmente en
+        lo relativo a la aptitud para portar armas de fuego, las que deber\u00e1n
+        ser comprobadas mediante certificados m\u00e9dico y psicol\u00f3gico<\/li>\n<li>Acreditar
+        idoneidad c\u00edvica, moral y profesional. (Art\u00edculo 11\u00b0 del Decreto
+        Supremo N\u00b0 1.773, 1994)<\/li>\n<\/ul>","costo":"<ul>\n<li>No tiene costo
+        para las personas que ser\u00e1n capacitadas, en tanto que el valor de la
+        capacitaci\u00f3n que debe pagar el empleador, se rige por la regulaci\u00f3n
+        del mercado.<\/li>\n<li>La solicitud ante Carabineros tiene un costo por persona
+        a capacitar que se encuentra publicado en el sitio web <a href=\"http:\/\/www.carabinerosdechileos10.cl\">www.carabinerosdechileos10.cl<\/a><\/li>\n<\/ul>","vigencia":"","plazo":"","observaciones":"<ul>\n<li>Para
+        la realizaci\u00f3n de un curso de vigilante privado, la entidad empleadora
+        o empresa de capacitaci\u00f3n (con acreditaci\u00f3n vigente) debe presentar
+        previamente una solicitud de autorizaci\u00f3n, acompa\u00f1ada del listado
+        de los capacitadores acreditados (vigentes) y el listado de las personas a
+        capacitar ante la autoridad fiscalizadora (Prefectura de Carabineros). En
+        \u00e9sta entidad debe pagar la tasa correspondiente a cada una de los alumnos.<\/li>\n<li>La
+        Tarjeta de Identificaci\u00f3n tiene vigencia de dos a\u00f1os, es renovable
+        y ser\u00e1 v\u00e1lida s\u00f3lo mientras la persona preste servicios a su
+        empleador, el cual debe tramitar su obtenci\u00f3n en una diligencia aparte
+        de este proceso.<\/li>\n<\/ul>","marco_legal":"","doc_requeridos":"<ul>\n<li>Fotocopia
+        C\u00e9dula de Identidad.<\/li>\n<li>Certificado de Estudios.<\/li>\n<li>Certificado
+        de antecedentes para fines especiales.<\/li>\n<li>Certificado de antecedentes
+        para fines comerciales.<\/li>\n<li>Certificados M\u00e9dicos.<\/li>\n<\/ul>","guia_online":"","guia_online_url":"","guia_oficina":"<p>En
+        las salas de clases correspondiente a la empresa de capacitaci\u00f3n (propias
+        o arrendadas) o en dependencias de la entidad empleadora, seg\u00fan corresponda,
+        previa autorizaci\u00f3n de la Autoridad Fiscalizadora (Prefectura de Carabineros)
+        correspondiente.<\/p>\n<p>Como resultado del tr\u00e1mite obtendr\u00e1 certificado
+        de aprobaci\u00f3n de curso de formaci\u00f3n de vigilante privado.<\/p>","guia_telefonico":"","guia_correo":"","temas":null,"tags":null,"chileclic_id":"CARAB0024","permalink":"https:\/\/www.chileatiende.gob.cl\/fichas\/ver\/418"},{"id":"421","codigo":"AD009-25","fecha":null,"servicio":"Carabineros
+        de Chile","titulo":"Curso de formaci\u00f3n de guardia de seguridad","updated_data_at":null,"objetivo":"<p><strong>Descripci\u00f3n:<\/strong><\/p>\n<p>Corresponde
+        a un curso dictado por una empresa de capacitaci\u00f3n acreditada en Carabineros,
+        dirigido a personas naturales contratadas por particulares, entidades o empresas
+        de recursos humanos. Este curso es pagado por el empleador. <br \/><strong><\/strong><\/p>\n<p><strong>En
+        que consiste:<\/strong><\/p>\n<p>Consiste en un curso de 90 horas, dictado
+        por una empresa de capacitaci\u00f3n acreditada en Carabineros. A su t\u00e9rmino,
+        se rinde un examen ante la Autoridad Fiscalizadora (Prefectura de Carabineros)<\/p>","beneficiarios":"<p>Personas
+        naturales o jur\u00eddicas (empleador), que cumplan con los siguientes requisitos:<\/p>\n<ul>\n<li>Ser
+        chileno.<\/li>\n<li>18 a\u00f1os edad.<\/li>\n<li>8\u00b0 a\u00f1o Educaci\u00f3n
+        B\u00e1sica aprobado.<\/li>\n<li>No haber sido condenado ni estar sometido
+        a proceso por crimen o simple delito.<\/li>\n<li>Tener salud y condiciones
+        f\u00edsicas compatibles con la funci\u00f3n que van a desempe\u00f1ar, las
+        que deber\u00e1n ser comprobadas mediante certificado m\u00e9dico.<\/li>\n<li>Acreditar
+        idoneidad c\u00edvica, moral y profesional (art. 8\u00b0 del Decreto Supremo
+        N\u00b0 93, 1985)<\/li>\n<\/ul>","costo":"<ul>\n<li>No tiene costo para las
+        personas que ser\u00e1n capacitadas, en tanto que el valor de la capacitaci\u00f3n
+        que debe pagar el empleador, se rige por la regulaci\u00f3n del mercado.<\/li>\n<li>La
+        solicitud ante Carabineros tiene un costo por persona a capacitar que se encuentra
+        publicado en el sitio web <a href=\"http:\/\/www.carabinerosdechileos10.cl\">www.carabinerosdechileos10.cl<\/a><\/li>\n<\/ul>","vigencia":"","plazo":"","observaciones":"<ul>\n<li>Para
+        la realizaci\u00f3n de un curso de guardia de seguridad, la empresa de capacitaci\u00f3n
+        (con acreditaci\u00f3n vigente) debe presentar previamente una solicitud de
+        autorizaci\u00f3n, acompa\u00f1ada del listado de los capacitadores acreditados
+        (vigentes) y el listado de las personas a capacitar ante la autoridad fiscalizadora
+        (Prefectura de Carabineros). Ante \u00e9sta entidad, se debe pagar la tasa
+        correspondiente a cada una de los alumnos.<\/li>\n<li>La Tarjeta de Identificaci\u00f3n
+        tiene vigencia de tres a\u00f1os, es renovable y ser\u00e1 v\u00e1lida s\u00f3lo
+        mientras la persona que la posee preste servicios a su empleador, el cual
+        debe tramitar su obtenci\u00f3n en diligencia a parte del presente proceso.<\/li>\n<\/ul>","marco_legal":"","doc_requeridos":"<ul>\n<li>Fotocopia
+        C\u00e9dula de Identidad.<\/li>\n<li>Certificado de Estudios.<\/li>\n<li>Certificado
+        de antecedentes para fines especiales.<\/li>\n<li>Certificado de antecedentes
+        para fines comerciales.<\/li>\n<li>Certificado m\u00e9dico.<\/li>\n<\/ul>","guia_online":"","guia_online_url":"","guia_oficina":"<ul>\n<li>Dir\u00edjase
+        a\u00a0las salas de clases correspondientes a la empresa de capacitaci\u00f3n,
+        pudiendo ser propias o arrendadas, previa autorizaci\u00f3n de la Autoridad
+        Fiscalizadora (Prefectura de Carabineros) correspondiente.<\/li>\n<li>Como
+        resultado del tr\u00e1mite obtendr\u00e1 certificado de aprobaci\u00f3n de
+        curso de formaci\u00f3n de guardia de seguridad.<\/li>\n<\/ul>","guia_telefonico":"","guia_correo":"","temas":null,"tags":null,"chileclic_id":"CARAB0025","permalink":"https:\/\/www.chileatiende.gob.cl\/fichas\/ver\/421"}]}}}'
+    http_version: 
+  recorded_at: Fri, 22 Sep 2017 15:38:55 GMT
+recorded_with: VCR 3.0.3

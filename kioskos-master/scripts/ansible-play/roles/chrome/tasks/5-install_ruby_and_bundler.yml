@@ -1,0 +1,18 @@
+- name: "apt | Ensure ruby is installed"
+  become: yes
+  become_user: root
+  apt:
+    name: "ruby"
+    state: present
+
+- name: "apt | Ensure ruby dev is installed"
+  become: yes
+  become_user: root
+  apt:
+    name: "ruby-dev"
+    state: present
+
+- name: "Install Bundler"
+  become: true
+  become_user: kiosk
+  command: bash -lc "gem install bundler --user-install"

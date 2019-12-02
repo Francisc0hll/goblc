@@ -1,0 +1,262 @@
+//CERTIFICADOS
+.certificates{
+  padding: 0;
+  height: calc(100vh - 330px);
+  overflow: hidden;
+  overflow-y: auto;
+  h3{
+    font-size: 230%;
+    text-align: center;
+    display: block;
+    margin: 8% 0;
+    strong{
+      border: 6px solid #4171bb;
+      padding: 4px;
+      border-radius: 50%;
+      margin: 10px;
+      height: 70px;
+      width: 70px;
+      font-size: 100%;
+      display: inline-block;
+      line-height: 130%;
+    }
+  }
+  h4{
+    font-size: 160%;
+    text-align: center;
+  }
+  .bottom-options{
+    padding: 10% 0 0 0;
+    text-align: center;
+    margin-bottom: 10px;
+    &.margin-left{
+      margin-left: 70px;
+    }
+    .btn{
+      padding: 30px 60px;
+      font-size: 200%
+    }
+  }
+  &.instructions{
+    h3{
+      margin: 8% 0 2% 0;
+    }
+  }
+  &.success,
+  &.error{
+    padding-top: 90px;
+    .icon{
+      text-align: center;
+      i{
+        font-size: 120px;
+        color: #47dc00;
+      }
+    }
+    h3{
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+  }
+  &.error{
+    .icon{
+      i{
+        color: #ee3a43;
+      }
+    }
+  }
+}
+
+.forms{
+  background: rgba(0,0,0,0.2);
+  padding: 80px;
+  font-size: 120%;
+  >div,
+  form>div{
+    position: relative;
+    margin-bottom: 80px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  label{
+    display: block;
+    padding: 0;
+    font-size: 170%;
+    font-weight: 400;
+    margin: 4px 0;
+    &.error{
+      color: #fff;
+      background: #ee3a43;
+      padding: 10px;
+      border-radius: 3px;
+      margin: 15px 0;
+      font-size: 100%;
+      font-weight: 300;
+      float: left;
+    }
+  }
+  labelCU{
+    display: block;
+    padding: 0;
+    font-size: 130%;
+    font-weight: 400;
+    margin: 4px 0;
+    &.error{
+      color: #C5C5C5;
+      background: #ee3a43;
+      padding: 10px;
+      border-radius: 3px;
+      margin: 15px 0;
+      font-size: 100%;
+      font-weight: 300;
+      float: left;
+    }
+  }
+
+  input[type='text'],
+  input[type='password'],
+  input[type='search'],
+  input[type='number'],
+  input[type='tel'],
+  input[type='number'],
+  input[type='email'],
+  input[type='url'],
+  select{
+    width: 100%;
+    background: transparent;
+    border: 3px solid #7cbeff;
+    border-radius: 0;
+    padding: 25px;
+    font-size: 2em;
+    color: #FFF;
+    text-align: left;
+    font-weight: 400;
+    &:focus{
+      background: rgba(255,255,255,0.1);
+      border-color: #FFF;
+      outline: 0px;
+    }
+    &.error{
+      border-color: #ee3a43;
+    }
+  }
+  select{
+    -webkit-appearance: none;
+    padding: initial;
+    height: 125px;
+    font-size: 180%;
+    option{
+      background: rgba(255,255,255,0.1);
+      padding: 30px;
+      color: #000 !important;
+      font-size: 90%;
+    }
+    &:after{
+      content: '';
+    }
+  }
+  .hint{
+    position: absolute;
+    top: 18px;
+    font-size: 120%;
+    &.p-left{
+      left: 15px;
+    }
+    &.p-right{
+      right: 15px;
+    }
+  }
+  .clean-input{
+    color: #84c6ff;
+    position: absolute;
+    top: 95px;
+    right: 30px;
+    display: block;
+    i{
+      font-size: 250%;
+    }
+  }
+  .mail,
+  .send-btn{
+    input,
+    button{
+      width: 90%;
+      padding: 30px;
+      text-decoration: none
+    }
+  }
+  .btn-print{
+    position: relative;
+    background: transparent;
+    border: none;
+    border-radius: 2%;
+    text-indent: -100000px;
+    background: image-url('ic_print_3x.png') no-repeat 30px 12px #d48825;
+    background-size: 50%;
+    box-shadow: 0 -6px 0 rgba(255, 255, 255, 0.4) inset;
+    width: 120px;
+    height: 90px;
+    filter: invert(100%);
+
+  }
+}
+
+.radio-group{
+  text-align: center;
+  overflow: hidden;
+  margin-top: 30px;
+  label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    font-size: 2.4em !important;
+    font-weight: 500;
+    margin-right: 30px;
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 34px;
+      height: 34px;
+      /*border: 3px solid #0468B1;*/
+      border: 2px solid #EE3A43;
+      border-radius: 34px;
+      margin-right: 10px;
+      margin-top: 20px;
+      float: left;
+    }
+    span{
+      margin: 20px;
+      display: block;
+    }
+  }
+  input[type=radio],
+  input[type=checkbox] {
+    display: none;
+  }
+  input[type=radio]:checked + label:before {
+    font-family: Arial;
+    content: "\2022";
+    color: #EE3A43;
+    font-size: 54px;
+    text-align: center;
+    line-height: 50%;
+  }
+}
+
+.buttons .btn-exito{
+  width: 60%;
+  margin-bottom: 0px;
+}
+
+.certificate-adv{
+  text-align: center;
+  font-size: 1.9em;
+  color: #fff;
+  margin: 260px 0 0;
+  padding: 40px 20px;
+  border: 1px dotted rgba(255,255,255,0.4);
+}
+.footer-text{
+  text-align: center;
+  padding-top: 3%;
+}

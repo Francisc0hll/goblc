@@ -1,0 +1,15 @@
+inherit_from: .rubocop_todo.yml
+AllCops:
+  Exclude:
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Rails:
+  Enabled: true
+Style/StringLiterals:
+  Enabled: false

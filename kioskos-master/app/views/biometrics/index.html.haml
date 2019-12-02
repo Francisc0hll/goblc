@@ -1,0 +1,29 @@
+.option-header.claveunica
+  .row
+    .col-md-12
+      =link_to totem_path, class: 'btn-back' do
+        %i.material-icons keyboard_backspace
+      .title
+        %i.material-icons ipower_settings_new
+        %h1 Obtener claveúnica
+
+.claveunica-page
+  .container#huellaBody
+    .row
+      .col-md-12
+        %h3
+          %strong
+            1
+          Ubica tu cédula de identidad en la ranura que se encuentra abajo de la pantalla
+
+      .col-md-12
+        .instruction
+          =image_tag "hand1.svg", alt: "hand1"
+
+  = render 'step_two'
+= render 'error/error_huella'
+= render 'error/error_ci'
+= render 'error/error_identificacion'
+= render 'error/error_moc'
+= render 'error/error_retry'
+= render 'error/error_timeout'

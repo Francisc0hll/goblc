@@ -1,0 +1,60 @@
+.header{
+	background: #fff;
+	box-sizing: border-box;
+	height: 180px;
+  .logo{
+    width: 60%;
+    img{
+      width: 100%;
+    }
+  }
+  .btn{
+    margin-top: 45px;
+  }
+}
+
+.option-header{
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  .title{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+      font-size: 250%;
+    }
+    img{
+      width: 200px;
+      margin-right: 60px;
+    }
+    i{
+      font-size: 250%;
+      margin-right: 15px;
+    }
+  }
+  &.claveunica{
+    background-color: #4171bb;
+  }
+  &.certificate{
+    background-color: #EE3A43;
+  }
+  &.procedures{
+    background-color: #eaeaea;
+    .btn-back, .title{
+      color: #222 !important;
+    }
+  }
+  .btn-back{
+    position: absolute;
+    display: block;
+    color: #fff;
+    top: 0;
+    left: 40px;
+    i{
+      font-size: 400%;
+      font-weight: 100;
+    }
+  }
+}

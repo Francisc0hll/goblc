@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://minsegpres.simple.cl/backend/api/ejecutar/1112999?rut=55555555-5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 03 Mar 2017 10:03:37 GMT
+      Set-Cookie:
+      - AWSELB=7BDB09DD16098517261B087C41FC3B6530E55A173797B923331E3F3049F64C98CBE25149C12488816511F52E64E39002900C664D007DAA76CC6E8979DDA5C1BCE7D2AD5308F01A0D29C42FAC844B91A40BA429732E;PATH=/
+      - ci_session=UTVQagFkBDhaIAVzUGYGMwU0AzoFdg1zUTMMKFp%2BD2YHbFM2VQkCZlEwXH4HbVUgW2AANgM9V2kPLFMzB24MZAYwAGJaPgw%2FBzAGNA86VT5RZVBkAWkEZFpoBWVQbwY6BTADZAVkDTRRZgxiWmsPawc7U25VMgJpUWdcfgdtVSBbYAA0Az9XaQ8sUzkHJgxeBmAAM1ppDH4HZgZ%2BD39VelFvUCMBagQzWmoFOlB%2BBjEFMQMuBWQNLlFnDGxaPQ8hBzRTaFV0AjRRJ1xmB2dVY1tgACcDelcgD2tTIgcJDGAGZgAyWmMMeAchBjYPf1ViUWVQZQFqBCBaHQVhUC4GYwVgA2EFLQ0gUSAMa1ojDz4HMlN2VWYCLVFvXC8HbFViW2kAPwMtVz8Pb1MjByIMXgZgADRaeQxlB3UGZA94VSFRdlBrATkEOFpqBTRQZAY0BTcDOQVkDTBRbgxuWjYPcg%3D%3D;
+        expires=Mon, 06-Feb-2017 16:08:05 GMT; path=/
+      - route=9db5c5d3891e17b1fcf690e574e69815; Path=/
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      X-Var:
+      - MISS
+      Content-Length:
+      - '1490'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{
+        "rut": "16127882-6",
+        "situacion": true,
+        "nombres": "ANDRES ALEJANDRO",
+        "paterno": "PENAILILLO",
+        "materno": "ACUNA",
+        "valer": "N",
+        "institucion": "NO",
+        "situamili": "NO",
+        "fechalic": "NO",
+        "unidad": "NO",
+        "descarga_certificado_fines_gener": "58b83f3b0bb3c.pdf",
+        "base64_certificado": ""
+      }'
+    http_version:
+  recorded_at: Mon, 03 Mar 2017 10:04:12 GMT
+recorded_with: VCR 3.0.3

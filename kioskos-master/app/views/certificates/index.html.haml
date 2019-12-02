@@ -1,0 +1,25 @@
+.option-header.certificate
+  .row
+    .col-md-12
+      =link_to totem_path, class: 'btn-back' do
+        %i.material-icons keyboard_backspace
+      .title
+        %i.material-icons insert_drive_file
+        %h1 Obtener un certificado
+
+.certificates
+  - if @procedures.size > 5
+    .container-fluid
+      .row
+        .col-md-12.search-main
+          = form_tag certificates_path, method: 'get'
+          .input-search-main
+            %input{name: "search", placeholder: "Escribe el nombre del certificado que buscas", type: "text", class: 'text', data:{autocompletable: "true"}}/
+            %i.material-icons search
+
+  .container
+    .row
+      =render 'procedure_list'
+
+
+

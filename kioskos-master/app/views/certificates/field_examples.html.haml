@@ -1,0 +1,58 @@
+.container-fluid.header.option-header
+  .row
+    .col-md-2.col-xs-2.back
+      =link_to totem_path do
+        %i.material-icons arrow_back
+        %span Volver
+    .col-md-10.col-xs-10.title
+      .section-title.certificados
+        %i.material-icons insert_drive_file
+        %h2 Certificado a tu correo electrónico
+.container-fluid.body
+  .container
+    .row
+      .col-md-12.block-all.forms.send-btn
+        .form-group
+          %select.selectpicker.form-control
+            %option Mustard
+            %option Ketchup
+            %option Relish
+
+
+        %form{"data-toggle" => "validator", :role => "form"}
+          .form-group
+            %label.control-label{:for => "inputName"} Name
+            %input#inputName.form-control{:placeholder => "Cina Saffary", :required => "", :type => "text"}/
+
+            %span.glyphicon.form-control-feedback{"aria-hidden" => "true"}
+            .help-block.with-errors Hey look, this one has feedback icons!
+          .form-group
+            %label.control-label{:for => "inputEmail"} Email
+            %input#inputEmail.form-control{"data-error" => "Bruh, that email address is invalid", :placeholder => "Email", :required => "", :type => "email"}/
+            .help-block.with-errors
+          .form-group
+            %label.control-label{:for => "inputPassword"} Password
+            .form-inline.row
+              .form-group.col-sm-6
+                %input#inputPassword.form-control{"data-minlength" => "6", :placeholder => "Password", :required => "", :type => "password"}/
+                .help-block Minimum of 6 characters
+              .form-group.col-sm-6
+                %input#inputPasswordConfirm.form-control{"data-match" => "#inputPassword", "data-match-error" => "Whoops, these don't match", :placeholder => "Confirm", :required => "", :type => "password"}/
+                .help-block.with-errors
+          .form-group
+            .radio
+              %label
+                %input{:name => "underwear", :required => "", :type => "radio"}/
+                Boxers
+            .radio
+              %label
+                %input{:name => "underwear", :required => "", :type => "radio"}/
+                Briefs
+          .form-group
+            .checkbox
+              %label
+                %input#terms{"data-error" => "Before you wreck yourself", :required => "", :type => "checkbox"}/
+                Check yourself
+              .help-block.with-errors
+          .form-group
+            %button.btn.btn-primary{:type => "submit"} Aceptar

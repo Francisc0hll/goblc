@@ -1,0 +1,34 @@
+.home
+  .container
+    .row
+      .col-md-12.title
+        %h2 ¡Hola! ¿Qué necesitas?
+    .row
+      .col-md-12
+        %a.btn.big-btn.btn-claveunica{href: "#{biometrics_intro_path}"}
+          %i.material-icons ipower_settings_new
+          %span Obtener claveúnica
+
+      .col-md-12
+        %a.btn.big-btn.btn-main{:href => "#{certificates_path}"}
+          %i.material-icons insert_drive_file
+          %span Obtener un Certificado
+
+      .col-md-12
+        %a.btn.big-btn.btn-secondary{:href => "#{procedures_path}"}
+          %i.material-icons help_outline
+          %span Ayuda sobre trámites
+
+    - if @totem.ministerial?
+      .home-adv
+        %p
+          Si tienes algún problema,
+          %strong acércate al mesón de informaciones para solicitar ayuda.
+    -else 
+      .home-adv
+        %p
+          Si tienes algún problema,
+          %strong llama al 101 o visita www.chileatiende.gob.cl.
+
+= render 'error/error_modal', modal_name: 'error_ci'
+

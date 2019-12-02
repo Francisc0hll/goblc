@@ -1,0 +1,84 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.chileatiende.gob.cl/api/fichas/327?access_token=QMwbYZbx3Hpyc9PG&type=JSON
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Mon, 06 Feb 2017 14:03:37 GMT
+      Set-Cookie:
+      - AWSELB=7BDB09DD16098517261B087C41FC3B6530E55A173797B923331E3F3049F64C98CBE25149C12488816511F52E64E39002900C664D007DAA76CC6E8979DDA5C1BCE7D2AD5308F01A0D29C42FAC844B91A40BA429732E;PATH=/
+      - ci_session=UTVQagFkBDhaIAVzUGYGMwU0AzoFdg1zUTMMKFp%2BD2YHbFM2VQkCZlEwXH4HbVUgW2AANgM9V2kPLFMzB24MZAYwAGJaPgw%2FBzAGNA86VT5RZVBkAWkEZFpoBWVQbwY6BTADZAVkDTRRZgxiWmsPawc7U25VMgJpUWdcfgdtVSBbYAA0Az9XaQ8sUzkHJgxeBmAAM1ppDH4HZgZ%2BD39VelFvUCMBagQzWmoFOlB%2BBjEFMQMuBWQNLlFnDGxaPQ8hBzRTaFV0AjRRJ1xmB2dVY1tgACcDelcgD2tTIgcJDGAGZgAyWmMMeAchBjYPf1ViUWVQZQFqBCBaHQVhUC4GYwVgA2EFLQ0gUSAMa1ojDz4HMlN2VWYCLVFvXC8HbFViW2kAPwMtVz8Pb1MjByIMXgZgADRaeQxlB3UGZA94VSFRdlBrATkEOFpqBTRQZAY0BTcDOQVkDTBRbgxuWjYPcg%3D%3D;
+        expires=Mon, 06-Feb-2017 16:08:05 GMT; path=/
+      - route=9db5c5d3891e17b1fcf690e574e69815; Path=/
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      X-Var:
+      - MISS
+      Content-Length:
+      - '1490'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ficha":{"id":"325","codigo":"AK008-13","fecha":"2011-12-23 10:15:30","servicio":"Corporaci\u00f3n
+        de Asistencia Judicial Regi\u00f3n Metropolitana","titulo":"Presentaci\u00f3n
+        de demanda por despido injustificado","updated_data_at":null,"objetivo":"<p><strong>Descripci\u00f3n:<\/strong><\/p>\n<p>Beneficio
+        que otorga la Corporaci\u00f3n de asistencia judicial para asumir la representaci\u00f3n
+        de un trabajador en la obtenci\u00f3n de la declaraci\u00f3n que la causal
+        invocada por el empleador para poner t\u00e9rmino al contrato del trabajador
+        es injustificada <br \/><strong><\/strong><\/p>\n<p><strong>En qu\u00e9 consiste:<\/strong><\/p>\n<p>Obtener
+        la declaraci\u00f3n que la causal invocada por el empleador para poner t\u00e9rmino
+        al contrato del trabajador es injustificada, obteniendo el pago de las indemnizaciones
+        por a\u00f1os de servicio y de aviso previo, y otras prestaciones laborales
+        absolutas.<\/p>","beneficiarios":"<p><span>Los <span>trabajadores<\/span>
+        que hayan sido despedidos, y que no est\u00e9n de acuerdo con la causal invocada
+        por el empleador, que cumplan con los siguientes requisitos:<\/span><\/p>\n<p><span>Para
+        que el Consultorio de Asistencia Jur\u00eddica de la Corporaci\u00f3n se haga
+        cargo, una asistente social del mismo debe acreditar la condici\u00f3n de
+        pobre. Adem\u00e1s debe contar con la <span>documentaci\u00f3n<\/span> que
+        le permita acreditar sus pretensiones.<\/span><\/p>","costo":"","vigencia":"","plazo":"","observaciones":"<p>La
+        persona debe dirigirse al consultorio jur\u00eddico del empleador. Si el empleador
+        tiene domicilio dentro de la jurisdicci\u00f3n de los tribunales de San Miguel,
+        puede ir al consultorio de la comuna en que vive el trabajador. En este lugar
+        se har\u00e1 una evaluaci\u00f3n socioecon\u00f3mica por parte de la asistente
+        social, y si amerita se le otorgara el privilegio de pobreza. El privilegio
+        de pobreza significa gratuidad en las actuaciones judiciales. Posteriormente,
+        relatara los hechos al abogado jefe del consultorio, el que derivara el caso
+        a un egresado de derecho. El egresado tramitar\u00e1 la causa con la supervigilancia
+        del abogado jefe.<\/p>","marco_legal":"","doc_requeridos":"<ul>\n<li><span>Acreditar
+        la condici\u00f3n de pobre. La forma de <span>acreditaci\u00f3n<\/span> la
+        har\u00e1 la asistente social del consultorio jur\u00eddico. (La <span>contraparte<\/span>
+        del juicio, no debe ser patrocinada por el mismo consultorio).<\/span><\/li>\n<\/ul>\n<p>Adem\u00e1s
+        debe adjuntar:<\/p>\n<ul>\n<li>Contrato de trabajo (si lo hay).<\/li>\n<li>Carta
+        de despido (si la hay).<\/li>\n<li><span>Ultimas <span>liquidaciones<\/span>
+        de sueldo.<\/span><\/li>\n<li><span>Acta de <span>comparecencia<\/span> ante
+        la Direcci\u00f3n del Trabajo.<\/span><\/li>\n<\/ul>","guia_online":"","guia_online_url":"","guia_oficina":"<ul>\n<li>Centro
+        de Atenci\u00f3n Jur\u00eddico Social de la Corporaci\u00f3n de Asistencia
+        Judicial de la comuna de residencia del solicitante.<\/li>\n<li>Puede obtener
+        las direcciones y tel\u00e9fonos en el sitio web de la Corporaci\u00f3n, <a
+        href=\"http:\/\/www.cajmetro.cl\/\" target=\"_blank\">http:\/\/www.cajmetro.cl\/<\/a><\/li>\n<li>En
+        los tribunales que tengan jurisdicci\u00f3n sobre el domicilio del empleador
+        o donde se hayan prestado los servicios. La elecci\u00f3n queda en manos del
+        trabajador.<\/li>\n<\/ul>","guia_telefonico":"<p>Asistencia Jur\u00eddica
+        Gratuita: 600 440 2000 y desde celulares 02 362 8200.<\/p>","guia_correo":"","temas":null,"tags":null,"chileclic_id":"CAJ0013","permalink":"https:\/\/www.chileatiende.gob.cl\/fichas\/ver\/325"}}'
+    http_version: 
+  recorded_at: Mon, 06 Feb 2017 14:04:12 GMT
+recorded_with: VCR 3.0.3

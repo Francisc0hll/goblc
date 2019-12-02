@@ -1,0 +1,40 @@
+------------------------------------------
+ver catalogo de procesos
+------------------------------------------
+
+	./gob-simple-procesos.sh
+
+NOTA: El idProceso y idTarea se extraen desde la URL retornada por el
+catalogo de procesos para cada tramite.
+
+------------------------------------------
+ver especificación swagger de tramite (constancia de pensionado)
+------------------------------------------
+
+NOTA: idProceso: 5, idTarea: 8
+
+	./gob-simple-especificacion.sh 5 8
+
+------------------------------------------
+ver formulario de tramite (constancia de pensionado)
+------------------------------------------
+
+NOTA: idProceso: 5, idTarea: 8, paso: 1 (primer formulario)
+
+	./gob-simple-formulario.sh 5 8 1
+
+------------------------------------------
+iniciar tramite (constancia de pensionado)
+------------------------------------------
+
+NOTA: idProceso: 5, idTarea: 8
+
+	./gob-simple-iniciar-tramites.sh 5 8 '{"identificacion":{"rut":"15587917-3","nombres":"Victor","apellidos":"Utreras;Jofre","email":"victor.utreras@continuum.com"},"data":{ "mes": "1", "annio": "2017"}}'
+
+------------------------------------------
+continuar tramite (constancia de pensionado)
+------------------------------------------
+
+NOTA: El idInstancia: 342, idTarea: 350 y secuencia: 1 se extraen desde la respuesta obtenida al iniciar tramite
+
+	./gob-simple-continuar-tramites.sh 342 350 1 '{"identificacion":{"rut":"15587917-3","nombres":"Victor","apellidos":"Utreras;Jofre","email":"victor.utreras@continuum.com"},"data":{ }}'

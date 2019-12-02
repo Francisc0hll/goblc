@@ -1,0 +1,42 @@
+.option-header.claveunica
+  .row
+    .col-md-12
+      =link_to screen_clave_unicas_path, class: 'btn-back' do
+        %i.material-icons keyboard_backspace
+      .title
+        %i.material-icons ipower_settings_new
+        %h1 Obtener claveúnica
+
+.claveunica-page
+  .container
+    .row
+      .col-md-12
+        %h3 Inventa una clave para el RUN #{format_rut(current_user.rut)}
+    .row.forms
+      = form_tag clave_unicas_path do
+        .col-md-12
+          %label Clave
+          %labelCU Incluye al menos 8 caracteres, una mayúscula y un número
+          = hidden_field_tag :phone, @phone
+          = hidden_field_tag :mail, @mail
+          = hidden_field_tag :create_method, :screen
+          .clean-input
+            
+          = password_field_tag :password,nil,minlength:8, class:'text required', pattern:"([a-z]*[A-Z][a-zA-Z0-9]*[0-9][a-zA-Z0-9]*||[a-z]*[0-9][a-zA-Z0-9]*[A-Z][a-zA-Z0-9]*)", title: "Ingrese una clave valida"
+        .col-md-12
+          %label Repite la clave
+          .clean-input
+            
+          = password_field_tag :password_again, nil, class:'text required'
+        
+        .col-md-12
+          %button.btn-success.btn.medium-btn.btn-main
+            Aceptar
+:javascript
+  $('form').validate({
+    rules: {
+      password_again: {
+        equalTo: "#password"
+        }
+    }
+  })

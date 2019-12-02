@@ -1,0 +1,55 @@
+.container-fluid.header.option-header
+  .row
+    .col-md-2.col-xs-2.back
+      %a.btn.btn-info.btn-volver{href: "#{totem_path}"}
+        %i.material-icons arrow_back
+        %span.span_align Volver
+    .col-md-10.col-xs-10.title
+      .section-title.certificados
+        %i.material-icons insert_drive_file
+        %h2 Certificado a tu correo electrónico
+.container-fluid.body
+  .container
+    .row
+      .col-md-12.block-all.forms
+        %h2 Tercer paso
+        =form_tag(create_certificates_path, 'data-timeout' => 30000, 'data-redirect' => "#{rut_certificates_path}?error_timeout=true") do
+          = hidden_field_tag :procedure_step, @procedure_step
+          = hidden_field_tag :rut, current_user[:rut]
+          = hidden_field_tag :email, current_user[:email]
+          = hidden_field_tag :_id_instancia_, @id_instancia
+          = hidden_field_tag :_id_etapa_, @id_etapa
+          = hidden_field_tag :_secuencia_, @secuencia
+
+          .col-md-12
+            %table.table.table-bordered
+              %tr.center-title
+                %th Nombre Tramite
+                %th Tipo de Pension
+                %th Beneficio
+                %th Seleccion
+              =form_tag(create_certificates_path, 'data-timeout' => 30000, 'data-redirect' => "#{rut_certificates_path}?error_timeout=true") do
+                - @available_prev.each do |benefit_prev|
+                  %tr.left-title
+                    %td=benefit_prev[:nombre]
+                    %td=benefit_prev[:tipopension]
+                    %td=benefit_prev[:beneficio]
+                    %td= check_box_tag "#{benefit_prev[:seleccion]}[]", benefit_prev[:posicion], false, :id => benefit_prev[:posicion]
+                - @available_rep.each do |benefit_rep|
+                  %tr.left-title
+                    %td=benefit_rep[:nombre]
+                    %td=benefit_rep[:tipopension]
+                    %td=benefit_rep[:beneficio]
+                    %td= check_box_tag "#{benefit_rep[:seleccion]}[]", benefit_rep[:posicion], false, :id => benefit_rep[:posicion]
+
+                - @available_pbs.each do |benefit_pbs|
+                  %tr.left-title
+                    %td=benefit_pbs[:nombre]
+                    %td=benefit_pbs[:tipopension]
+                    %td=benefit_pbs[:beneficio]
+                    %td= check_box_tag "#{benefit_pbs[:seleccion]}[]", benefit_pbs[:posicion], false, :id => benefit_pbs[:posicion]
+
+
+        = button_tag(type: 'submit', class: 'btn btn-icon btn-success') do
+          %i.material-icons navigate_next
+          %span Continuar

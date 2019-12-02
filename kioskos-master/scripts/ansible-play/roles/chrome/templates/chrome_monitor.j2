@@ -1,0 +1,11 @@
+#!/bin/bash
+
+## Save this on /opt/chrome_monitor
+## Remember to chmod +x it
+
+#su kiosk
+cd /home/{{ totem_linux_user }}/monitor/src/
+/home/{{ totem_linux_user }}/.gem/ruby/2.3.0/bin/bundle install --path vendor/bundle
+ruby /home/{{ totem_linux_user }}/monitor/src/monitor_bootstrapper.rb
+
+#GEM_BIN_PATH=$(find $HOME/.gem -name bin)

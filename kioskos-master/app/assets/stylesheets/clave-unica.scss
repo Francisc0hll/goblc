@@ -1,0 +1,187 @@
+.claveunica-page{
+  padding: 0;
+  height: calc(100vh - 330px);
+  overflow: hidden;
+  overflow-y: auto;
+  h3{
+    font-size: 230%;
+    text-align: center;
+    display: block;
+    margin: 8% 0 2% 0;
+    strong{
+      border: 6px solid #4171bb;
+      padding: 4px;
+      border-radius: 50%;
+      margin: 10px;
+      height: 70px;
+      width: 70px;
+      font-size: 100%;
+      display: inline-block;
+      line-height: 130%;
+    }
+  }
+  h4{
+    font-size: 160%;
+    text-align: center;
+  }
+  .bottom-options{
+    padding: 10% 0 0 0;
+    text-align: center;
+    margin-bottom: 10px;
+    &.margin-left{
+      margin-left: 70px;
+    }
+    .btn{
+      padding: 30px 60px;
+      font-size: 200%
+    }
+  }
+  &.success,
+  &.error{
+    padding-top: 90px;
+    .icon{
+      text-align: center;
+      i{
+        font-size: 120px;
+        color: #47dc00;
+      }
+    }
+    h3{
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+  }
+  &.error{
+    .icon{
+      i{
+        color: #ee3a43;
+      }
+    }
+  }
+}
+
+.options{
+	padding: 120px 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  >div{
+    margin-bottom: 50px;
+  }
+	.option{
+		overflow: hidden;
+		padding: 30px 15px;
+    width: 100%;
+    display: inline-flex;
+    border: 6px solid #fff;
+    color: #fff;
+    border-radius: 6px;
+		i{
+			display: block;
+			font-size: 78px;
+    	padding: 20px;
+		}
+		span{
+			display: block;
+			padding: 35px 30px;
+	    float: right;
+	    font-size: 40px;
+		}
+    &.sms{
+      background-color: #fff;
+      color: #14588c;
+    }
+    &.mail{
+      background-color: #fff;
+      color: #14588c;
+    }
+    &.screen{
+      background-color: #fff;
+    color: #14588c;
+    }
+	}
+
+	.text{
+		p{
+			font-size: 20px;
+			display: block;
+			padding: 10px;
+		}
+	}
+}
+
+
+
+/* Tooltip container */
+.tooltip {
+	position: relative;
+  display: inline-block;
+	opacity: 0;
+	padding: 55px 0;
+	z-index: initial;
+	opacity: 1;
+	i{
+		font-size: 80px;
+	}
+	&.telefono{
+		color: #EE3A43;
+	}
+	&.correo{
+		color: #FF9933;
+	}
+	&.pantalla{
+		color: #4285F4;
+	}
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 500px;
+  background-color: white;
+  color: #666;
+  text-align: center;
+  padding: 30px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  right: 105px;
+  top: 0px;
+  font-size: 24px;
+  box-shadow: 0 -2px 30px rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  &:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid white;
+    position: absolute;
+    right: -25px;
+  }
+}
+.step{
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50px;
+  margin: 0 50px;
+  color: #375179;
+  font-size: 4em;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 18px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.alert-carnet{
+  font-size: 200%;
+  background-color: #e9ffde;
+  border: none;
+  padding: 40px 10px;
+}

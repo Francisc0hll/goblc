@@ -1,0 +1,333 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.chileatiende.gob.cl/api/fichas/9611?access_token=QMwbYZbx3Hpyc9PG&type=JSON
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Mon, 11 Sep 2017 14:28:29 GMT
+      Set-Cookie:
+      - AWSELB=7BDB09DD16098517261B087C41FC3B6530E55A17372333BF9E5601DC547D719670BE2291592488816511F52E64E39002900C664D00127FD95FA4C05C34185988ACF28BE783F01A0D29C42FAC844B91A40BA429732E;PATH=/
+      - ci_session=BmJUbgZjUGwOdFEnV2EEMVBhAzpRIlIsWzkBJQcjCmMGbQFkAFxVMQRlUnBQOgJ3XGdTZQ0zXWNXdFdjUWMGbVFlVjZSYw4%2BB2ACMABlAW0GYlRiBmRQbw45UTBXawRiUGUDNFFhUmZbPgEyB2kKMwZjAToAM1VuBDlScFA6AndcZ1NnDTFdY1d0Vz1RcAZUUTdWZVJhDnwHZgJ6AHABLgY4VCcGbVBnDj5Rbld5BDNQZAMuUTBScVttAWEHYAokBjoBPQAhVWMEclJoUDACNFxnU3QNdF0qVzNXJlFfBmpRMVZkUmsOegchAjIAcAE2BjJUYQZtUHQOSVE1VykEYVA1A2FReVJ%2FWyoBZgd%2BCjsGMwEkADNVegQ6UiFQOwI1XG5TbA0jXTVXN1cnUXQGVFE3VmJScQ5nB3UCYAB3AXUGIVRvBj5QbA4%2BUWFXawQ1UGADNFEwUm5bbQFnB2sKdw%3D%3D;
+        expires=Mon, 11-Sep-2017 16:28:31 GMT; path=/
+      - route=992d2dede5be69f2f523d48ac3594a7e; Path=/
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      X-Var:
+      - MISS
+      Content-Length:
+      - '2290'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ficha":{"id":"9611","codigo":"ZZ001-102","fecha":"2017-04-03 12:30:04","servicio":"ChileAtiende","titulo":"Permiso
+        de circulaci\u00f3n","updated_data_at":"2017-04-03 00:00:00","objetivo":"<p>Antes
+        de obtener o renovar el permiso de circulaci\u00f3n, consulte si registra
+        una <a href=\"http:\/\/consultamultas.srcei.cl\/ConsultaMultas\/consultaMultasExterna.do\"
+        target=\"_blank\">multa de tr\u00e1nsito no pagada<\/a>.<\/p>","beneficiarios":"<p>Permite
+        que autom\u00f3viles, camionetas, motos y otros veh\u00edculos puedan circular
+        por las calles del pa\u00eds en forma legal. Recuerde que antes de obtener
+        o renovar el permiso de circulaci\u00f3n, debe consultar si registra <a href=\"http:\/\/consultamultas.srcei.cl\/ConsultaMultas\/consultaMultasExterna.do\"
+        target=\"_blank\">multas de tr\u00e1nsito no pagadas.<\/a><\/p>\n<p>{{paso:Fechas
+        de pago}}<\/p>\n<p>{{contenido:<\/p>\n<ul>\n<li><strong>Del 1 de febrero al
+        31 de marzo<\/strong>: autom\u00f3viles particulares, motocicletas, furgones,
+        ambulancias, carrozas f\u00fanebres, autom\u00f3viles de alquiler de lujo,
+        de turismo o de servicios especiales, station wagons y camionetas. Tambi\u00e9n
+        se incluyen en este periodo los carros y remolques para acoplar a veh\u00edculos
+        motorizados, hasta 1.750 kilogramos de capacidad de carga, media unidad.<\/li>\n<li><strong>Mayo<\/strong>:
+        taxis y buses.<strong><\/strong><\/li>\n<li><strong>Septiembre<\/strong>:
+        veh\u00edculos de carga, motonetas,\u00a0bicimotos, bicicletas con motor,
+        tractocamiones, tractores agr\u00edcolas o industriales y m\u00e1quinas automotrices.
+        Tambi\u00e9n se incluyen en este periodo los carros y remolques para acoplar
+        a veh\u00edculos motorizados, mayor a 1.750 kilogramos de capacidad de carga.}}<\/li>\n<\/ul>\n<p>{{paso:Valores}}<br
+        \/><br \/>{{contenido:<\/p>\n<p>Cada a\u00f1o, el Servicio de Impuestos Internos
+        (SII) hace una<strong> tasaci\u00f3n oficial de los autom\u00f3viles<\/strong>,
+        para determinar el valor de cada permiso.<\/p>\n<ul>\n<li><a href=\"https:\/\/www.sii.cl\/avalu\/tv\/tv_liv_inp2017.htm\"
+        target=\"_blank\">Consulte la tasaci\u00f3n de veh\u00edculos livianos (2017)<\/a>.<\/li>\n<li><a
+        href=\"https:\/\/www.sii.cl\/avalu\/tv\/tv_pes_inp2017.htm\" target=\"_blank\">Consulte
+        la tasaci\u00f3n de veh\u00edculos pesados (2017)<\/a>.}}<\/li>\n<\/ul>\n<p>{{paso:Lugares
+        de pago}}<\/p>\n<p>{{contenido:<\/p>\n<p>En la <a href=\"http:\/\/datos.sinim.gov.cl\/ficha_comunal.php\"
+        target=\"_blank\">direcci\u00f3n de tr\u00e1nsito de cada municipalidad<\/a>
+        y en los centros habilitados por cada una de ellas para realizar el tr\u00e1mite.
+        }}<br \/><br \/>{{paso:Formas de pago}}<\/p>\n<p>{{contenido:<\/p>\n<ul>\n<li>Efectivo.<\/li>\n<li>Tarjetas
+        de cr\u00e9dito.<\/li>\n<li>Cheque al d\u00eda.<\/li>\n<li>En dos cuotas:
+        para autom\u00f3viles, la primera (equivalente al 50%) se paga hasta el 31
+        de marzo. Este beneficio es efectivo s\u00f3lo para quienes no tienen multas
+        impagas.}}<\/li>\n<\/ul>\n<p>{{paso:Documentos requeridos (veh\u00edculos
+        usados)}}<\/p>\n<p>{{contenido:<\/p>\n<ul>\n<li>Permiso de circulaci\u00f3n
+        anterior.<\/li>\n<li>Certificado de homologaci\u00f3n (si corresponde), o\u00a0revisi\u00f3n
+        t\u00e9cnica vigente.<\/li>\n<li>P\u00f3liza del seguro automotor obligatorio,
+        que debe cubrir el per\u00edodo de vigencia del permiso de circulaci\u00f3n.<\/li>\n<li>Tarjeta
+        de dominio o <a href=\"[[3412]]\" target=\"_blank\">padr\u00f3n<\/a>, seg\u00fan
+        inscripci\u00f3n en el Servicio de Registro Civil.}}<\/li>\n<\/ul>\n<p>{{paso:Documentos
+        requeridos (veh\u00edculos nuevos)}}<\/p>\n<p>{{contenido:<\/p>\n<ul>\n<li>Factura
+        de compra (incluye la copia).<\/li>\n<li>Inscripci\u00f3n en el Servicio de
+        Registro Civil.<\/li>\n<li>Certificado de homologaci\u00f3n (si corresponde)
+        y certificado de normas de homologaci\u00f3n.<\/li>\n<li>P\u00f3liza de seguro
+        automotor obligatorio con vigencia hasta el 31 de marzo del a\u00f1o siguiente.<\/li>\n<\/ul>\n<p><strong>Importante<\/strong>:
+        los veh\u00edculos nuevos pagar\u00e1n el permiso en forma proporcional a
+        cada uno de los meses que faltan para completar el a\u00f1o.}}<\/p>\n<p>{{paso:Multas}}<\/p>\n<p>{{contenido:<\/p>\n<p>El
+        permiso se puede obtener s\u00f3lo si el veh\u00edculo<strong> no presenta
+        multas de tr\u00e1nsito impagas<\/strong>. En caso contrario, debe pagar en
+        la tesorer\u00eda municipal de la comuna donde le cursaron el parte, o directamente
+        en los centros habilitados para obtener el permiso de circulaci\u00f3n.<\/p>\n<ul>\n<li><a
+        href=\"http:\/\/consultamultas.srcei.cl\/ConsultaMultas\/consultaMultasExterna.do\"
+        target=\"_blank\">Consulte multas de tr\u00e1nsito no pagadas<\/a>.}}<\/li>\n<\/ul>\n<p>{{paso:Veh\u00edculos
+        que no circulan durante el a\u00f1o}}<\/p>\n<p>{{contenido:Si el veh\u00edculo
+        no ha circulado o no circular\u00e1 durante todo el a\u00f1o, <strong>se debe\u00a0pagar
+        un derecho municipal<\/strong> e indicar el motivo en una declaraci\u00f3n
+        jurada simple.<\/p>\n<p><strong>Importante<\/strong>: el plazo vence el 30
+        de noviembre de cada a\u00f1o.}}<br \/><br \/>{{paso:Si el permiso no se paga}}<\/p>\n<p>{{contenido:El
+        propietario puede quedar como moroso, se expone a intereses extras y a\u00a0multas
+        policiales (el\u00a0veh\u00edculo puede ser retirado de circulaci\u00f3n si
+        es sorprendido en la v\u00eda p\u00fablica). Adem\u00e1s, al momento de renovar
+        la patente se aplicar\u00e1 una multa correspondiente al 1,5% del valor del
+        permiso respectivo, que se calcula con al IPC.}}<\/p>\n<p>{{paso:Fuentes legales}}<\/p>\n<p>{{contenido:<\/p>\n<ul>\n<li><a
+        href=\"http:\/\/www.leychile.cl\/Navegar?idNorma=18967\" target=\"_blank\">Art\u00edculo
+        15, decreto ley N\u00b02.385<\/a>, que fija texto refundido y sistematizado
+        del decreto ley N\u00b03.063, de 1979, sobre rentas municipales.<\/li>\n<li><a
+        href=\"http:\/\/www.leychile.cl\/Navegar?idNorma=29708\" target=\"_blank\">Ley
+        N\u00b018.290 (Ley de Tr\u00e1nsito)<\/a>.}}<\/li>\n<\/ul>","costo":"","vigencia":"","plazo":"","observaciones":"","marco_legal":"","doc_requeridos":"","guia_online":"","guia_online_url":"","guia_oficina":"","guia_telefonico":"","guia_correo":"","temas":{"tema":["Transporte"]},"tags":{"tag":["permiso
+        de circulaci\u00f3n","patente","patente de auto","pago de patente","permiso
+        de auto","permiso para conductos","circulacion","pagar el permiso"]},"chileclic_id":null,"permalink":"https:\/\/www.chileatiende.gob.cl\/fichas\/ver\/9611"}}'
+    http_version: 
+  recorded_at: Mon, 11 Sep 2017 14:28:29 GMT
+- request:
+    method: get
+    uri: https://www.chileatiende.gob.cl/api/fichas/9611?access_token=QMwbYZbx3Hpyc9PG&type=JSON
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Mon, 11 Sep 2017 14:28:43 GMT
+      Set-Cookie:
+      - AWSELB=7BDB09DD16098517261B087C41FC3B6530E55A1737A26103DB20047500860AB3959BFF5788C0C2DE773903E6CA41FF468E7B085567F01E1F038ED6396E817309DDD8FEFF0A3FD07703DA36FB257C9EE209EC8EA2AB;PATH=/
+      - ci_session=VTEFPwdiUGwBe1IkBTNVYFVkBD1ZKgV7WzlXcwMnWDEBagJnAV0NaVIzByVQOgB1DzRZbwwyVGoEJ1RjAmRSb1ZjAmEGNFxuC25QOgQ%2FAGxVYwU1BzdQMAE2UmUFbFVjVTIEZFk4BW1bbldmA2RYaAFhAm0BOg0xUjIHJVA6AHUPNFltDDBUagQnVD4CI1IAVjACMQY1XC4LalAoBHQAL1VrBXYHbFBnATFSbQUrVWJVYQQpWTgFJlttVzkDZFh2AT0CPwEgDTtSJAc9UDAANg80WX4MdVQjBGBUJQIMUj5WNgIwBj9cKAstUGAEdAA3VWEFMAdsUHQBRlI2BXtVMFUwBGZZcQUoWypXMAN6WGkBNAInATINIlJsB3RQOwA3Dz1ZZgwiVDwEZFQkAidSAFYwAjYGJVw1C3lQMgRzAHRVcgU%2BBz9QbAExUmIFOVVkVWUEM1k4BTlbb1cxA29YJQ%3D%3D;
+        expires=Mon, 11-Sep-2017 16:28:51 GMT; path=/
+      - route=37cf2b5d00ac2ab9f5a0588bcde9cc0c; Path=/
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      X-Var:
+      - MISS
+      Content-Length:
+      - '2290'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ficha":{"id":"9611","codigo":"ZZ001-102","fecha":"2017-04-03 12:30:04","servicio":"ChileAtiende","titulo":"Permiso
+        de circulaci\u00f3n","updated_data_at":"2017-04-03 00:00:00","objetivo":"<p>Antes
+        de obtener o renovar el permiso de circulaci\u00f3n, consulte si registra
+        una <a href=\"http:\/\/consultamultas.srcei.cl\/ConsultaMultas\/consultaMultasExterna.do\"
+        target=\"_blank\">multa de tr\u00e1nsito no pagada<\/a>.<\/p>","beneficiarios":"<p>Permite
+        que autom\u00f3viles, camionetas, motos y otros veh\u00edculos puedan circular
+        por las calles del pa\u00eds en forma legal. Recuerde que antes de obtener
+        o renovar el permiso de circulaci\u00f3n, debe consultar si registra <a href=\"http:\/\/consultamultas.srcei.cl\/ConsultaMultas\/consultaMultasExterna.do\"
+        target=\"_blank\">multas de tr\u00e1nsito no pagadas.<\/a><\/p>\n<p>{{paso:Fechas
+        de pago}}<\/p>\n<p>{{contenido:<\/p>\n<ul>\n<li><strong>Del 1 de febrero al
+        31 de marzo<\/strong>: autom\u00f3viles particulares, motocicletas, furgones,
+        ambulancias, carrozas f\u00fanebres, autom\u00f3viles de alquiler de lujo,
+        de turismo o de servicios especiales, station wagons y camionetas. Tambi\u00e9n
+        se incluyen en este periodo los carros y remolques para acoplar a veh\u00edculos
+        motorizados, hasta 1.750 kilogramos de capacidad de carga, media unidad.<\/li>\n<li><strong>Mayo<\/strong>:
+        taxis y buses.<strong><\/strong><\/li>\n<li><strong>Septiembre<\/strong>:
+        veh\u00edculos de carga, motonetas,\u00a0bicimotos, bicicletas con motor,
+        tractocamiones, tractores agr\u00edcolas o industriales y m\u00e1quinas automotrices.
+        Tambi\u00e9n se incluyen en este periodo los carros y remolques para acoplar
+        a veh\u00edculos motorizados, mayor a 1.750 kilogramos de capacidad de carga.}}<\/li>\n<\/ul>\n<p>{{paso:Valores}}<br
+        \/><br \/>{{contenido:<\/p>\n<p>Cada a\u00f1o, el Servicio de Impuestos Internos
+        (SII) hace una<strong> tasaci\u00f3n oficial de los autom\u00f3viles<\/strong>,
+        para determinar el valor de cada permiso.<\/p>\n<ul>\n<li><a href=\"https:\/\/www.sii.cl\/avalu\/tv\/tv_liv_inp2017.htm\"
+        target=\"_blank\">Consulte la tasaci\u00f3n de veh\u00edculos livianos (2017)<\/a>.<\/li>\n<li><a
+        href=\"https:\/\/www.sii.cl\/avalu\/tv\/tv_pes_inp2017.htm\" target=\"_blank\">Consulte
+        la tasaci\u00f3n de veh\u00edculos pesados (2017)<\/a>.}}<\/li>\n<\/ul>\n<p>{{paso:Lugares
+        de pago}}<\/p>\n<p>{{contenido:<\/p>\n<p>En la <a href=\"http:\/\/datos.sinim.gov.cl\/ficha_comunal.php\"
+        target=\"_blank\">direcci\u00f3n de tr\u00e1nsito de cada municipalidad<\/a>
+        y en los centros habilitados por cada una de ellas para realizar el tr\u00e1mite.
+        }}<br \/><br \/>{{paso:Formas de pago}}<\/p>\n<p>{{contenido:<\/p>\n<ul>\n<li>Efectivo.<\/li>\n<li>Tarjetas
+        de cr\u00e9dito.<\/li>\n<li>Cheque al d\u00eda.<\/li>\n<li>En dos cuotas:
+        para autom\u00f3viles, la primera (equivalente al 50%) se paga hasta el 31
+        de marzo. Este beneficio es efectivo s\u00f3lo para quienes no tienen multas
+        impagas.}}<\/li>\n<\/ul>\n<p>{{paso:Documentos requeridos (veh\u00edculos
+        usados)}}<\/p>\n<p>{{contenido:<\/p>\n<ul>\n<li>Permiso de circulaci\u00f3n
+        anterior.<\/li>\n<li>Certificado de homologaci\u00f3n (si corresponde), o\u00a0revisi\u00f3n
+        t\u00e9cnica vigente.<\/li>\n<li>P\u00f3liza del seguro automotor obligatorio,
+        que debe cubrir el per\u00edodo de vigencia del permiso de circulaci\u00f3n.<\/li>\n<li>Tarjeta
+        de dominio o <a href=\"[[3412]]\" target=\"_blank\">padr\u00f3n<\/a>, seg\u00fan
+        inscripci\u00f3n en el Servicio de Registro Civil.}}<\/li>\n<\/ul>\n<p>{{paso:Documentos
+        requeridos (veh\u00edculos nuevos)}}<\/p>\n<p>{{contenido:<\/p>\n<ul>\n<li>Factura
+        de compra (incluye la copia).<\/li>\n<li>Inscripci\u00f3n en el Servicio de
+        Registro Civil.<\/li>\n<li>Certificado de homologaci\u00f3n (si corresponde)
+        y certificado de normas de homologaci\u00f3n.<\/li>\n<li>P\u00f3liza de seguro
+        automotor obligatorio con vigencia hasta el 31 de marzo del a\u00f1o siguiente.<\/li>\n<\/ul>\n<p><strong>Importante<\/strong>:
+        los veh\u00edculos nuevos pagar\u00e1n el permiso en forma proporcional a
+        cada uno de los meses que faltan para completar el a\u00f1o.}}<\/p>\n<p>{{paso:Multas}}<\/p>\n<p>{{contenido:<\/p>\n<p>El
+        permiso se puede obtener s\u00f3lo si el veh\u00edculo<strong> no presenta
+        multas de tr\u00e1nsito impagas<\/strong>. En caso contrario, debe pagar en
+        la tesorer\u00eda municipal de la comuna donde le cursaron el parte, o directamente
+        en los centros habilitados para obtener el permiso de circulaci\u00f3n.<\/p>\n<ul>\n<li><a
+        href=\"http:\/\/consultamultas.srcei.cl\/ConsultaMultas\/consultaMultasExterna.do\"
+        target=\"_blank\">Consulte multas de tr\u00e1nsito no pagadas<\/a>.}}<\/li>\n<\/ul>\n<p>{{paso:Veh\u00edculos
+        que no circulan durante el a\u00f1o}}<\/p>\n<p>{{contenido:Si el veh\u00edculo
+        no ha circulado o no circular\u00e1 durante todo el a\u00f1o, <strong>se debe\u00a0pagar
+        un derecho municipal<\/strong> e indicar el motivo en una declaraci\u00f3n
+        jurada simple.<\/p>\n<p><strong>Importante<\/strong>: el plazo vence el 30
+        de noviembre de cada a\u00f1o.}}<br \/><br \/>{{paso:Si el permiso no se paga}}<\/p>\n<p>{{contenido:El
+        propietario puede quedar como moroso, se expone a intereses extras y a\u00a0multas
+        policiales (el\u00a0veh\u00edculo puede ser retirado de circulaci\u00f3n si
+        es sorprendido en la v\u00eda p\u00fablica). Adem\u00e1s, al momento de renovar
+        la patente se aplicar\u00e1 una multa correspondiente al 1,5% del valor del
+        permiso respectivo, que se calcula con al IPC.}}<\/p>\n<p>{{paso:Fuentes legales}}<\/p>\n<p>{{contenido:<\/p>\n<ul>\n<li><a
+        href=\"http:\/\/www.leychile.cl\/Navegar?idNorma=18967\" target=\"_blank\">Art\u00edculo
+        15, decreto ley N\u00b02.385<\/a>, que fija texto refundido y sistematizado
+        del decreto ley N\u00b03.063, de 1979, sobre rentas municipales.<\/li>\n<li><a
+        href=\"http:\/\/www.leychile.cl\/Navegar?idNorma=29708\" target=\"_blank\">Ley
+        N\u00b018.290 (Ley de Tr\u00e1nsito)<\/a>.}}<\/li>\n<\/ul>","costo":"","vigencia":"","plazo":"","observaciones":"","marco_legal":"","doc_requeridos":"","guia_online":"","guia_online_url":"","guia_oficina":"","guia_telefonico":"","guia_correo":"","temas":{"tema":["Transporte"]},"tags":{"tag":["permiso
+        de circulaci\u00f3n","patente","patente de auto","pago de patente","permiso
+        de auto","permiso para conductos","circulacion","pagar el permiso"]},"chileclic_id":null,"permalink":"https:\/\/www.chileatiende.gob.cl\/fichas\/ver\/9611"}}'
+    http_version: 
+  recorded_at: Mon, 11 Sep 2017 14:28:43 GMT
+- request:
+    method: get
+    uri: https://www.chileatiende.gob.cl/api/fichas/9611?access_token=QMwbYZbx3Hpyc9PG&type=JSON
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Mon, 11 Sep 2017 14:28:49 GMT
+      Set-Cookie:
+      - AWSELB=7BDB09DD16098517261B087C41FC3B6530E55A17372333BF9E5601DC547D719670BE2291592488816511F52E64E39002900C664D006E2B763114ED73D00EA50FFFE6F84C1FF01A0D29C42FAC844B91A40BA429732E;PATH=/
+      - ci_session=A2dUblcyAj4PdQRyDDpUYVJjVG0FdgJ8BmQBJVN3XTRSOQZjVgpXMwVkUXMEbgp%2FCTJUYgY4UW9Qc1I0UmEDOFNtVmUDYV05B2EEawAwDDgDZVRmVz4CPA84BGQMY1RoUjBUZQVsAm4GNwFvUzddP1JkBjlWbVdtBTlRcwRuCn8JMlRgBjpRb1BzUjhScwNRUzVWZQMwXS8HZgR8AHAMIwM9VCdXPAI1Dz8EOwwiVGNSZlR5BWQCIQYwAW9TNF1zUm4GO1Z3V2EFc1FrBGQKPAkyVHMGf1EmUDRSI1JcA29TM1ZkAzpdKQchBDQAcAw7AzdUYVc8AiYPSARgDHJUMVI3VDYFLQIvBncBZlMqXWxSZwYjVmVXeAU7USIEbwo9CTtUawYoUTlQMFIiUncDUVM1VmIDIF00B3UEZgB3DHgDJFRvV28CPg8%2FBDQMMFRlUmJUYwVkAj4GMgFmUz9dIA%3D%3D;
+        expires=Mon, 11-Sep-2017 16:28:50 GMT; path=/
+      - route=992d2dede5be69f2f523d48ac3594a7e; Path=/
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      X-Var:
+      - MISS
+      Content-Length:
+      - '2290'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ficha":{"id":"9611","codigo":"ZZ001-102","fecha":"2017-04-03 12:30:04","servicio":"ChileAtiende","titulo":"Permiso
+        de circulaci\u00f3n","updated_data_at":"2017-04-03 00:00:00","objetivo":"<p>Antes
+        de obtener o renovar el permiso de circulaci\u00f3n, consulte si registra
+        una <a href=\"http:\/\/consultamultas.srcei.cl\/ConsultaMultas\/consultaMultasExterna.do\"
+        target=\"_blank\">multa de tr\u00e1nsito no pagada<\/a>.<\/p>","beneficiarios":"<p>Permite
+        que autom\u00f3viles, camionetas, motos y otros veh\u00edculos puedan circular
+        por las calles del pa\u00eds en forma legal. Recuerde que antes de obtener
+        o renovar el permiso de circulaci\u00f3n, debe consultar si registra <a href=\"http:\/\/consultamultas.srcei.cl\/ConsultaMultas\/consultaMultasExterna.do\"
+        target=\"_blank\">multas de tr\u00e1nsito no pagadas.<\/a><\/p>\n<p>{{paso:Fechas
+        de pago}}<\/p>\n<p>{{contenido:<\/p>\n<ul>\n<li><strong>Del 1 de febrero al
+        31 de marzo<\/strong>: autom\u00f3viles particulares, motocicletas, furgones,
+        ambulancias, carrozas f\u00fanebres, autom\u00f3viles de alquiler de lujo,
+        de turismo o de servicios especiales, station wagons y camionetas. Tambi\u00e9n
+        se incluyen en este periodo los carros y remolques para acoplar a veh\u00edculos
+        motorizados, hasta 1.750 kilogramos de capacidad de carga, media unidad.<\/li>\n<li><strong>Mayo<\/strong>:
+        taxis y buses.<strong><\/strong><\/li>\n<li><strong>Septiembre<\/strong>:
+        veh\u00edculos de carga, motonetas,\u00a0bicimotos, bicicletas con motor,
+        tractocamiones, tractores agr\u00edcolas o industriales y m\u00e1quinas automotrices.
+        Tambi\u00e9n se incluyen en este periodo los carros y remolques para acoplar
+        a veh\u00edculos motorizados, mayor a 1.750 kilogramos de capacidad de carga.}}<\/li>\n<\/ul>\n<p>{{paso:Valores}}<br
+        \/><br \/>{{contenido:<\/p>\n<p>Cada a\u00f1o, el Servicio de Impuestos Internos
+        (SII) hace una<strong> tasaci\u00f3n oficial de los autom\u00f3viles<\/strong>,
+        para determinar el valor de cada permiso.<\/p>\n<ul>\n<li><a href=\"https:\/\/www.sii.cl\/avalu\/tv\/tv_liv_inp2017.htm\"
+        target=\"_blank\">Consulte la tasaci\u00f3n de veh\u00edculos livianos (2017)<\/a>.<\/li>\n<li><a
+        href=\"https:\/\/www.sii.cl\/avalu\/tv\/tv_pes_inp2017.htm\" target=\"_blank\">Consulte
+        la tasaci\u00f3n de veh\u00edculos pesados (2017)<\/a>.}}<\/li>\n<\/ul>\n<p>{{paso:Lugares
+        de pago}}<\/p>\n<p>{{contenido:<\/p>\n<p>En la <a href=\"http:\/\/datos.sinim.gov.cl\/ficha_comunal.php\"
+        target=\"_blank\">direcci\u00f3n de tr\u00e1nsito de cada municipalidad<\/a>
+        y en los centros habilitados por cada una de ellas para realizar el tr\u00e1mite.
+        }}<br \/><br \/>{{paso:Formas de pago}}<\/p>\n<p>{{contenido:<\/p>\n<ul>\n<li>Efectivo.<\/li>\n<li>Tarjetas
+        de cr\u00e9dito.<\/li>\n<li>Cheque al d\u00eda.<\/li>\n<li>En dos cuotas:
+        para autom\u00f3viles, la primera (equivalente al 50%) se paga hasta el 31
+        de marzo. Este beneficio es efectivo s\u00f3lo para quienes no tienen multas
+        impagas.}}<\/li>\n<\/ul>\n<p>{{paso:Documentos requeridos (veh\u00edculos
+        usados)}}<\/p>\n<p>{{contenido:<\/p>\n<ul>\n<li>Permiso de circulaci\u00f3n
+        anterior.<\/li>\n<li>Certificado de homologaci\u00f3n (si corresponde), o\u00a0revisi\u00f3n
+        t\u00e9cnica vigente.<\/li>\n<li>P\u00f3liza del seguro automotor obligatorio,
+        que debe cubrir el per\u00edodo de vigencia del permiso de circulaci\u00f3n.<\/li>\n<li>Tarjeta
+        de dominio o <a href=\"[[3412]]\" target=\"_blank\">padr\u00f3n<\/a>, seg\u00fan
+        inscripci\u00f3n en el Servicio de Registro Civil.}}<\/li>\n<\/ul>\n<p>{{paso:Documentos
+        requeridos (veh\u00edculos nuevos)}}<\/p>\n<p>{{contenido:<\/p>\n<ul>\n<li>Factura
+        de compra (incluye la copia).<\/li>\n<li>Inscripci\u00f3n en el Servicio de
+        Registro Civil.<\/li>\n<li>Certificado de homologaci\u00f3n (si corresponde)
+        y certificado de normas de homologaci\u00f3n.<\/li>\n<li>P\u00f3liza de seguro
+        automotor obligatorio con vigencia hasta el 31 de marzo del a\u00f1o siguiente.<\/li>\n<\/ul>\n<p><strong>Importante<\/strong>:
+        los veh\u00edculos nuevos pagar\u00e1n el permiso en forma proporcional a
+        cada uno de los meses que faltan para completar el a\u00f1o.}}<\/p>\n<p>{{paso:Multas}}<\/p>\n<p>{{contenido:<\/p>\n<p>El
+        permiso se puede obtener s\u00f3lo si el veh\u00edculo<strong> no presenta
+        multas de tr\u00e1nsito impagas<\/strong>. En caso contrario, debe pagar en
+        la tesorer\u00eda municipal de la comuna donde le cursaron el parte, o directamente
+        en los centros habilitados para obtener el permiso de circulaci\u00f3n.<\/p>\n<ul>\n<li><a
+        href=\"http:\/\/consultamultas.srcei.cl\/ConsultaMultas\/consultaMultasExterna.do\"
+        target=\"_blank\">Consulte multas de tr\u00e1nsito no pagadas<\/a>.}}<\/li>\n<\/ul>\n<p>{{paso:Veh\u00edculos
+        que no circulan durante el a\u00f1o}}<\/p>\n<p>{{contenido:Si el veh\u00edculo
+        no ha circulado o no circular\u00e1 durante todo el a\u00f1o, <strong>se debe\u00a0pagar
+        un derecho municipal<\/strong> e indicar el motivo en una declaraci\u00f3n
+        jurada simple.<\/p>\n<p><strong>Importante<\/strong>: el plazo vence el 30
+        de noviembre de cada a\u00f1o.}}<br \/><br \/>{{paso:Si el permiso no se paga}}<\/p>\n<p>{{contenido:El
+        propietario puede quedar como moroso, se expone a intereses extras y a\u00a0multas
+        policiales (el\u00a0veh\u00edculo puede ser retirado de circulaci\u00f3n si
+        es sorprendido en la v\u00eda p\u00fablica). Adem\u00e1s, al momento de renovar
+        la patente se aplicar\u00e1 una multa correspondiente al 1,5% del valor del
+        permiso respectivo, que se calcula con al IPC.}}<\/p>\n<p>{{paso:Fuentes legales}}<\/p>\n<p>{{contenido:<\/p>\n<ul>\n<li><a
+        href=\"http:\/\/www.leychile.cl\/Navegar?idNorma=18967\" target=\"_blank\">Art\u00edculo
+        15, decreto ley N\u00b02.385<\/a>, que fija texto refundido y sistematizado
+        del decreto ley N\u00b03.063, de 1979, sobre rentas municipales.<\/li>\n<li><a
+        href=\"http:\/\/www.leychile.cl\/Navegar?idNorma=29708\" target=\"_blank\">Ley
+        N\u00b018.290 (Ley de Tr\u00e1nsito)<\/a>.}}<\/li>\n<\/ul>","costo":"","vigencia":"","plazo":"","observaciones":"","marco_legal":"","doc_requeridos":"","guia_online":"","guia_online_url":"","guia_oficina":"","guia_telefonico":"","guia_correo":"","temas":{"tema":["Transporte"]},"tags":{"tag":["permiso
+        de circulaci\u00f3n","patente","patente de auto","pago de patente","permiso
+        de auto","permiso para conductos","circulacion","pagar el permiso"]},"chileclic_id":null,"permalink":"https:\/\/www.chileatiende.gob.cl\/fichas\/ver\/9611"}}'
+    http_version: 
+  recorded_at: Mon, 11 Sep 2017 14:28:49 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,40 @@
+.option-header.certificate
+  .row
+    .col-md-12
+      =link_to certificates_path, class: 'btn-back' do
+        %i.material-icons keyboard_backspace
+      .title
+        %i.material-icons insert_drive_file
+        %h1 Obtener un certificado
+
+.certificates
+  .container
+    .row
+      .col-md-12
+        %h3 Valida tu identidad usando claveúnica
+
+    .row.forms
+      =form_tag(validate_clave_unicas_path, 'data-timeout' => 5000, 'data-redirect' => "#{authenticate_clave_unicas_path}?error_timeout=true") do
+        .col-md-12.add-rut
+          %label Ingresa tu RUT
+          .hint.p-right (Sin puntos ni guiones. Ejemplo: "13888211K")
+          %a.clean-input
+            %i.material-icons clear
+          = text_field_tag :run, current_rut, maxlength:"11", class: 'rut'
+
+        .col-md-12
+          %label Ingresa tu claveúnica
+          .hint.p-right
+            =link_to '¿La olvidaste? Crea una nueva.', biometrics_intro_path
+
+          %a.clean-input
+            %i.material-icons clear
+          = password_field_tag :password, nil, placeholder: "", class: 'text'
+
+        .col-md-12
+          = button_tag(type: 'submit', class: 'btn medium-btn btn-claveunica') do
+            %span Aceptar
+
+#modalErrorCU{ :class=> "modal fade" ,:role => "dialog", :tabindex => "-1", "data-show"=>"#{(defined? @has_error) ? @has_error : 'false'}"}
+  - if @type_error
+    = render "error/error_#{@type_error}"

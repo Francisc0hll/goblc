@@ -1,0 +1,9 @@
+a_procedure_log:
+  totem: active
+  chileatiende_id: 12345
+  name: Obtencion de certificado de generacion de tramites
+
+another_procedure_log:
+  totem: yet_another_totem
+  chileatiende_id: 54321
+  name: Obtencion de visa

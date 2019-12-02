@@ -1,0 +1,58 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+free_anonymous:
+  name: Certificado Anónimo
+  price: 0
+  active_in_totem: true
+  security: anonymous
+  type_of_procedure: simple
+  description: ''
+  class_name_simple: 'ProcedurePrueba'
+  institution_id: 1
+
+bad_certificate:
+  name: Certificado de nota sexto de humanidades
+  price: 0
+  active_in_totem: true
+  security: anonymous
+  type_of_procedure: simple
+  description: ''
+  class_name_simple: BadProcedure
+  institution_id: 1
+
+authenticated_certificate:
+  name: Certificado de Identidad
+  price: 0
+  active_in_totem: true
+  security: authentication
+  type_of_procedure: simple
+  description: ''
+  class_name_simple: 'ProcedurePrueba'
+  institution_id: 1
+
+constancia_de_pensionado:
+  name: Certificado de constancia de pensionado
+  price: 0
+  active_in_totem: true
+  security: authentication
+  type_of_procedure: simple
+  description: ''
+  id_proceso_simple: 5
+  id_etapa_simple: 8
+  class_name_simple: 'ProcedureConstanciaDePensionado'
+  institution_id: 2
+
+certificado_situacion_militar:
+  name: Certificado de situacion militar
+  price: 0
+  active_in_totem: true
+  security: authentication
+  type_of_procedure: simple
+  description: 'Certificado situacion militar. Es posible de hacer en el totem'
+  id_proceso_simple: 12
+  id_etapa_simple: 19
+  class_name_simple: 'ProcedureCertificadoSituacionMilitar'
+  chile_atiende_id: 946
+  institution_id: 2
+
+
